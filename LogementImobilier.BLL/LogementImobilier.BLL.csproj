@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>1ba2c193-5667-49fd-b063-9e9388d7e8ff</ProjectGuid>
+    <ProjectGuid>5545a8b7-1ca3-4402-ab2d-fe8ae5d5e8cf</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogemenImobilier.BAL</RootNamespace>
-    <AssemblyName>LogemenImobilier.BAL</AssemblyName>
+    <RootNamespace>LogementImobilier.BLL</RootNamespace>
+    <AssemblyName>LogementImobilier.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
