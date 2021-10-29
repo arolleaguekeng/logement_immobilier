@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogemenImobilier.BAL", "LogemenImobilier.BAL\LogemenImobilier.BAL.csproj", "{1BA2C193-5667-49FD-B063-9E9388D7E8FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BA2C193-5667-49FD-B063-9E9388D7E8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA2C193-5667-49FD-B063-9E9388D7E8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA2C193-5667-49FD-B063-9E9388D7E8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA2C193-5667-49FD-B063-9E9388D7E8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB7F1B7D-3879-4372-98B3-09872525C5D4}
+	EndGlobalSection
+EndGlobal
