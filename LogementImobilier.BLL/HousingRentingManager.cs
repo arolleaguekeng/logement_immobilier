@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LogementImobilier.BO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,22 @@ namespace LogementImobilier.BLL
         {
             return ((Surface * meterPrice) + (meterPrice + levelOfHousing + levelItem + levelLocation))*time;
             
+        }
+
+        public void Rending(Housing housing, Housing rentingHousing)
+        {
+            if (housing.Used == false)
+                housing.Used = true;
+            housinRepository.Set(housing, rentingHousing);
+        }
+
+        public void EndRending(Housing housing, Housing newHousing, DateTime endRendingDate)
+        {
+            if (housing.Used == true)
+            {
+                housing.Used = false;
+                housinRepository.Set(housing, newHousing);
+            }
         }
     }
 }
