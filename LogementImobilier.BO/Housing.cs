@@ -15,6 +15,9 @@ namespace LogementImobilier.BO
         public decimal Price { get; set; }
         public string Location { get; set; }
         public List<Item> Items { get; set; }
+        public bool Used { get; set; }
+
+
         public Housing()
         {
 

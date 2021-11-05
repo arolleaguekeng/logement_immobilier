@@ -39,7 +39,21 @@ namespace LogementImobilier.BLL
         {
             return (longs * larg);
         }
+        public void Rending(Housing housing, Housing rentingHousing)
+        {
+            if (housing.Used == false)
+                housing.Used = true;
+            housinRepository.Set(housing,rentingHousing);
+        }
 
+        public void EndRending(Housing housing,Housing newHousing,DateTime endRendingDate)
+        {
+            if (housing.Used == true)
+            {
+                housing.Used = false;
+                housinRepository.Set(housing, newHousing);
+            }
+        }
 
 
     }
