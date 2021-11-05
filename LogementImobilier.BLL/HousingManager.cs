@@ -37,7 +37,7 @@ namespace LogementImobilier.BLL
         }
         public decimal CalculSurface(decimal longs, decimal larg)
         {
-            return (longs * larg);
+            return (longs * larg );
         }
 
 
