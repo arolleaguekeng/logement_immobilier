@@ -16,7 +16,7 @@ namespace LogementImobilier.BLL
 
         public decimal CalculPrice(decimal Surface,decimal meterPrice, int levelItem,int levelOfHousing,int levelLocation,decimal time)
         {
-            return ((Surface * meterPrice) + (meterPrice + levelOfHousing + levelItem + levelLocation))*time;
+            return ((Surface * meterPrice) + (meterPrice + levelOfHousing + levelItem + levelLocation))*time; 
             
         }
 
