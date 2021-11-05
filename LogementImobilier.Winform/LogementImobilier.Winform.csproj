@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="fmIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fmIndex.Designer.cs">
+      <DependentUpon>fmIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmIndex.resx">
+      <DependentUpon>fmIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogementImobilier.BLL\LogementImobilier.BLL.csproj">
+      <Project>{5545a8b7-1ca3-4402-ab2d-fe8ae5d5e8cf}</Project>
+      <Name>LogementImobilier.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogementImobilier.BO\LogementImobilier.BO.csproj">
+      <Project>{0571c334-483f-4516-94df-2a68146e621b}</Project>
+      <Name>LogementImobilier.BO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

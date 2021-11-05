@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogementImobilier.DAL
+namespace LogementImobilier.BO
 {
-    public class Class1
+    public class Item :BaseModel
     {
+       
     }
 }

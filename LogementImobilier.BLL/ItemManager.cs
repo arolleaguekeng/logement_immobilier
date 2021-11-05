@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogementImobilier.BO
+namespace LogementImobilier.BLL
 {
-    public class Class1
+    class ItemManager
     {
     }
 }
