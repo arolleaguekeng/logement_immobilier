@@ -384,7 +384,7 @@
             // 
             this.columnHeader3.Width = 142;
             // 
-            // fmIndex
+            // fmExemple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -407,7 +407,7 @@
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "fmIndex";
+            this.Name = "fmExemple";
             this.Text = "Index";
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
             this.ResumeLayout(false);
