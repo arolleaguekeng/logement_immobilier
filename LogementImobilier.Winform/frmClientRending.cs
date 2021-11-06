@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace LogementImobilier.Winform
 {
-    public partial class frmHome : Form
+    public partial class frmClientRending : Form
     {
-        public frmHome()
+        public frmClientRending()
         {
             InitializeComponent();
         }
-
     }
 }

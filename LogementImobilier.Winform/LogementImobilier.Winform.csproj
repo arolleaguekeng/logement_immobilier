@@ -55,6 +55,12 @@
     <Compile Include="fmExemple.Designer.cs">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmClientRending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientRending.Designer.cs">
+      <DependentUpon>frmClientRending.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <EmbeddedResource Include="fmExemple.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientRending.resx">
+      <DependentUpon>frmClientRending.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -132,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wallpaper_meuble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_logeme2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

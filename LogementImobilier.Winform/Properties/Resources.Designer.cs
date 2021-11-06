@@ -63,6 +63,16 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_logeme2 {
+            get {
+                object obj = ResourceManager.GetObject("logo_logeme2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallpaper_meuble {
             get {
                 object obj = ResourceManager.GetObject("wallpaper_meuble", resourceCulture);
