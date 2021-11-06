@@ -8,6 +8,6 @@ namespace LogementImobilier.BLL
 {
     class ClientManager
     {
-        //ksdfjhsdjkfsdhfkj
+        //ksdfjhsdjkfsdhfkj 
     }
 }
