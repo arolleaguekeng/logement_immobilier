@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace LogementImobilier.Winform
 {
-    public partial class frmIndex : Form
+    public partial class frmHome : Form
     {
-        public frmIndex()
+        public frmHome()
         {
             InitializeComponent();
-            frmHome home = new frmHome();
-            home.MdiParent = this;
-            home.Show();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
