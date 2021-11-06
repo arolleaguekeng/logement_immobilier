@@ -38,12 +38,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -58,7 +58,7 @@
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.btnClose);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -186,28 +186,29 @@
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "O";
             // 
-            // guna2Button1
+            // btnClose
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(1139, 0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(61, 43);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "X";
+            this.btnClose.Animated = true;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.DisabledState.Parent = this.btnClose;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Location = new System.Drawing.Point(1139, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(61, 43);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -224,29 +225,33 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1200, 32);
             this.guna2GradientPanel1.TabIndex = 2;
             // 
-            // label2
+            // guna2GradientButton2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1107, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "User";
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1112, 3);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(41, 43);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2GradientButton2.Animated = true;
+            this.guna2GradientButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton2.BorderRadius = 2;
+            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton2.DisabledState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Purple;
+            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Location = new System.Drawing.Point(134, 0);
+            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2GradientButton2.ShadowDecoration.Depth = 5;
+            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
+            this.guna2GradientButton2.Size = new System.Drawing.Size(134, 32);
+            this.guna2GradientButton2.TabIndex = 7;
+            this.guna2GradientButton2.Text = "Button";
             // 
             // guna2GradientButton1
             // 
@@ -276,33 +281,29 @@
             this.guna2GradientButton1.TabIndex = 6;
             this.guna2GradientButton1.Text = "Button";
             // 
-            // guna2GradientButton2
+            // label2
             // 
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.BorderRadius = 2;
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.DisabledState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Purple;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(134, 0);
-            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton2.ShadowDecoration.Depth = 5;
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(134, 32);
-            this.guna2GradientButton2.TabIndex = 7;
-            this.guna2GradientButton2.Text = "Button";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1107, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "User";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1112, 3);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(41, 43);
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // frmIndex
             // 
@@ -334,7 +335,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label label2;
