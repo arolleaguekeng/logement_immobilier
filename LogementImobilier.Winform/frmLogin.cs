@@ -19,7 +19,17 @@ namespace LogementImobilier.Winform
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            panelEmail.Visible = true;
+        }
 
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            panelEmail.Visible = false;
+        }
+
+        private void btnValidate_Click(object sender, EventArgs e)
+        {
+            panelEmail.Visible = true;
         }
     }
 }
