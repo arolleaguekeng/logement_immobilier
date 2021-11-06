@@ -40,7 +40,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -212,7 +211,6 @@
             // 
             // guna2GradientPanel1
             // 
-            this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton2);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientButton1);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.guna2CirclePictureBox1);
@@ -222,36 +220,8 @@
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 43);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1200, 32);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1200, 31);
             this.guna2GradientPanel1.TabIndex = 2;
-            // 
-            // guna2GradientButton2
-            // 
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.BorderRadius = 2;
-            this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.DisabledState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Purple;
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(134, 0);
-            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton2.ShadowDecoration.Depth = 5;
-            this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(134, 32);
-            this.guna2GradientButton2.TabIndex = 7;
-            this.guna2GradientButton2.Text = "Button";
             // 
             // guna2GradientButton1
             // 
@@ -277,9 +247,9 @@
             this.guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2GradientButton1.ShadowDecoration.Depth = 5;
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(134, 32);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(134, 31);
             this.guna2GradientButton1.TabIndex = 6;
-            this.guna2GradientButton1.Text = "Button";
+            this.guna2GradientButton1.Text = "Renting";
             // 
             // label2
             // 
@@ -287,7 +257,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1107, 52);
+            this.label2.Location = new System.Drawing.Point(1064, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 21);
             this.label2.TabIndex = 3;
@@ -297,11 +267,11 @@
             // 
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1112, 3);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1112, 0);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(41, 43);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(27, 31);
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
@@ -342,7 +312,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
     }
 }
