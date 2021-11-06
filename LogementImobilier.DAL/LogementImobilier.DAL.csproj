@@ -57,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LogementImobilier.BO\LogementImobilier.BO.csproj">
+      <Project>{0571C334-483F-4516-94DF-2A68146E621B}</Project>
+      <Name>LogementImobilier.BO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyLibs\LibraryGenericSerialiser\LibraryGenericSerialiser\LibraryGenericSerialiser.csproj">
       <Project>{1cf0ad28-6c7c-4f76-826a-153aeb51e562}</Project>
       <Name>LibraryGenericSerialiser</Name>
