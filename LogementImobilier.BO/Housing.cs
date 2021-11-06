@@ -8,13 +8,14 @@ namespace LogementImobilier.BO
 {
     public class Housing : BaseModel
     {
-        public string Password { get; set; }
-        public decimal X { get; set; }
-        public decimal Y { get; set; }
-        public int NumbreHalls { get; set; }
+
         public decimal Price { get; set; }
         public string Location { get; set; }
-        public List<Item> Items { get; set; }
+        public int NumberRoom { get; set; }
+        public int NumberKitchen { get; set; }
+        public int NumberShower { get; set; }
+        public int NumbreExibition { get; set; }
+
         public bool Used { get; set; }
 
 
