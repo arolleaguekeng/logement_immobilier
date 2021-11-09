@@ -51,6 +51,7 @@
             this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label10 = new System.Windows.Forms.Label();
             this.flpanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
@@ -362,7 +363,7 @@
             // chbParking
             // 
             this.chbParking.AutoSize = true;
-            this.chbParking.BackColor = System.Drawing.SystemColors.Control;
+            this.chbParking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.chbParking.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.chbParking.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.chbParking.CheckedState.BorderRadius = 0;
@@ -370,6 +371,7 @@
             this.chbParking.CheckedState.FillColor = System.Drawing.Color.Purple;
             this.chbParking.CheckMarkColor = System.Drawing.Color.Purple;
             this.chbParking.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbParking.ForeColor = System.Drawing.Color.White;
             this.chbParking.Location = new System.Drawing.Point(1163, 46);
             this.chbParking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbParking.Name = "chbParking";
@@ -385,7 +387,7 @@
             // chbTerasse
             // 
             this.chbTerasse.AutoSize = true;
-            this.chbTerasse.BackColor = System.Drawing.SystemColors.Control;
+            this.chbTerasse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.chbTerasse.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.chbTerasse.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.chbTerasse.CheckedState.BorderRadius = 0;
@@ -393,6 +395,7 @@
             this.chbTerasse.CheckedState.FillColor = System.Drawing.Color.Purple;
             this.chbTerasse.CheckMarkColor = System.Drawing.Color.Purple;
             this.chbTerasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbTerasse.ForeColor = System.Drawing.Color.White;
             this.chbTerasse.Location = new System.Drawing.Point(1020, 46);
             this.chbTerasse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbTerasse.Name = "chbTerasse";
@@ -454,6 +457,18 @@
             this.flpanel.Size = new System.Drawing.Size(1311, 582);
             this.flpanel.TabIndex = 39;
             // 
+            // guna2ShadowPanel1
+            // 
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1473, 773);
+            this.guna2ShadowPanel1.TabIndex = 40;
+            // 
             // frmRenting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -462,9 +477,11 @@
             this.Controls.Add(this.flpanel);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRenting";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRenting";
             this.Load += new System.EventHandler(this.frmRenting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
@@ -504,5 +521,6 @@
         private Guna.UI2.WinForms.Guna2CheckBox chbParking;
         private Guna.UI2.WinForms.Guna2CheckBox chbTerasse;
         private System.Windows.Forms.FlowLayoutPanel flpanel;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
     }
 }

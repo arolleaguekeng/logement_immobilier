@@ -44,15 +44,24 @@ namespace LogementImobilier.Winform
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+
             housings = housing.Search(tbSearch.Text, cbbLocation.Text, (int)nudExibition.Value, (int)nudKitchens.Value,
             (int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
+            ShowAviableHouse();
+
+        }
+
+        private void ShowAviableHouse()
+        {
             foreach (var h in housings)
             {
-               
+
                 picture = new PictureBox();
                 description = new Label();
                 panel = new FlowLayoutPanel();
                 star = new Guna2RatingStar();
+                flpanel.Controls.Clear();
+
                 star.Value = h.NumberStart;
                 star.RatingColor = System.Drawing.Color.Gold;
                 //add the star
@@ -73,20 +82,18 @@ namespace LogementImobilier.Winform
                 picture.Dock = DockStyle.Top;
                 //picture.Size = new Size(new Point(400, 400));
                 description.Dock = DockStyle.Top;
-                description.Text = h.Name ;
+                description.Text = h.Name;
                 description.ForeColor = Color.Red;
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
 
-                
 
             }
-                
-
         }
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
-
+            housings = housing.SearchName(tbSearch.Text);
+            ShowAviableHouse();
         }
     }
 }

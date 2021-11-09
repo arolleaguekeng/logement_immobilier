@@ -25,5 +25,15 @@ namespace LogementImobilier.Winform
             this.Close();
         }
 
+        private void menuAddHousing_Click(object sender, EventArgs e)
+        {
+            OpenAddHouse();
+        }
+
+        public  void OpenAddHouse()
+        {
+            frmAddHouse addHouse = new frmAddHouse();
+            addHouse.ShowDialog();
+        }
     }
 }

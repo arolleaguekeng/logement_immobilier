@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAddHouse = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btn_StarRenting = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
@@ -96,32 +96,33 @@
             this.guna2GradientButton3.TabIndex = 8;
             this.guna2GradientButton3.Text = "Show Houses";
             // 
-            // guna2GradientButton4
+            // btnAddHouse
             // 
-            this.guna2GradientButton4.Animated = true;
-            this.guna2GradientButton4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton4.BorderRadius = 25;
-            this.guna2GradientButton4.CheckedState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.CustomImages.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton4.DisabledState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.Purple;
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(428, 153);
-            this.guna2GradientButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton4.ShadowDecoration.Depth = 5;
-            this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(190, 47);
-            this.guna2GradientButton4.TabIndex = 9;
-            this.guna2GradientButton4.Text = "Add House";
+            this.btnAddHouse.Animated = true;
+            this.btnAddHouse.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddHouse.BorderRadius = 25;
+            this.btnAddHouse.CheckedState.Parent = this.btnAddHouse;
+            this.btnAddHouse.CustomImages.Parent = this.btnAddHouse;
+            this.btnAddHouse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddHouse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddHouse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddHouse.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddHouse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddHouse.DisabledState.Parent = this.btnAddHouse;
+            this.btnAddHouse.FillColor2 = System.Drawing.Color.Purple;
+            this.btnAddHouse.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddHouse.ForeColor = System.Drawing.Color.White;
+            this.btnAddHouse.HoverState.Parent = this.btnAddHouse;
+            this.btnAddHouse.Location = new System.Drawing.Point(428, 153);
+            this.btnAddHouse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddHouse.Name = "btnAddHouse";
+            this.btnAddHouse.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAddHouse.ShadowDecoration.Depth = 5;
+            this.btnAddHouse.ShadowDecoration.Parent = this.btnAddHouse;
+            this.btnAddHouse.Size = new System.Drawing.Size(190, 47);
+            this.btnAddHouse.TabIndex = 9;
+            this.btnAddHouse.Text = "Add House";
+            this.btnAddHouse.Click += new System.EventHandler(this.btnAddHouse_Click);
             // 
             // guna2GradientButton5
             // 
@@ -188,32 +189,33 @@
             this.guna2GradientButton6.TabIndex = 14;
             this.guna2GradientButton6.Text = "Add client";
             // 
-            // guna2GradientButton1
+            // btn_StarRenting
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 25;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Purple;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(37, 153);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton1.ShadowDecoration.Depth = 5;
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(190, 47);
-            this.guna2GradientButton1.TabIndex = 6;
-            this.guna2GradientButton1.Text = "Start Renting";
+            this.btn_StarRenting.Animated = true;
+            this.btn_StarRenting.BackColor = System.Drawing.Color.Transparent;
+            this.btn_StarRenting.BorderRadius = 25;
+            this.btn_StarRenting.CheckedState.Parent = this.btn_StarRenting;
+            this.btn_StarRenting.CustomImages.Parent = this.btn_StarRenting;
+            this.btn_StarRenting.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_StarRenting.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_StarRenting.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_StarRenting.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_StarRenting.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_StarRenting.DisabledState.Parent = this.btn_StarRenting;
+            this.btn_StarRenting.FillColor2 = System.Drawing.Color.Purple;
+            this.btn_StarRenting.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_StarRenting.ForeColor = System.Drawing.Color.White;
+            this.btn_StarRenting.HoverState.Parent = this.btn_StarRenting;
+            this.btn_StarRenting.Location = new System.Drawing.Point(37, 153);
+            this.btn_StarRenting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_StarRenting.Name = "btn_StarRenting";
+            this.btn_StarRenting.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_StarRenting.ShadowDecoration.Depth = 5;
+            this.btn_StarRenting.ShadowDecoration.Parent = this.btn_StarRenting;
+            this.btn_StarRenting.Size = new System.Drawing.Size(190, 47);
+            this.btn_StarRenting.TabIndex = 6;
+            this.btn_StarRenting.Text = "Start Renting";
+            this.btn_StarRenting.Click += new System.EventHandler(this.btn_StarRenting_Click);
             // 
             // label2
             // 
@@ -254,10 +256,10 @@
             this.Controls.Add(this.guna2GradientButton6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2GradientButton5);
-            this.Controls.Add(this.guna2GradientButton4);
+            this.Controls.Add(this.btnAddHouse);
             this.Controls.Add(this.guna2GradientButton3);
             this.Controls.Add(this.guna2GradientButton2);
-            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.btn_StarRenting);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -271,11 +273,11 @@
         #endregion
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAddHouse;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton btn_StarRenting;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
