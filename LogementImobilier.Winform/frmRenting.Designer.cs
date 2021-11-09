@@ -41,23 +41,23 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cbbLocation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.tbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.nudPrice = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.chbParking = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chbTerasse = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.nudPrice = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label10 = new System.Windows.Forms.Label();
             this.flpanel = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             this.guna2Panel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -252,68 +252,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1473, 53);
             this.guna2Panel1.TabIndex = 36;
             // 
-            // btnClose
-            // 
-            this.btnClose.Animated = true;
-            this.btnClose.CheckedState.Parent = this.btnClose;
-            this.btnClose.CustomImages.Parent = this.btnClose;
-            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.DisabledState.Parent = this.btnClose;
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Location = new System.Drawing.Point(1392, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.ShadowDecoration.Parent = this.btnClose;
-            this.btnClose.Size = new System.Drawing.Size(81, 53);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "X";
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.nudPrice);
-            this.panel1.Controls.Add(this.chbParking);
-            this.panel1.Controls.Add(this.chbTerasse);
-            this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.nudShowers);
-            this.panel1.Controls.Add(this.cbbLocation);
-            this.panel1.Controls.Add(this.nudRooms);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.btnStars);
-            this.panel1.Controls.Add(this.nudExibition);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.nudKitchens);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(0, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1473, 95);
-            this.panel1.TabIndex = 38;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(11, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 25);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "Location";
-            // 
             // tbSearch
             // 
             this.tbSearch.Animated = true;
@@ -352,35 +290,74 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // btnSearch
+            // btnClose
             // 
-            this.btnSearch.Animated = true;
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BorderRadius = 15;
-            this.btnSearch.CheckedState.Parent = this.btnSearch;
-            this.btnSearch.CustomImages.Parent = this.btnSearch;
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.DisabledState.Parent = this.btnSearch;
-            this.btnSearch.FillColor2 = System.Drawing.Color.Purple;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.HoverState.Parent = this.btnSearch;
-            this.btnSearch.Image = global::LogementImobilier.Winform.Properties.Resources.search_32px;
-            this.btnSearch.Location = new System.Drawing.Point(1286, 32);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnSearch.ShadowDecoration.Depth = 5;
-            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
-            this.btnSearch.Size = new System.Drawing.Size(141, 48);
-            this.btnSearch.TabIndex = 42;
-            this.btnSearch.Text = "Seach";
-            this.btnSearch.UseTransparentBackground = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnClose.Animated = true;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.DisabledState.Parent = this.btnClose;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Location = new System.Drawing.Point(1392, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(81, 53);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.nudPrice);
+            this.panel1.Controls.Add(this.chbParking);
+            this.panel1.Controls.Add(this.chbTerasse);
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.nudShowers);
+            this.panel1.Controls.Add(this.cbbLocation);
+            this.panel1.Controls.Add(this.nudRooms);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.btnStars);
+            this.panel1.Controls.Add(this.nudExibition);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.nudKitchens);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(0, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1473, 95);
+            this.panel1.TabIndex = 38;
+            // 
+            // nudPrice
+            // 
+            this.nudPrice.BackColor = System.Drawing.Color.Transparent;
+            this.nudPrice.BorderRadius = 8;
+            this.nudPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nudPrice.DisabledState.Parent = this.nudPrice;
+            this.nudPrice.FocusedState.Parent = this.nudPrice;
+            this.nudPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPrice.ForeColor = System.Drawing.Color.Black;
+            this.nudPrice.Location = new System.Drawing.Point(637, 42);
+            this.nudPrice.Margin = new System.Windows.Forms.Padding(5);
+            this.nudPrice.Name = "nudPrice";
+            this.nudPrice.ShadowDecoration.Parent = this.nudPrice;
+            this.nudPrice.Size = new System.Drawing.Size(181, 38);
+            this.nudPrice.TabIndex = 59;
+            this.nudPrice.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.nudPrice.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // chbParking
             // 
@@ -428,26 +405,50 @@
             this.chbTerasse.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chbTerasse.UseVisualStyleBackColor = false;
             // 
-            // nudPrice
+            // btnSearch
             // 
-            this.nudPrice.BackColor = System.Drawing.Color.Transparent;
-            this.nudPrice.BorderRadius = 8;
-            this.nudPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nudPrice.DisabledState.Parent = this.nudPrice;
-            this.nudPrice.FocusedState.Parent = this.nudPrice;
-            this.nudPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPrice.ForeColor = System.Drawing.Color.Black;
-            this.nudPrice.Location = new System.Drawing.Point(637, 42);
-            this.nudPrice.Margin = new System.Windows.Forms.Padding(5);
-            this.nudPrice.Name = "nudPrice";
-            this.nudPrice.ShadowDecoration.Parent = this.nudPrice;
-            this.nudPrice.Size = new System.Drawing.Size(181, 38);
-            this.nudPrice.TabIndex = 59;
-            this.nudPrice.UpDownButtonFillColor = System.Drawing.Color.Purple;
-            this.nudPrice.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.btnSearch.Animated = true;
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BorderRadius = 15;
+            this.btnSearch.CheckedState.Parent = this.btnSearch;
+            this.btnSearch.CustomImages.Parent = this.btnSearch;
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.DisabledState.Parent = this.btnSearch;
+            this.btnSearch.FillColor2 = System.Drawing.Color.Purple;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.HoverState.Parent = this.btnSearch;
+            this.btnSearch.Image = global::LogementImobilier.Winform.Properties.Resources.search_32px;
+            this.btnSearch.Location = new System.Drawing.Point(1286, 32);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSearch.ShadowDecoration.Depth = 5;
+            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
+            this.btnSearch.Size = new System.Drawing.Size(141, 48);
+            this.btnSearch.TabIndex = 42;
+            this.btnSearch.Text = "Seach";
+            this.btnSearch.UseTransparentBackground = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(11, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 25);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Location";
             // 
             // flpanel
             // 
+            this.flpanel.AutoScroll = true;
             this.flpanel.Location = new System.Drawing.Point(17, 156);
             this.flpanel.Name = "flpanel";
             this.flpanel.Size = new System.Drawing.Size(1311, 582);
@@ -471,9 +472,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).EndInit();
             this.ResumeLayout(false);
 

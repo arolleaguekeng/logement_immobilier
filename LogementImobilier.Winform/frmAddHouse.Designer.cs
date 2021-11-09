@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.label10 = new System.Windows.Forms.Label();
             this.nudShowers = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -39,24 +40,23 @@
             this.label4 = new System.Windows.Forms.Label();
             this.starNotation = new Guna.UI2.WinForms.Guna2RatingStar();
             this.nudExibition = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.linePrice = new Guna.UI2.WinForms.Guna2TrackBar();
-            this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.nudKitchen = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbId = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
             this.nudPrice = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.chbTerasse = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chbParking = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbPrice = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +72,16 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(887, 53);
             this.guna2Panel1.TabIndex = 52;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 53);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // btnClose
             // 
@@ -96,6 +106,7 @@
             this.btnClose.Size = new System.Drawing.Size(81, 53);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label10
             // 
@@ -141,10 +152,14 @@
             this.cbbLocation.HoverState.Parent = this.cbbLocation;
             this.cbbLocation.ItemHeight = 30;
             this.cbbLocation.Items.AddRange(new object[] {
-            "ComboBox",
-            "test",
-            "test",
-            "test"});
+            "Bafoussam",
+            "Douala",
+            "Kribi",
+            "Limbé",
+            "Maroua",
+            "Garoua",
+            "Nkongsamba",
+            "Dschang"});
             this.cbbLocation.ItemsAppearance.Parent = this.cbbLocation;
             this.cbbLocation.ItemsAppearance.SelectedBackColor = System.Drawing.Color.Purple;
             this.cbbLocation.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
@@ -234,28 +249,6 @@
             this.nudExibition.UpDownButtonFillColor = System.Drawing.Color.Purple;
             this.nudExibition.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
-            // linePrice
-            // 
-            this.linePrice.FillColor = System.Drawing.Color.White;
-            this.linePrice.HoverState.Parent = this.linePrice;
-            this.linePrice.Location = new System.Drawing.Point(641, 221);
-            this.linePrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.linePrice.Name = "linePrice";
-            this.linePrice.Size = new System.Drawing.Size(206, 23);
-            this.linePrice.TabIndex = 19;
-            this.linePrice.ThumbColor = System.Drawing.Color.Purple;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(650, 179);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 28);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Price";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -295,16 +288,6 @@
             this.label7.Size = new System.Drawing.Size(91, 28);
             this.label7.TabIndex = 26;
             this.label7.Text = "Notation";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 53);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // tbId
             // 
@@ -392,6 +375,7 @@
             this.nudPrice.BorderRadius = 8;
             this.nudPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudPrice.DisabledState.Parent = this.nudPrice;
+            this.nudPrice.Enabled = false;
             this.nudPrice.FocusedState.Parent = this.nudPrice;
             this.nudPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudPrice.ForeColor = System.Drawing.Color.Black;
@@ -450,11 +434,33 @@
             this.chbParking.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chbParking.UseVisualStyleBackColor = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(64, 370);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(136, 17);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "Estimation of price : ";
+            // 
+            // lbPrice
+            // 
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrice.ForeColor = System.Drawing.Color.Purple;
+            this.lbPrice.Location = new System.Drawing.Point(206, 363);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(23, 25);
+            this.lbPrice.TabIndex = 60;
+            this.lbPrice.Text = "0";
+            // 
             // frmAddHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 479);
+            this.Controls.Add(this.lbPrice);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.chbParking);
             this.Controls.Add(this.chbTerasse);
             this.Controls.Add(this.nudPrice);
@@ -463,7 +469,6 @@
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.starNotation);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.linePrice);
             this.Controls.Add(this.nudShowers);
             this.Controls.Add(this.cbbLocation);
             this.Controls.Add(this.guna2Panel1);
@@ -474,17 +479,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.nudExibition);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddHouse";
             this.Text = "frmAddHouse";
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -505,8 +509,6 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2RatingStar starNotation;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudExibition;
-        private Guna.UI2.WinForms.Guna2TrackBar linePrice;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudKitchen;
         private System.Windows.Forms.Label label7;
@@ -516,5 +518,7 @@
         private Guna.UI2.WinForms.Guna2NumericUpDown nudPrice;
         private Guna.UI2.WinForms.Guna2CheckBox chbTerasse;
         private Guna.UI2.WinForms.Guna2CheckBox chbParking;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbPrice;
     }
 }

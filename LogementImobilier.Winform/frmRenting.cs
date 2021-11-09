@@ -20,7 +20,7 @@ namespace LogementImobilier.Winform
         Guna2GradientButton show;
         HousingManager housing;
         List<Housing> housings;
-        FlowLayoutPanel panel;
+        Panel panel;
         PictureBox picture;
         Label description;
         public frmRenting()
@@ -53,42 +53,27 @@ namespace LogementImobilier.Winform
                 description = new Label();
                 panel = new FlowLayoutPanel();
                 star = new Guna2RatingStar();
-                
+                star.Value = h.NumberStart;
+                star.RatingColor = System.Drawing.Color.Gold;
+                //add the star
                 show = new Guna2GradientButton();
+                show.Dock = DockStyle.Bottom;
+                show.Text = "More";
                 flpanel.Controls.Add(panel);
                 panel.Controls.Add(picture);
                 panel.Controls.Add(star);
                 panel.Controls.Add(description);
                 panel.Controls.Add(show);
-                
-                star.Value = h.NumberStart;
-
-
-                star.BorderColor = System.Drawing.Color.Purple;
-                star.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-                star.Name = "btnStars";
-                star.RatingColor = System.Drawing.Color.Gold;
-                star.Size = new System.Drawing.Size(95, 95);
-
-
-
-
-
-
-
-
-
-
-                picture.Dock = DockStyle.Top;
-                
+                panel.Size = new System.Drawing.Size(200, 200);
+                panel.BorderStyle = BorderStyle.FixedSingle;
+                panel.Size = new Size(new Point(150, 150));
+                star.Enabled = false;
                 show.Dock = DockStyle.Bottom;
-                show.Text = "show";
+                picture.Dock = DockStyle.Top;
+                //picture.Size = new Size(new Point(400, 400));
                 description.Dock = DockStyle.Left;
                 description.Text = h.Name ;
                 description.ForeColor = Color.Red;
-                panel.BorderStyle = BorderStyle.FixedSingle;
-
-                panel.Size = new Size(new Point(150, 150));
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
                 
 
