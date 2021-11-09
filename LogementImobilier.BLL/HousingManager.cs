@@ -39,15 +39,17 @@ namespace LogementImobilier.BLL
 
         public List<Housing> Search(string name, string location, int numberExibition, int numberKitchen, int numberRoom, int numberShower, bool parking, bool terasse, decimal price, float numberStars)
         {
-            return housinRepository.FindByName(name,location,numberExibition,numberKitchen,numberRoom,numberShower,parking,terasse,price,numberStars);
+            return housinRepository.FindByName(name,location,numberExibition,numberKitchen,numberRoom,
+                                                numberShower,parking,terasse,price,numberStars);
         }
 
 
 
 
-        public decimal CalculPrice(int numberRoom, int numberKitchens, int levelOfHousing, int numberExhibition, int numberShower, int duration)
+        public decimal CalculPrice(int numberRoom, int numberKitchens, int levelOfHousing, int numberExhibition, int numberShower, int duration,int level)
         {
-            return ((numberRoom * 2000) + (numberShower * 3000) + (numberKitchens * 3000) + (levelOfHousing * 5000) + ((numberExhibition * 15000)) * duration);
+            return ((numberRoom * 2000) + (numberShower * 3000) + (numberKitchens * 3000) + 
+                    (levelOfHousing * 5000) + ((numberExhibition * 15000)) * duration+(level*1000));
 
         }
 

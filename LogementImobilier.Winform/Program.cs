@@ -16,7 +16,7 @@ namespace LogementImobilier.Winform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAddHouse());
+            Application.Run(new frmRenting());
         }
     }
 }

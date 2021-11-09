@@ -25,14 +25,15 @@ namespace LogementImobilier.Winform
             {
                 Client client = new Client();
                 HousingManager housing = new HousingManager();
+
+
+
                 lbPrice.Text = housing.CalculPrice((int)nudRooms.Value, (int)nudKitchen.Value,
                     (int)starNotation.Value, (int)nudExibition.Value, (int)nudShowers.Value,
-                    1).ToString();
-                nudPrice.Value = decimal.Parse(lbPrice.Text);
-
-                housing.CreateHousing(new Housing(tbId.Text, tbName.Text, nudPrice.Value, cbbLocation.Text, (int)nudRooms.Value,
+                    1,(int )nudLevel.Value).ToString();
+                housing.CreateHousing(new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
                     (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
-                    false, client, chbTerasse.Checked, chbParking.Checked));
+                    false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value));
 
                 MessageBox.Show("Added Sucsesfuly");
             }

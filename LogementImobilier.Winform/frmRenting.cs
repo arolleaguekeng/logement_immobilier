@@ -59,6 +59,7 @@ namespace LogementImobilier.Winform
                 show = new Guna2GradientButton();
                 show.Dock = DockStyle.Bottom;
                 show.Text = "More";
+                show.Size = new System.Drawing.Size(140, 30);
                 flpanel.Controls.Add(panel);
                 panel.Controls.Add(picture);
                 panel.Controls.Add(star);
@@ -71,7 +72,7 @@ namespace LogementImobilier.Winform
                 show.Dock = DockStyle.Bottom;
                 picture.Dock = DockStyle.Top;
                 //picture.Size = new Size(new Point(400, 400));
-                description.Dock = DockStyle.Left;
+                description.Dock = DockStyle.Top;
                 description.Text = h.Name ;
                 description.ForeColor = Color.Red;
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;

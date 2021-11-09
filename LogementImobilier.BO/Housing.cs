@@ -19,8 +19,11 @@ namespace LogementImobilier.BO
         public bool Terrasse { get; set; }
         public bool Parking { get; set; }
         public bool Used { get; set; }
+        public int NumberOfLevel { get; set; }
+
+
         public Housing(string id,string name,decimal price, string location, int numberRoom, int numberKitchen, int numberShower,
-                        int numberExibition, float numberStart, bool used,Client client,bool terasse,bool parking)
+                        int numberExibition, float numberStart, bool used,Client client,bool terasse,bool parking,int numberOfLevel)
         {
             Id = id;
             Name = name;
@@ -35,6 +38,7 @@ namespace LogementImobilier.BO
             HousingClient = client;
             Terrasse = terasse;
             Parking = parking;
+            NumberOfLevel = numberOfLevel;
         }
     }
 }

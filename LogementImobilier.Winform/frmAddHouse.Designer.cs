@@ -46,18 +46,19 @@
             this.tbId = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.nudPrice = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.chbTerasse = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chbParking = new Guna.UI2.WinForms.Guna2CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lbPrice = new System.Windows.Forms.Label();
+            this.nudLevel = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -167,7 +168,7 @@
             this.cbbLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbLocation.Name = "cbbLocation";
             this.cbbLocation.ShadowDecoration.Parent = this.cbbLocation;
-            this.cbbLocation.Size = new System.Drawing.Size(209, 36);
+            this.cbbLocation.Size = new System.Drawing.Size(285, 36);
             this.cbbLocation.TabIndex = 35;
             // 
             // nudRooms
@@ -369,25 +370,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // nudPrice
-            // 
-            this.nudPrice.BackColor = System.Drawing.Color.Transparent;
-            this.nudPrice.BorderRadius = 8;
-            this.nudPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nudPrice.DisabledState.Parent = this.nudPrice;
-            this.nudPrice.Enabled = false;
-            this.nudPrice.FocusedState.Parent = this.nudPrice;
-            this.nudPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPrice.ForeColor = System.Drawing.Color.Black;
-            this.nudPrice.Location = new System.Drawing.Point(39, 273);
-            this.nudPrice.Margin = new System.Windows.Forms.Padding(5);
-            this.nudPrice.Name = "nudPrice";
-            this.nudPrice.ShadowDecoration.Parent = this.nudPrice;
-            this.nudPrice.Size = new System.Drawing.Size(336, 50);
-            this.nudPrice.TabIndex = 56;
-            this.nudPrice.UpDownButtonFillColor = System.Drawing.Color.Purple;
-            this.nudPrice.UpDownButtonForeColor = System.Drawing.Color.White;
-            // 
             // chbTerasse
             // 
             this.chbTerasse.AutoSize = true;
@@ -437,33 +419,64 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(64, 370);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(34, 370);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 17);
+            this.label5.Size = new System.Drawing.Size(186, 25);
             this.label5.TabIndex = 59;
             this.label5.Text = "Estimation of price : ";
             // 
             // lbPrice
             // 
             this.lbPrice.AutoSize = true;
-            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.ForeColor = System.Drawing.Color.Purple;
-            this.lbPrice.Location = new System.Drawing.Point(206, 363);
+            this.lbPrice.Location = new System.Drawing.Point(226, 363);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(23, 25);
+            this.lbPrice.Size = new System.Drawing.Size(111, 32);
             this.lbPrice.TabIndex = 60;
-            this.lbPrice.Text = "0";
+            this.lbPrice.Text = "0 FCFA";
+            // 
+            // nudLevel
+            // 
+            this.nudLevel.BackColor = System.Drawing.Color.Transparent;
+            this.nudLevel.BorderRadius = 8;
+            this.nudLevel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nudLevel.DisabledState.Parent = this.nudLevel;
+            this.nudLevel.FocusedState.Parent = this.nudLevel;
+            this.nudLevel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudLevel.ForeColor = System.Drawing.Color.Black;
+            this.nudLevel.Location = new System.Drawing.Point(713, 208);
+            this.nudLevel.Margin = new System.Windows.Forms.Padding(5);
+            this.nudLevel.Name = "nudLevel";
+            this.nudLevel.ShadowDecoration.Parent = this.nudLevel;
+            this.nudLevel.Size = new System.Drawing.Size(92, 38);
+            this.nudLevel.TabIndex = 61;
+            this.nudLevel.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.nudLevel.UpDownButtonForeColor = System.Drawing.Color.White;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(707, 178);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 28);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Levels";
             // 
             // frmAddHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 479);
+            this.Controls.Add(this.nudLevel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.chbParking);
             this.Controls.Add(this.chbTerasse);
-            this.Controls.Add(this.nudPrice);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbId);
@@ -489,7 +502,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,10 +528,11 @@
         private Guna.UI2.WinForms.Guna2TextBox tbId;
         private Guna.UI2.WinForms.Guna2TextBox tbName;
         private Guna.UI2.WinForms.Guna2GradientButton btnSave;
-        private Guna.UI2.WinForms.Guna2NumericUpDown nudPrice;
         private Guna.UI2.WinForms.Guna2CheckBox chbTerasse;
         private Guna.UI2.WinForms.Guna2CheckBox chbParking;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbPrice;
+        private Guna.UI2.WinForms.Guna2NumericUpDown nudLevel;
+        private System.Windows.Forms.Label label1;
     }
 }
