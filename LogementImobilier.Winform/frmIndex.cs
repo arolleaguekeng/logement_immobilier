@@ -24,5 +24,6 @@ namespace LogementImobilier.Winform
         {
             this.Close();
         }
+
     }
 }

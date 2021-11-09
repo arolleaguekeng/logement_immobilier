@@ -55,6 +55,12 @@
     <Compile Include="fmExemple.Designer.cs">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddHouse.Designer.cs">
+      <DependentUpon>frmAddHouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmClientRending.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="fmExemple.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddHouse.resx">
+      <DependentUpon>frmAddHouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientRending.resx">
       <DependentUpon>frmClientRending.cs</DependentUpon>
@@ -144,6 +153,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_logeme2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_property_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\launch_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apartment_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_search_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

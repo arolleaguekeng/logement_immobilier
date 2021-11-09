@@ -11,9 +11,6 @@ namespace LogementImobilier.BLL
     public class HousingManager
     {
         public HousingRepository housinRepository;
-        public Dictionary<int,string> levelItems;
-        public Dictionary<int,string> levelHousing;
-        public Dictionary<int, string> levelLocation;
 
         public HousingManager()
         {
@@ -38,6 +35,11 @@ namespace LogementImobilier.BLL
         public decimal CalculSurface(decimal longs, decimal larg)
         {
             return (longs * larg );
+        }
+
+        public List<Housing> Search(string name, string location, int numberExibition, int numberKitchen, int numberRoom, int numberShower, bool parking, bool terasse, decimal price, float numberStars)
+        {
+            return housinRepository.FindByName(name,location,numberExibition,numberKitchen,numberRoom,numberShower,parking,terasse,price,numberStars);
         }
 
 

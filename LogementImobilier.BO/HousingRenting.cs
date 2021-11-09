@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace LogementImobilier.BO
 {
-    class HousingRenting:Housing
+    class HousingRenting
     {
-        public DateTime RentingDate { get; set; }
-        public DateTime EndRenting { get; set; }
-
 
     }
 }
