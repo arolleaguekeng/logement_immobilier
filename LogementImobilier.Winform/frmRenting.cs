@@ -76,6 +76,7 @@ namespace LogementImobilier.Winform
                 description.Text = h.Name ;
                 description.ForeColor = Color.Red;
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
+
                 
 
             }
