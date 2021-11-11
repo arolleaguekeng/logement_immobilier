@@ -22,6 +22,7 @@ namespace LogementImobilier.BO
         public int NumberOfLevel { get; set; }
 
 
+
         public Housing(string id,string name,decimal price, string location, int numberRoom, int numberKitchen, int numberShower,
                         int numberExibition, float numberStart, bool used,Client client,bool terasse,bool parking,int numberOfLevel)
         {

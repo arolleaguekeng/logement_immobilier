@@ -55,9 +55,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
@@ -86,7 +86,7 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(327, 9);
+            this.label6.Location = new System.Drawing.Point(382, 9);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(169, 32);
             this.label6.TabIndex = 63;
@@ -143,13 +143,13 @@
             this.nudShowers.ShadowDecoration.Parent = this.nudShowers;
             this.nudShowers.Size = new System.Drawing.Size(92, 36);
             this.nudShowers.TabIndex = 21;
-            this.nudShowers.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.nudShowers.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudShowers.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // cbbLocation
             // 
             this.cbbLocation.BackColor = System.Drawing.Color.Transparent;
-            this.cbbLocation.BorderColor = System.Drawing.Color.Purple;
+            this.cbbLocation.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.cbbLocation.BorderRadius = 8;
             this.cbbLocation.BorderThickness = 2;
             this.cbbLocation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -196,7 +196,7 @@
             this.nudRooms.ShadowDecoration.Parent = this.nudRooms;
             this.nudRooms.Size = new System.Drawing.Size(92, 38);
             this.nudRooms.TabIndex = 16;
-            this.nudRooms.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.nudRooms.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudRooms.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // label2
@@ -234,7 +234,7 @@
             // 
             // starNotation
             // 
-            this.starNotation.BorderColor = System.Drawing.Color.Purple;
+            this.starNotation.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.starNotation.Location = new System.Drawing.Point(458, 344);
             this.starNotation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starNotation.Name = "starNotation";
@@ -257,7 +257,7 @@
             this.nudExibition.ShadowDecoration.Parent = this.nudExibition;
             this.nudExibition.Size = new System.Drawing.Size(92, 36);
             this.nudExibition.TabIndex = 29;
-            this.nudExibition.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.nudExibition.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudExibition.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // label8
@@ -286,7 +286,7 @@
             this.nudKitchen.ShadowDecoration.Parent = this.nudKitchen;
             this.nudKitchen.Size = new System.Drawing.Size(92, 38);
             this.nudKitchen.TabIndex = 21;
-            this.nudKitchen.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.nudKitchen.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudKitchen.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // label7
@@ -304,7 +304,7 @@
             // 
             this.tbId.Animated = true;
             this.tbId.BackColor = System.Drawing.Color.Transparent;
-            this.tbId.BorderColor = System.Drawing.Color.Purple;
+            this.tbId.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbId.BorderRadius = 8;
             this.tbId.BorderThickness = 2;
             this.tbId.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -333,7 +333,7 @@
             // 
             this.tbName.Animated = true;
             this.tbName.BackColor = System.Drawing.Color.Transparent;
-            this.tbName.BorderColor = System.Drawing.Color.Purple;
+            this.tbName.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbName.BorderRadius = 8;
             this.tbName.BorderThickness = 2;
             this.tbName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -362,7 +362,7 @@
             // 
             this.btnSave.Animated = true;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderRadius = 25;
+            this.btnSave.BorderRadius = 15;
             this.btnSave.CheckedState.Parent = this.btnSave;
             this.btnSave.CustomImages.Parent = this.btnSave;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -371,7 +371,7 @@
             this.btnSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSave.DisabledState.Parent = this.btnSave;
-            this.btnSave.FillColor2 = System.Drawing.Color.Purple;
+            this.btnSave.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.Parent = this.btnSave;
@@ -381,7 +381,7 @@
             this.btnSave.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSave.ShadowDecoration.Depth = 5;
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(179, 69);
+            this.btnSave.Size = new System.Drawing.Size(179, 57);
             this.btnSave.TabIndex = 55;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -468,7 +468,7 @@
             this.nudLevel.ShadowDecoration.Parent = this.nudLevel;
             this.nudLevel.Size = new System.Drawing.Size(92, 38);
             this.nudLevel.TabIndex = 61;
-            this.nudLevel.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.nudLevel.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudLevel.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // label1
@@ -517,6 +517,15 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1056, 589);
             this.guna2ShadowPanel1.TabIndex = 63;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox1.Location = new System.Drawing.Point(38, 310);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(336, 96);
+            this.richTextBox1.TabIndex = 66;
+            this.richTextBox1.Text = "";
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -538,15 +547,6 @@
             this.label9.Size = new System.Drawing.Size(109, 25);
             this.label9.TabIndex = 64;
             this.label9.Text = "Description";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Location = new System.Drawing.Point(38, 310);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(336, 96);
-            this.richTextBox1.TabIndex = 66;
-            this.richTextBox1.Text = "";
             // 
             // frmAddHouse
             // 

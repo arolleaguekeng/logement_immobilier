@@ -28,5 +28,10 @@ namespace LogementImobilier.Winform
             frmRenting renting = new frmRenting();
             renting.ShowDialog();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

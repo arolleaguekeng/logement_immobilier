@@ -16,8 +16,7 @@ namespace LogementImobilier.Winform
         {
             InitializeComponent();
             frmHome home = new frmHome();
-            home.MdiParent = this;
-            home.Show();
+            home.ShowDialog();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

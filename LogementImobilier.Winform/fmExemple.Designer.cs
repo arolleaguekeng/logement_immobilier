@@ -90,7 +90,7 @@
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Purple;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
@@ -201,7 +201,7 @@
             // 
             // guna2RatingStar1
             // 
-            this.guna2RatingStar1.BorderColor = System.Drawing.Color.Purple;
+            this.guna2RatingStar1.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2RatingStar1.Location = new System.Drawing.Point(727, 386);
             this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
@@ -224,7 +224,7 @@
             this.guna2NumericUpDown1.ShadowDecoration.Parent = this.guna2NumericUpDown1;
             this.guna2NumericUpDown1.Size = new System.Drawing.Size(336, 50);
             this.guna2NumericUpDown1.TabIndex = 15;
-            this.guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.Purple;
+            this.guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2NumericUpDown1.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // guna2RadioButton1
@@ -273,7 +273,7 @@
             this.guna2ProgressIndicator1.Location = new System.Drawing.Point(727, 290);
             this.guna2ProgressIndicator1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ProgressIndicator1.Name = "guna2ProgressIndicator1";
-            this.guna2ProgressIndicator1.ProgressColor = System.Drawing.Color.Purple;
+            this.guna2ProgressIndicator1.ProgressColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2ProgressIndicator1.ShadowDecoration.Parent = this.guna2ProgressIndicator1;
             this.guna2ProgressIndicator1.Size = new System.Drawing.Size(91, 90);
             this.guna2ProgressIndicator1.TabIndex = 18;
@@ -283,7 +283,7 @@
             this.guna2DateTimePicker1.Animated = true;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Purple;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.Teal;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -332,7 +332,7 @@
             // 
             this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleProgressBar1.InnerColor = System.Drawing.Color.Purple;
+            this.guna2CircleProgressBar1.InnerColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2CircleProgressBar1.Location = new System.Drawing.Point(727, 514);
             this.guna2CircleProgressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CircleProgressBar1.Minimum = 0;

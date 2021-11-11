@@ -95,5 +95,20 @@ namespace LogementImobilier.Winform
             housings = housing.SearchName(tbSearch.Text);
             ShowAviableHouse();
         }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click_2(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

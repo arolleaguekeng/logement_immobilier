@@ -43,9 +43,10 @@
             // 
             this.panelEmail.Controls.Add(this.btnNext);
             this.panelEmail.Controls.Add(this.tbEmail);
-            this.panelEmail.Location = new System.Drawing.Point(6, 90);
+            this.panelEmail.Location = new System.Drawing.Point(8, 111);
+            this.panelEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEmail.Name = "panelEmail";
-            this.panelEmail.Size = new System.Drawing.Size(282, 137);
+            this.panelEmail.Size = new System.Drawing.Size(376, 169);
             this.panelEmail.TabIndex = 0;
             // 
             // btnNext
@@ -61,17 +62,17 @@
             this.btnNext.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnNext.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnNext.DisabledState.Parent = this.btnNext;
-            this.btnNext.FillColor2 = System.Drawing.Color.Purple;
+            this.btnNext.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
             this.btnNext.HoverState.Parent = this.btnNext;
-            this.btnNext.Location = new System.Drawing.Point(77, 80);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNext.Location = new System.Drawing.Point(103, 98);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
             this.btnNext.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnNext.ShadowDecoration.Depth = 5;
             this.btnNext.ShadowDecoration.Parent = this.btnNext;
-            this.btnNext.Size = new System.Drawing.Size(134, 40);
+            this.btnNext.Size = new System.Drawing.Size(179, 49);
             this.btnNext.TabIndex = 12;
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
@@ -92,14 +93,14 @@
             this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbEmail.HoverState.Parent = this.tbEmail;
-            this.tbEmail.Location = new System.Drawing.Point(13, 26);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmail.Location = new System.Drawing.Point(17, 32);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.PasswordChar = '\0';
             this.tbEmail.PlaceholderText = "Enter your email";
             this.tbEmail.SelectedText = "";
             this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
-            this.tbEmail.Size = new System.Drawing.Size(265, 38);
+            this.tbEmail.Size = new System.Drawing.Size(353, 47);
             this.tbEmail.TabIndex = 11;
             // 
             // label1
@@ -107,10 +108,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(73, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(119, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 51);
+            this.label1.Size = new System.Drawing.Size(151, 65);
             this.label1.TabIndex = 1;
             this.label1.Text = "Login";
             // 
@@ -118,9 +118,10 @@
             // 
             this.panelPassword.Controls.Add(this.tbPassword);
             this.panelPassword.Controls.Add(this.btnValidate);
-            this.panelPassword.Location = new System.Drawing.Point(6, 90);
+            this.panelPassword.Location = new System.Drawing.Point(8, 111);
+            this.panelPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelPassword.Name = "panelPassword";
-            this.panelPassword.Size = new System.Drawing.Size(282, 137);
+            this.panelPassword.Size = new System.Drawing.Size(376, 169);
             this.panelPassword.TabIndex = 13;
             // 
             // tbPassword
@@ -139,14 +140,14 @@
             this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbPassword.HoverState.Parent = this.tbPassword;
-            this.tbPassword.Location = new System.Drawing.Point(15, 25);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Location = new System.Drawing.Point(20, 31);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '\0';
             this.tbPassword.PlaceholderText = "Enter your password";
             this.tbPassword.SelectedText = "";
             this.tbPassword.ShadowDecoration.Parent = this.tbPassword;
-            this.tbPassword.Size = new System.Drawing.Size(252, 41);
+            this.tbPassword.Size = new System.Drawing.Size(336, 50);
             this.tbPassword.TabIndex = 13;
             this.tbPassword.UseSystemPasswordChar = true;
             // 
@@ -163,30 +164,31 @@
             this.btnValidate.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnValidate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnValidate.DisabledState.Parent = this.btnValidate;
-            this.btnValidate.FillColor2 = System.Drawing.Color.Purple;
+            this.btnValidate.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnValidate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValidate.ForeColor = System.Drawing.Color.White;
             this.btnValidate.HoverState.Parent = this.btnValidate;
-            this.btnValidate.Location = new System.Drawing.Point(77, 80);
-            this.btnValidate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnValidate.Location = new System.Drawing.Point(103, 98);
+            this.btnValidate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnValidate.Name = "btnValidate";
             this.btnValidate.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnValidate.ShadowDecoration.Depth = 5;
             this.btnValidate.ShadowDecoration.Parent = this.btnValidate;
-            this.btnValidate.Size = new System.Drawing.Size(134, 40);
+            this.btnValidate.Size = new System.Drawing.Size(179, 49);
             this.btnValidate.TabIndex = 12;
             this.btnValidate.Text = "Validate";
             this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(297, 239);
-            this.Controls.Add(this.panelEmail);
+            this.ClientSize = new System.Drawing.Size(396, 294);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelPassword);
+            this.Controls.Add(this.panelEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
