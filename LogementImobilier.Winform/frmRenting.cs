@@ -27,6 +27,8 @@ namespace LogementImobilier.Winform
         {
             InitializeComponent();
             housing = new HousingManager();
+            frmHome frmHome = new frmHome();
+            
         }
 
         private void frmRenting_Load(object sender, EventArgs e)
@@ -45,9 +47,9 @@ namespace LogementImobilier.Winform
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
-            housings = housing.Search(tbSearch.Text, cbbLocation.Text, (int)nudExibition.Value, (int)nudKitchens.Value,
-            (int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
-            ShowAviableHouse();
+            //housings = housing.Search(tbSearch.Text, cbbLocation.Text, (int)nudExibition.Value, (int)nudKitchens.Value,
+            //(int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
+            //ShowAviableHouse();
 
         }
 
@@ -92,7 +94,7 @@ namespace LogementImobilier.Winform
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
-            housings = housing.SearchName(tbSearch.Text);
+            //housings = housing.SearchName(tbSearch.Text);
             ShowAviableHouse();
         }
 
@@ -110,5 +112,7 @@ namespace LogementImobilier.Winform
         {
             this.Close();
         }
+
+
     }
 }
