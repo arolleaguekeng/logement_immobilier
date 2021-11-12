@@ -107,6 +107,7 @@ namespace LogementImobilier.Winform
             lbMessages.Text = "Sart a Renting operation";
             frmRenting renting = new frmRenting();
             OpenChildform(renting, sender);
+            panelMessage.Visible = true;
         }
 
         private void frmIndex_Load(object sender, EventArgs e)
@@ -124,6 +125,13 @@ namespace LogementImobilier.Winform
         {
             frmAddHouse addHouse = new frmAddHouse();
             OpenChildform(addHouse, sender);
+            panelMessage.Visible = true;
+            lbMessages.Text = "Add new house";
+        }
+
+        private void btnClosePanel_Click(object sender, EventArgs e)
+        {
+            panelMessage.Visible = false;
         }
     }
 }

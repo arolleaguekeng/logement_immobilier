@@ -8,6 +8,7 @@ namespace LogementImobilier.Winform
 {
     static class Program
     {
+        public static string Message;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

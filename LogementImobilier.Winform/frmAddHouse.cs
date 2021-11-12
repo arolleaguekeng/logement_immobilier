@@ -14,9 +14,12 @@ namespace LogementImobilier.Winform
 {
     public partial class frmAddHouse : Form
     {
+        Label labelMsg;
         public frmAddHouse()
         {
             InitializeComponent();
+            labelMsg = new Label();
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -24,6 +27,7 @@ namespace LogementImobilier.Winform
             try
             {
                 Client client = new Client();
+                frmIndex index = new frmIndex();
                 HousingManager housing = new HousingManager();
 
 
@@ -35,7 +39,11 @@ namespace LogementImobilier.Winform
                     (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
                     false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value));
 
-                MessageBox.Show("Added Sucsesfuly");
+                //MessageBox.Show("Added Sucsesfuly");
+                index.panelMessage.Controls.Add(labelMsg);
+                index.panelMessage.Visible = true;
+                labelMsg.Text = "Added Sucsesfuly";
+                labelMsg.Dock = DockStyle.Right;
             }
             catch (Exception)
             {
