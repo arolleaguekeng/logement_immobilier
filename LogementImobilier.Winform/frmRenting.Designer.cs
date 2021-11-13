@@ -45,7 +45,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.nudKitchens = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.flpanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.lvShowHousing = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
@@ -114,6 +124,7 @@
             this.cbbLocation.ShadowDecoration.Parent = this.cbbLocation;
             this.cbbLocation.Size = new System.Drawing.Size(211, 36);
             this.cbbLocation.TabIndex = 62;
+            this.cbbLocation.SelectedIndexChanged += new System.EventHandler(this.cbbLocation_SelectedIndexChanged);
             // 
             // nudPrice
             // 
@@ -132,6 +143,7 @@
             this.nudPrice.TabIndex = 59;
             this.nudPrice.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudPrice.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.nudPrice.ValueChanged += new System.EventHandler(this.nudPrice_ValueChanged);
             // 
             // chbParking
             // 
@@ -238,6 +250,7 @@
             this.nudShowers.TabIndex = 21;
             this.nudShowers.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudShowers.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.nudShowers.ValueChanged += new System.EventHandler(this.nudShowers_ValueChanged);
             // 
             // nudRooms
             // 
@@ -256,6 +269,7 @@
             this.nudRooms.TabIndex = 16;
             this.nudRooms.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudRooms.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.nudRooms.ValueChanged += new System.EventHandler(this.nudRooms_ValueChanged);
             // 
             // label2
             // 
@@ -299,6 +313,7 @@
             this.btnStars.RatingColor = System.Drawing.Color.Gold;
             this.btnStars.Size = new System.Drawing.Size(124, 33);
             this.btnStars.TabIndex = 18;
+            this.btnStars.ValueChanged += new System.EventHandler(this.btnStars_ValueChanged);
             // 
             // nudExibition
             // 
@@ -317,6 +332,7 @@
             this.nudExibition.TabIndex = 29;
             this.nudExibition.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudExibition.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.nudExibition.ValueChanged += new System.EventHandler(this.nudExibition_ValueChanged);
             // 
             // label1
             // 
@@ -357,24 +373,96 @@
             this.nudKitchens.TabIndex = 21;
             this.nudKitchens.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudKitchens.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.nudKitchens.ValueChanged += new System.EventHandler(this.nudKitchens_ValueChanged);
             // 
-            // flpanel
+            // lvShowHousing
             // 
-            this.flpanel.BackColor = System.Drawing.Color.White;
-            this.flpanel.BackgroundImage = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
-            this.flpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpanel.Location = new System.Drawing.Point(0, 0);
-            this.flpanel.Name = "flpanel";
-            this.flpanel.Size = new System.Drawing.Size(1103, 690);
-            this.flpanel.TabIndex = 39;
+            this.lvShowHousing.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lvShowHousing.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader8,
+            this.columnHeader10,
+            this.columnHeader7,
+            this.columnHeader9});
+            this.lvShowHousing.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lvShowHousing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvShowHousing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvShowHousing.FullRowSelect = true;
+            this.lvShowHousing.GridLines = true;
+            this.lvShowHousing.HideSelection = false;
+            this.lvShowHousing.HoverSelection = true;
+            this.lvShowHousing.Location = new System.Drawing.Point(0, 0);
+            this.lvShowHousing.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.lvShowHousing.MultiSelect = false;
+            this.lvShowHousing.Name = "lvShowHousing";
+            this.lvShowHousing.ShowItemToolTips = true;
+            this.lvShowHousing.Size = new System.Drawing.Size(1103, 690);
+            this.lvShowHousing.TabIndex = 39;
+            this.lvShowHousing.UseCompatibleStateImageBehavior = false;
+            this.lvShowHousing.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Location";
+            this.columnHeader1.Width = 163;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 131;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Level";
+            this.columnHeader3.Width = 88;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "douch";
+            this.columnHeader4.Width = 80;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "salon";
+            this.columnHeader5.Width = 68;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "cuisine";
+            this.columnHeader6.Width = 81;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Parking";
+            this.columnHeader8.Width = 90;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Etage";
+            this.columnHeader10.Width = 82;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Price";
+            this.columnHeader7.Width = 148;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Status";
+            this.columnHeader9.Width = 80;
             // 
             // frmRenting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1353, 690);
-            this.Controls.Add(this.flpanel);
+            this.Controls.Add(this.lvShowHousing);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -412,6 +500,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudKitchens;
-        private System.Windows.Forms.FlowLayoutPanel flpanel;
+        private System.Windows.Forms.ListView lvShowHousing;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
     }
 }

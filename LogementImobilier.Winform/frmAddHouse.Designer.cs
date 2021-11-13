@@ -52,15 +52,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.panelMessage = new System.Windows.Forms.Panel();
+            this.btnClosePanel = new Guna.UI2.WinForms.Guna2Button();
+            this.lbMessages = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label9 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
+            this.panelMessage.SuspendLayout();
             this.SuspendLayout();
             // 
             // label10
@@ -84,7 +89,7 @@
             this.nudShowers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudShowers.ForeColor = System.Drawing.Color.Black;
             this.nudShowers.Location = new System.Drawing.Point(522, 174);
-            this.nudShowers.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.nudShowers.Margin = new System.Windows.Forms.Padding(5);
             this.nudShowers.Name = "nudShowers";
             this.nudShowers.ShadowDecoration.Parent = this.nudShowers;
             this.nudShowers.Size = new System.Drawing.Size(74, 34);
@@ -137,7 +142,7 @@
             this.nudRooms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudRooms.ForeColor = System.Drawing.Color.Black;
             this.nudRooms.Location = new System.Drawing.Point(522, 259);
-            this.nudRooms.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.nudRooms.Margin = new System.Windows.Forms.Padding(5);
             this.nudRooms.Name = "nudRooms";
             this.nudRooms.ShadowDecoration.Parent = this.nudRooms;
             this.nudRooms.Size = new System.Drawing.Size(74, 34);
@@ -198,7 +203,7 @@
             this.nudExibition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudExibition.ForeColor = System.Drawing.Color.Black;
             this.nudExibition.Location = new System.Drawing.Point(655, 174);
-            this.nudExibition.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.nudExibition.Margin = new System.Windows.Forms.Padding(5);
             this.nudExibition.Name = "nudExibition";
             this.nudExibition.ShadowDecoration.Parent = this.nudExibition;
             this.nudExibition.Size = new System.Drawing.Size(74, 34);
@@ -227,7 +232,7 @@
             this.nudKitchen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudKitchen.ForeColor = System.Drawing.Color.Black;
             this.nudKitchen.Location = new System.Drawing.Point(829, 100);
-            this.nudKitchen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.nudKitchen.Margin = new System.Windows.Forms.Padding(5);
             this.nudKitchen.Name = "nudKitchen";
             this.nudKitchen.ShadowDecoration.Parent = this.nudKitchen;
             this.nudKitchen.Size = new System.Drawing.Size(74, 34);
@@ -266,7 +271,7 @@
             this.tbId.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbId.HoverState.Parent = this.tbId;
             this.tbId.Location = new System.Drawing.Point(38, 100);
-            this.tbId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbId.Margin = new System.Windows.Forms.Padding(5);
             this.tbId.Name = "tbId";
             this.tbId.PasswordChar = '\0';
             this.tbId.PlaceholderText = "Enter id of Housing";
@@ -295,7 +300,7 @@
             this.tbName.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbName.HoverState.Parent = this.tbName;
             this.tbName.Location = new System.Drawing.Point(38, 160);
-            this.tbName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbName.Margin = new System.Windows.Forms.Padding(5);
             this.tbName.Name = "tbName";
             this.tbName.PasswordChar = '\0';
             this.tbName.PlaceholderText = "Enter name of Housing";
@@ -409,7 +414,7 @@
             this.nudLevel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudLevel.ForeColor = System.Drawing.Color.Black;
             this.nudLevel.Location = new System.Drawing.Point(658, 259);
-            this.nudLevel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.nudLevel.Margin = new System.Windows.Forms.Padding(5);
             this.nudLevel.Name = "nudLevel";
             this.nudLevel.ShadowDecoration.Parent = this.nudLevel;
             this.nudLevel.Size = new System.Drawing.Size(74, 34);
@@ -432,6 +437,7 @@
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2ShadowPanel1.Controls.Add(this.panelMessage);
             this.guna2ShadowPanel1.Controls.Add(this.tbId);
             this.guna2ShadowPanel1.Controls.Add(this.richTextBox1);
             this.guna2ShadowPanel1.Controls.Add(this.tbName);
@@ -464,6 +470,54 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1016, 540);
             this.guna2ShadowPanel1.TabIndex = 63;
             // 
+            // panelMessage
+            // 
+            this.panelMessage.BackColor = System.Drawing.Color.Moccasin;
+            this.panelMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelMessage.Controls.Add(this.btnClosePanel);
+            this.panelMessage.Controls.Add(this.lbMessages);
+            this.panelMessage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMessage.Location = new System.Drawing.Point(0, 0);
+            this.panelMessage.Name = "panelMessage";
+            this.panelMessage.Size = new System.Drawing.Size(1014, 22);
+            this.panelMessage.TabIndex = 67;
+            this.panelMessage.Visible = false;
+            // 
+            // btnClosePanel
+            // 
+            this.btnClosePanel.Animated = true;
+            this.btnClosePanel.CheckedState.Parent = this.btnClosePanel;
+            this.btnClosePanel.CustomImages.Parent = this.btnClosePanel;
+            this.btnClosePanel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClosePanel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClosePanel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClosePanel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClosePanel.DisabledState.Parent = this.btnClosePanel;
+            this.btnClosePanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClosePanel.FillColor = System.Drawing.Color.Transparent;
+            this.btnClosePanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClosePanel.ForeColor = System.Drawing.Color.Black;
+            this.btnClosePanel.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnClosePanel.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnClosePanel.HoverState.Parent = this.btnClosePanel;
+            this.btnClosePanel.Location = new System.Drawing.Point(1000, 0);
+            this.btnClosePanel.Name = "btnClosePanel";
+            this.btnClosePanel.ShadowDecoration.Parent = this.btnClosePanel;
+            this.btnClosePanel.Size = new System.Drawing.Size(10, 18);
+            this.btnClosePanel.TabIndex = 4;
+            this.btnClosePanel.Text = "X";
+            // 
+            // lbMessages
+            // 
+            this.lbMessages.AutoSize = true;
+            this.lbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMessages.ForeColor = System.Drawing.Color.Purple;
+            this.lbMessages.Location = new System.Drawing.Point(9, -1);
+            this.lbMessages.Name = "lbMessages";
+            this.lbMessages.Size = new System.Drawing.Size(79, 20);
+            this.lbMessages.TabIndex = 2;
+            this.lbMessages.Text = "Welcome";
+            // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -495,6 +549,11 @@
             this.label9.TabIndex = 64;
             this.label9.Text = "Description";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 4000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmAddHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -512,6 +571,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
+            this.panelMessage.ResumeLayout(false);
+            this.panelMessage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -543,5 +604,9 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.Panel panelMessage;
+        private Guna.UI2.WinForms.Guna2Button btnClosePanel;
+        public System.Windows.Forms.Label lbMessages;
+        private System.Windows.Forms.Timer timer1;
     }
 }

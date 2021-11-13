@@ -15,6 +15,7 @@ namespace LogementImobilier.Winform
         [STAThread]
         static void Main()
         {
+            Message = "Housing !";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmIndex());

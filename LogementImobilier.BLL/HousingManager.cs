@@ -28,18 +28,18 @@ namespace LogementImobilier.BLL
         {
             housinRepository.Delete(housing);
         }
-        public void GetAllHousing()
+        public List<Housing> GetAllHousing()
         {
-            housinRepository.GetAll();
+            return housinRepository.GetAll();
         }
         public decimal CalculSurface(decimal longs, decimal larg)
         {
             return (longs * larg );
         }
 
-        public List<Housing> Search(string name, string location, int numberExibition, int numberKitchen, int numberRoom, int numberShower, bool parking, bool terasse, decimal price, float numberStars)
+        public List<Housing> Search( string location, int numberExibition, int numberKitchen, int numberRoom, int numberShower, bool parking, bool terasse, decimal price, float numberStars)
         {
-            return housinRepository.Find(name,location,numberExibition,numberKitchen,numberRoom,
+            return housinRepository.Find(location,numberExibition,numberKitchen,numberRoom,
                                                 numberShower,parking,terasse,price,numberStars);
         }
 

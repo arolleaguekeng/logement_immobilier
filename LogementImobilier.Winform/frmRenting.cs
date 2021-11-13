@@ -16,19 +16,17 @@ namespace LogementImobilier.Winform
 {
     public partial class frmRenting : Form
     {
-        Guna2RatingStar star;
-        Guna2GradientButton show;
         HousingManager housing;
         List<Housing> housings;
-        Panel panel;
-        PictureBox picture;
-        Label description;
         public frmRenting()
         {
             InitializeComponent();
             housing = new HousingManager();
             frmHome frmHome = new frmHome();
+            housings = housing.GetAllHousing();
+            ShowLvHousing();
             
+
         }
 
         private void frmRenting_Load(object sender, EventArgs e)
@@ -46,56 +44,33 @@ namespace LogementImobilier.Winform
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
-            //housings = housing.Search(tbSearch.Text, cbbLocation.Text, (int)nudExibition.Value, (int)nudKitchens.Value,
-            //(int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
-            //ShowAviableHouse();
-
+            FindShow();
+            //MessageBox.Show("loc:\n"+cbbLocation.SelectedItem.ToString() + "exib:\n"+nudExibition.Value.ToString() + "kit:\n" + (int)nudKitchens.Value+
+            //    "rooms:\n" + (int)nudRooms.Value + "showers:\n" + (int)nudShowers.Value + "P:\n" + chbParking.Checked.ToString() + "T:\n" + chbTerasse.Checked + "Price:\n" + nudPrice.Value + "star:\n" + btnStars.Value);
         }
 
-        private void ShowAviableHouse()
+        private void FindShow()
         {
-            foreach (var h in housings)
+            housings = housing.GetAllHousing();
+            housings = housing.Search(cbbLocation.SelectedItem.ToString(), (int)nudExibition.Value, (int)nudKitchens.Value,
+                (int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
+            lvShowHousing.Items.Clear();
+            ShowLvHousing();
+        }
+
+        private void ShowLvHousing()
+        {
+            foreach (var house in housings)
             {
-
-                picture = new PictureBox();
-                description = new Label();
-                panel = new FlowLayoutPanel();
-                star = new Guna2RatingStar();
-                flpanel.Controls.Clear();
-
-                star.Value = h.NumberStart;
-                star.RatingColor = System.Drawing.Color.Gold;
-                //add the star
-                show = new Guna2GradientButton();
-                show.Dock = DockStyle.Bottom;
-                show.Text = "More";
-                show.Size = new System.Drawing.Size(140, 30);
-                flpanel.Controls.Add(panel);
-                panel.Controls.Add(picture);
-                panel.Controls.Add(star);
-                panel.Controls.Add(description);
-                panel.Controls.Add(show);
-                panel.Size = new System.Drawing.Size(200, 200);
-                panel.BorderStyle = BorderStyle.FixedSingle;
-                panel.Size = new Size(new Point(150, 150));
-                star.Enabled = false;
-                show.Dock = DockStyle.Bottom;
-                picture.Dock = DockStyle.Top;
-                //picture.Size = new Size(new Point(400, 400));
-                description.Dock = DockStyle.Top;
-                description.Text = h.Name;
-                description.ForeColor = Color.Red;
-                picture.SizeMode = PictureBoxSizeMode.StretchImage;
-
-
+                lvShowHousing.Items.Add(new ListViewItem(new string[] { house.Location, house.Name, house.NumberOfLevel.ToString(),house.NumberShower.ToString(),
+                house.NumberExibition.ToString(),house.NumberKitchen.ToString(),house.Parking.ToString(),house.NumberOfLevel.ToString(),house.Price.ToString(),house.Used.ToString()}));
             }
         }
+
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
             //housings = housing.SearchName(tbSearch.Text);
-            ShowAviableHouse();
         }
 
         private void btnClose_Click_1(object sender, EventArgs e)
@@ -113,6 +88,43 @@ namespace LogementImobilier.Winform
             this.Close();
         }
 
+        private void tbSearch_TextChanged_1(object sender, EventArgs e)
+        {
+        }
 
+        private void cbbLocation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FindShow();
+        }
+
+        private void nudKitchens_ValueChanged(object sender, EventArgs e)
+        {
+            FindShow();
+        }
+
+        private void nudRooms_ValueChanged(object sender, EventArgs e)
+        {
+            FindShow();
+        }
+
+        private void nudShowers_ValueChanged(object sender, EventArgs e)
+        {
+            FindShow();
+        }
+
+        private void nudExibition_ValueChanged(object sender, EventArgs e)
+        {
+            FindShow();
+        }
+
+        private void btnStars_ValueChanged(object sender, EventArgs e)
+        {
+            FindShow();
+        }
+
+        private void nudPrice_ValueChanged(object sender, EventArgs e)
+        {
+            FindShow();
+        }
     }
 }

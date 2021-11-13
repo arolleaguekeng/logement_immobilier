@@ -44,7 +44,7 @@
             this.panelEmail.Controls.Add(this.btnNext);
             this.panelEmail.Controls.Add(this.tbEmail);
             this.panelEmail.Location = new System.Drawing.Point(8, 111);
-            this.panelEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelEmail.Margin = new System.Windows.Forms.Padding(4);
             this.panelEmail.Name = "panelEmail";
             this.panelEmail.Size = new System.Drawing.Size(376, 169);
             this.panelEmail.TabIndex = 0;
@@ -93,14 +93,14 @@
             this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbEmail.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbEmail.HoverState.Parent = this.tbEmail;
-            this.tbEmail.Location = new System.Drawing.Point(17, 32);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbEmail.Location = new System.Drawing.Point(20, 31);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(5);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.PasswordChar = '\0';
             this.tbEmail.PlaceholderText = "Enter your email";
             this.tbEmail.SelectedText = "";
             this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
-            this.tbEmail.Size = new System.Drawing.Size(353, 47);
+            this.tbEmail.Size = new System.Drawing.Size(336, 50);
             this.tbEmail.TabIndex = 11;
             // 
             // label1
@@ -119,7 +119,7 @@
             this.panelPassword.Controls.Add(this.tbPassword);
             this.panelPassword.Controls.Add(this.btnValidate);
             this.panelPassword.Location = new System.Drawing.Point(8, 111);
-            this.panelPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelPassword.Margin = new System.Windows.Forms.Padding(4);
             this.panelPassword.Name = "panelPassword";
             this.panelPassword.Size = new System.Drawing.Size(376, 169);
             this.panelPassword.TabIndex = 13;
@@ -141,7 +141,7 @@
             this.tbPassword.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbPassword.HoverState.Parent = this.tbPassword;
             this.tbPassword.Location = new System.Drawing.Point(20, 31);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(5);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '\0';
             this.tbPassword.PlaceholderText = "Enter your password";
@@ -183,12 +183,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 294);
+            this.ClientSize = new System.Drawing.Size(391, 480);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panelPassword);
             this.Controls.Add(this.panelEmail);
+            this.Controls.Add(this.panelPassword);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";

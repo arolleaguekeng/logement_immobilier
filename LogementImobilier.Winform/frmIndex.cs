@@ -123,9 +123,9 @@ namespace LogementImobilier.Winform
 
         private void btnAddHouse_Click_1(object sender, EventArgs e)
         {
+            panelMessage.Visible = false;
             frmAddHouse addHouse = new frmAddHouse();
             OpenChildform(addHouse, sender);
-            panelMessage.Visible = true;
             lbMessages.Text = "Add new house";
         }
 
