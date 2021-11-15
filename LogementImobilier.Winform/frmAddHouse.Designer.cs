@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
             this.label10 = new System.Windows.Forms.Label();
             this.nudShowers = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -53,35 +53,34 @@
             this.nudLevel = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lineName = new System.Windows.Forms.PictureBox();
-            this.lineId = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMessage = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnClosePanel = new Guna.UI2.WinForms.Guna2Button();
             this.lbMessages = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lineName = new System.Windows.Forms.PictureBox();
+            this.lineId = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
+            this.panelMessage.SuspendLayout();
             this.guna2ShadowPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelMessage.SuspendLayout();
             this.SuspendLayout();
             // 
             // label10
@@ -492,172 +491,6 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1016, 540);
             this.guna2ShadowPanel1.TabIndex = 63;
             // 
-            // richTextBox1
-            // 
-            this.guna2Transition1.SetDecoration(this.richTextBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(28, 219);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(336, 73);
-            this.richTextBox1.TabIndex = 66;
-            this.richTextBox1.Text = "";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.linkLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(564, 383);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(232, 29);
-            this.linkLabel1.TabIndex = 65;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Other caracateristics";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(23, 191);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 25);
-            this.label9.TabIndex = 64;
-            this.label9.Text = "Description";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 4000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // guna2ShadowPanel2
-            // 
-            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel2.Controls.Add(this.pictureBox2);
-            this.guna2ShadowPanel2.Controls.Add(this.lineName);
-            this.guna2ShadowPanel2.Controls.Add(this.lineId);
-            this.guna2ShadowPanel2.Controls.Add(this.panel1);
-            this.guna2ShadowPanel2.Controls.Add(this.nudRooms);
-            this.guna2ShadowPanel2.Controls.Add(this.tbId);
-            this.guna2ShadowPanel2.Controls.Add(this.label3);
-            this.guna2ShadowPanel2.Controls.Add(this.richTextBox1);
-            this.guna2ShadowPanel2.Controls.Add(this.nudKitchen);
-            this.guna2ShadowPanel2.Controls.Add(this.tbName);
-            this.guna2ShadowPanel2.Controls.Add(this.label4);
-            this.guna2ShadowPanel2.Controls.Add(this.chbParking);
-            this.guna2ShadowPanel2.Controls.Add(this.label8);
-            this.guna2ShadowPanel2.Controls.Add(this.nudLevel);
-            this.guna2ShadowPanel2.Controls.Add(this.nudExibition);
-            this.guna2ShadowPanel2.Controls.Add(this.chbTerasse);
-            this.guna2ShadowPanel2.Controls.Add(this.label2);
-            this.guna2ShadowPanel2.Controls.Add(this.label1);
-            this.guna2ShadowPanel2.Controls.Add(this.lbPrice);
-            this.guna2ShadowPanel2.Controls.Add(this.linkLabel1);
-            this.guna2ShadowPanel2.Controls.Add(this.label5);
-            this.guna2ShadowPanel2.Controls.Add(this.starNotation);
-            this.guna2ShadowPanel2.Controls.Add(this.nudShowers);
-            this.guna2ShadowPanel2.Controls.Add(this.label9);
-            this.guna2ShadowPanel2.Controls.Add(this.cbbLocation);
-            this.guna2ShadowPanel2.Controls.Add(this.label7);
-            this.guna2ShadowPanel2.Controls.Add(this.btnSave);
-            this.guna2ShadowPanel2.Controls.Add(this.label10);
-            this.guna2Transition1.SetDecoration(this.guna2ShadowPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(77, 50);
-            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
-            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel2.ShadowDepth = 233;
-            this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(915, 477);
-            this.guna2ShadowPanel2.TabIndex = 68;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(425, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 20);
-            this.label6.TabIndex = 68;
-            this.label6.Text = "ADD";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panel1.Controls.Add(this.label6);
-            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(915, 30);
-            this.panel1.TabIndex = 69;
-            // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation3;
-            this.guna2Transition1.TimeStep = 11F;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.guna2Transition1.SetDecoration(this.pictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.pictureBox2.Location = new System.Drawing.Point(512, 114);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(282, 2);
-            this.pictureBox2.TabIndex = 72;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lineName
-            // 
-            this.lineName.BackColor = System.Drawing.Color.Black;
-            this.guna2Transition1.SetDecoration(this.lineName, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.lineName.Location = new System.Drawing.Point(29, 160);
-            this.lineName.Name = "lineName";
-            this.lineName.Size = new System.Drawing.Size(282, 2);
-            this.lineName.TabIndex = 71;
-            this.lineName.TabStop = false;
-            // 
-            // lineId
-            // 
-            this.lineId.BackColor = System.Drawing.Color.Black;
-            this.guna2Transition1.SetDecoration(this.lineId, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.lineId.Location = new System.Drawing.Point(27, 109);
-            this.lineId.Name = "lineId";
-            this.lineId.Size = new System.Drawing.Size(282, 2);
-            this.lineId.TabIndex = 70;
-            this.lineId.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1014, 538);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 69;
-            this.pictureBox1.TabStop = false;
-            // 
             // panelMessage
             // 
             this.panelMessage.Controls.Add(this.btnClosePanel);
@@ -711,6 +544,161 @@
             this.lbMessages.TabIndex = 2;
             this.lbMessages.Text = "Welcome";
             // 
+            // guna2ShadowPanel2
+            // 
+            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.pictureBox2);
+            this.guna2ShadowPanel2.Controls.Add(this.lineName);
+            this.guna2ShadowPanel2.Controls.Add(this.lineId);
+            this.guna2ShadowPanel2.Controls.Add(this.panel1);
+            this.guna2ShadowPanel2.Controls.Add(this.nudRooms);
+            this.guna2ShadowPanel2.Controls.Add(this.tbId);
+            this.guna2ShadowPanel2.Controls.Add(this.label3);
+            this.guna2ShadowPanel2.Controls.Add(this.nudKitchen);
+            this.guna2ShadowPanel2.Controls.Add(this.tbName);
+            this.guna2ShadowPanel2.Controls.Add(this.label4);
+            this.guna2ShadowPanel2.Controls.Add(this.chbParking);
+            this.guna2ShadowPanel2.Controls.Add(this.label8);
+            this.guna2ShadowPanel2.Controls.Add(this.nudLevel);
+            this.guna2ShadowPanel2.Controls.Add(this.nudExibition);
+            this.guna2ShadowPanel2.Controls.Add(this.chbTerasse);
+            this.guna2ShadowPanel2.Controls.Add(this.label2);
+            this.guna2ShadowPanel2.Controls.Add(this.label1);
+            this.guna2ShadowPanel2.Controls.Add(this.lbPrice);
+            this.guna2ShadowPanel2.Controls.Add(this.linkLabel1);
+            this.guna2ShadowPanel2.Controls.Add(this.label5);
+            this.guna2ShadowPanel2.Controls.Add(this.starNotation);
+            this.guna2ShadowPanel2.Controls.Add(this.nudShowers);
+            this.guna2ShadowPanel2.Controls.Add(this.label9);
+            this.guna2ShadowPanel2.Controls.Add(this.cbbLocation);
+            this.guna2ShadowPanel2.Controls.Add(this.label7);
+            this.guna2ShadowPanel2.Controls.Add(this.btnSave);
+            this.guna2ShadowPanel2.Controls.Add(this.label10);
+            this.guna2Transition1.SetDecoration(this.guna2ShadowPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(77, 50);
+            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel2.ShadowDepth = 233;
+            this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(915, 477);
+            this.guna2ShadowPanel2.TabIndex = 68;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.guna2Transition1.SetDecoration(this.pictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pictureBox2.Location = new System.Drawing.Point(512, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(282, 2);
+            this.pictureBox2.TabIndex = 72;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lineName
+            // 
+            this.lineName.BackColor = System.Drawing.Color.Black;
+            this.guna2Transition1.SetDecoration(this.lineName, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lineName.Location = new System.Drawing.Point(29, 160);
+            this.lineName.Name = "lineName";
+            this.lineName.Size = new System.Drawing.Size(282, 2);
+            this.lineName.TabIndex = 71;
+            this.lineName.TabStop = false;
+            // 
+            // lineId
+            // 
+            this.lineId.BackColor = System.Drawing.Color.Black;
+            this.guna2Transition1.SetDecoration(this.lineId, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lineId.Location = new System.Drawing.Point(27, 109);
+            this.lineId.Name = "lineId";
+            this.lineId.Size = new System.Drawing.Size(282, 2);
+            this.lineId.TabIndex = 70;
+            this.lineId.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.Controls.Add(this.label6);
+            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(915, 30);
+            this.panel1.TabIndex = 69;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(425, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 20);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "ADD";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.linkLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(564, 383);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(232, 29);
+            this.linkLabel1.TabIndex = 65;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Other caracateristics";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(23, 191);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 25);
+            this.label9.TabIndex = 64;
+            this.label9.Text = "Pictures";
+            // 
+            // pictureBox1
+            // 
+            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1014, 538);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 69;
+            this.pictureBox1.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 4000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
+            this.guna2Transition1.TimeStep = 11F;
+            // 
             // frmAddHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -728,16 +716,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
+            this.panelMessage.ResumeLayout(false);
+            this.panelMessage.PerformLayout();
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelMessage.ResumeLayout(false);
-            this.panelMessage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -767,7 +755,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
         private System.Windows.Forms.Label label6;

@@ -37,5 +37,11 @@ namespace LogementImobilier.Winform
         {
             this.Close();
         }
+
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+            frmFacture facture = new frmFacture();
+            facture.Show();
+        }
     }
 }

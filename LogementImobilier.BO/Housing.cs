@@ -44,5 +44,10 @@ namespace LogementImobilier.BO
         public Housing()
         {
         }
+
+        public static implicit operator List<object>(Housing v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
