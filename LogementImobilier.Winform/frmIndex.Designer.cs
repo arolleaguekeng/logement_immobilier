@@ -32,6 +32,7 @@
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,25 +43,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panelmenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_Childform = new System.Windows.Forms.Panel();
-            this.panelMessage = new System.Windows.Forms.Panel();
-            this.lbMessages = new System.Windows.Forms.Label();
             this.btnClosePanel = new Guna.UI2.WinForms.Guna2Button();
+            this.lbMessages = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnStartRenting = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddHouse = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panelMessage = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelmenu.SuspendLayout();
             this.panel_Childform.SuspendLayout();
-            this.panelMessage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelMessage.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2ShadowForm1
@@ -83,6 +83,18 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1200, 40);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(534, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 32);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Housing";
             // 
             // menuStrip1
             // 
@@ -223,37 +235,13 @@
             // panel_Childform
             // 
             this.panel_Childform.BackColor = System.Drawing.Color.White;
-            this.panel_Childform.Controls.Add(this.pictureBox2);
             this.panel_Childform.Controls.Add(this.panelMessage);
+            this.panel_Childform.Controls.Add(this.pictureBox2);
             this.panel_Childform.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Childform.Location = new System.Drawing.Point(212, 85);
             this.panel_Childform.Name = "panel_Childform";
             this.panel_Childform.Size = new System.Drawing.Size(988, 618);
             this.panel_Childform.TabIndex = 20;
-            // 
-            // panelMessage
-            // 
-            this.panelMessage.BackColor = System.Drawing.Color.Moccasin;
-            this.panelMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelMessage.Controls.Add(this.btnClosePanel);
-            this.panelMessage.Controls.Add(this.lbMessages);
-            this.panelMessage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMessage.Location = new System.Drawing.Point(0, 0);
-            this.panelMessage.Name = "panelMessage";
-            this.panelMessage.Size = new System.Drawing.Size(988, 40);
-            this.panelMessage.TabIndex = 0;
-            this.panelMessage.Visible = false;
-            // 
-            // lbMessages
-            // 
-            this.lbMessages.AutoSize = true;
-            this.lbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMessages.ForeColor = System.Drawing.Color.Purple;
-            this.lbMessages.Location = new System.Drawing.Point(4, 3);
-            this.lbMessages.Name = "lbMessages";
-            this.lbMessages.Size = new System.Drawing.Size(133, 32);
-            this.lbMessages.TabIndex = 2;
-            this.lbMessages.Text = "Welcome";
             // 
             // btnClosePanel
             // 
@@ -266,27 +254,39 @@
             this.btnClosePanel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClosePanel.DisabledState.Parent = this.btnClosePanel;
             this.btnClosePanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClosePanel.FillColor = System.Drawing.Color.Transparent;
+            this.btnClosePanel.FillColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnClosePanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClosePanel.ForeColor = System.Drawing.Color.Black;
+            this.btnClosePanel.ForeColor = System.Drawing.Color.White;
             this.btnClosePanel.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnClosePanel.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnClosePanel.HoverState.Parent = this.btnClosePanel;
-            this.btnClosePanel.Location = new System.Drawing.Point(946, 0);
+            this.btnClosePanel.Location = new System.Drawing.Point(950, 0);
             this.btnClosePanel.Name = "btnClosePanel";
             this.btnClosePanel.ShadowDecoration.Parent = this.btnClosePanel;
-            this.btnClosePanel.Size = new System.Drawing.Size(38, 36);
+            this.btnClosePanel.Size = new System.Drawing.Size(38, 39);
             this.btnClosePanel.TabIndex = 4;
             this.btnClosePanel.Text = "X";
             this.btnClosePanel.Click += new System.EventHandler(this.btnClosePanel_Click);
+            // 
+            // lbMessages
+            // 
+            this.lbMessages.AutoSize = true;
+            this.lbMessages.BackColor = System.Drawing.Color.Transparent;
+            this.lbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMessages.ForeColor = System.Drawing.Color.White;
+            this.lbMessages.Location = new System.Drawing.Point(15, 3);
+            this.lbMessages.Name = "lbMessages";
+            this.lbMessages.Size = new System.Drawing.Size(133, 32);
+            this.lbMessages.TabIndex = 2;
+            this.lbMessages.Text = "Welcome";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 40);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(988, 578);
+            this.pictureBox2.Size = new System.Drawing.Size(988, 618);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -344,29 +344,6 @@
             this.btnAddHouse.Text = "House";
             this.btnAddHouse.Click += new System.EventHandler(this.btnAddHouse_Click_1);
             // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1160, 0);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 45);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // guna2Button1
             // 
             this.guna2Button1.Animated = true;
@@ -392,17 +369,41 @@
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Client";
             // 
-            // label2
+            // guna2CirclePictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(534, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 32);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Housing";
+            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1160, 0);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 45);
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelMessage
+            // 
+            this.panelMessage.Controls.Add(this.btnClosePanel);
+            this.panelMessage.Controls.Add(this.lbMessages);
+            this.panelMessage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMessage.FillColor = System.Drawing.Color.Purple;
+            this.panelMessage.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
+            this.panelMessage.Location = new System.Drawing.Point(0, 0);
+            this.panelMessage.Name = "panelMessage";
+            this.panelMessage.ShadowDecoration.Parent = this.panelMessage;
+            this.panelMessage.Size = new System.Drawing.Size(988, 39);
+            this.panelMessage.TabIndex = 71;
             // 
             // frmIndex
             // 
@@ -421,6 +422,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmIndex";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmIndex_FormClosed);
             this.Load += new System.EventHandler(this.frmIndex_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -430,11 +432,11 @@
             this.panel1.PerformLayout();
             this.panelmenu.ResumeLayout(false);
             this.panel_Childform.ResumeLayout(false);
-            this.panelMessage.ResumeLayout(false);
-            this.panelMessage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelMessage.ResumeLayout(false);
+            this.panelMessage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -459,9 +461,9 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Label lbMessages;
-        public System.Windows.Forms.Panel panelMessage;
         private Guna.UI2.WinForms.Guna2Button btnClosePanel;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         public System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2GradientPanel panelMessage;
     }
 }

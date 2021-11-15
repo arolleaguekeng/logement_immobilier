@@ -39,10 +39,7 @@ namespace LogementImobilier.Winform
 
                 timer1.Enabled = true;
                 panelMessage.Visible = true;
-                panelMessage.BackColor = Color.Green;
-                lbMessages.ForeColor = Color.White;
-                lbMessages.Text = "Added Sucsesfuly";
-                lbMessages.Dock = DockStyle.Left;
+                lbMessages.Text = "Added Succesfully";
             }
             catch (Exception)
             {

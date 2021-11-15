@@ -79,6 +79,12 @@
     <Compile Include="frmIndex.Designer.cs">
       <DependentUpon>frmIndex.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInfoHousing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoHousing.Designer.cs">
+      <DependentUpon>frmInfoHousing.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRenting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIndex.resx">
       <DependentUpon>frmIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoHousing.resx">
+      <DependentUpon>frmInfoHousing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRenting.resx">
       <DependentUpon>frmRenting.cs</DependentUpon>
@@ -160,6 +169,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add_new_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_logeme21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_blue_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeF0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator_male_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_white_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

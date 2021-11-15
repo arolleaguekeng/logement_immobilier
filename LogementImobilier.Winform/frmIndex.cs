@@ -104,7 +104,7 @@ namespace LogementImobilier.Winform
 
         private void btnStartRenting_Click_1(object sender, EventArgs e)
         {
-            lbMessages.Text = "Sart a Renting operation";
+            lbMessages.Text = "Double Click for show more details of Housing";
             frmRenting renting = new frmRenting();
             OpenChildform(renting, sender);
             panelMessage.Visible = true;
@@ -132,6 +132,11 @@ namespace LogementImobilier.Winform
         private void btnClosePanel_Click(object sender, EventArgs e)
         {
             panelMessage.Visible = false;
+        }
+
+        private void frmIndex_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

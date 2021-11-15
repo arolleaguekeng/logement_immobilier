@@ -62,8 +62,11 @@ namespace LogementImobilier.Winform
         {
             foreach (var house in housings)
             {
-                lvShowHousing.Items.Add(new ListViewItem(new string[] { house.Location, house.Name, house.NumberOfLevel.ToString(),house.NumberShower.ToString(),
-                house.NumberExibition.ToString(),house.NumberKitchen.ToString(),house.Parking.ToString(),house.NumberOfLevel.ToString(),house.Price.ToString(),house.Used.ToString()}));
+                var Lvi = new ListViewItem(new string[] { house.Location, house.Name, house.NumberOfLevel.ToString(),house.NumberShower.ToString(),
+                house.NumberExibition.ToString(),house.NumberKitchen.ToString(),house.Parking.ToString(),house.NumberOfLevel.ToString(),house.Price.ToString(),house.Used.ToString()});
+                Lvi.Tag = house;
+                lvShowHousing.Items.Add(Lvi);
+
             }
         }
 
@@ -125,6 +128,36 @@ namespace LogementImobilier.Winform
         private void nudPrice_ValueChanged(object sender, EventArgs e)
         {
             FindShow();
+        }
+
+        private void btnClose_Click_3(object sender, EventArgs e)
+        {
+            panelRight.Visible = false;
+            btnSee.Visible = true;
+            
+
+
+        }
+
+        private void btnSee_Click(object sender, EventArgs e)
+        {
+            btnSee.Visible = false;
+            panelRight.Visible = true;
+            panelRight.Dock = DockStyle.Right;
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            panelRight.Visible = false;
+            btnSee.Visible = true;
+        }
+        public static Housing hous;
+        private void lvShowHousing_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            frmInfoHousing infoHousing = new frmInfoHousing();
+            Program.InfoHouse = lvShowHousing.SelectedItems[0].Tag as Housing;
+            infoHousing.ShowDialog();
+
         }
     }
 }

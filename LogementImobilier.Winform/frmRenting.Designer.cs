@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelRight = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.cbbLocation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.nudPrice = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.chbParking = new Guna.UI2.WinForms.Guna2CheckBox();
             this.chbTerasse = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label10 = new System.Windows.Forms.Label();
             this.nudShowers = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.nudRooms = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -45,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.nudKitchens = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lvShowHousing = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -56,39 +58,89 @@
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel1.SuspendLayout();
+            this.btnSee = new Guna.UI2.WinForms.Guna2Button();
+            this.panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelRight
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cbbLocation);
-            this.panel1.Controls.Add(this.nudPrice);
-            this.panel1.Controls.Add(this.chbParking);
-            this.panel1.Controls.Add(this.chbTerasse);
-            this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.nudShowers);
-            this.panel1.Controls.Add(this.nudRooms);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.btnStars);
-            this.panel1.Controls.Add(this.nudExibition);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.nudKitchens);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1103, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 690);
-            this.panel1.TabIndex = 38;
+            this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRight.Controls.Add(this.guna2Button1);
+            this.panelRight.Controls.Add(this.btnClose);
+            this.panelRight.Controls.Add(this.cbbLocation);
+            this.panelRight.Controls.Add(this.nudPrice);
+            this.panelRight.Controls.Add(this.chbParking);
+            this.panelRight.Controls.Add(this.chbTerasse);
+            this.panelRight.Controls.Add(this.label10);
+            this.panelRight.Controls.Add(this.nudShowers);
+            this.panelRight.Controls.Add(this.nudRooms);
+            this.panelRight.Controls.Add(this.label2);
+            this.panelRight.Controls.Add(this.label3);
+            this.panelRight.Controls.Add(this.label4);
+            this.panelRight.Controls.Add(this.btnStars);
+            this.panelRight.Controls.Add(this.nudExibition);
+            this.panelRight.Controls.Add(this.label1);
+            this.panelRight.Controls.Add(this.label8);
+            this.panelRight.Controls.Add(this.nudKitchens);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRight.Location = new System.Drawing.Point(1198, 0);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(155, 690);
+            this.panelRight.TabIndex = 38;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::LogementImobilier.Winform.Properties.Resources.forward_32px;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(20, 35);
+            this.guna2Button1.Location = new System.Drawing.Point(-1, 244);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(34, 43);
+            this.guna2Button1.TabIndex = 64;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Animated = true;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.DisabledState.Parent = this.btnClose;
+            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Location = new System.Drawing.Point(120, -1);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(34, 28);
+            this.btnClose.TabIndex = 63;
+            this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_3);
             // 
             // cbbLocation
             // 
@@ -118,11 +170,11 @@
             this.cbbLocation.ItemsAppearance.Parent = this.cbbLocation;
             this.cbbLocation.ItemsAppearance.SelectedBackColor = System.Drawing.Color.Purple;
             this.cbbLocation.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-            this.cbbLocation.Location = new System.Drawing.Point(15, 37);
+            this.cbbLocation.Location = new System.Drawing.Point(6, 43);
             this.cbbLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbLocation.Name = "cbbLocation";
             this.cbbLocation.ShadowDecoration.Parent = this.cbbLocation;
-            this.cbbLocation.Size = new System.Drawing.Size(211, 36);
+            this.cbbLocation.Size = new System.Drawing.Size(138, 36);
             this.cbbLocation.TabIndex = 62;
             this.cbbLocation.SelectedIndexChanged += new System.EventHandler(this.cbbLocation_SelectedIndexChanged);
             // 
@@ -135,11 +187,11 @@
             this.nudPrice.FocusedState.Parent = this.nudPrice;
             this.nudPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudPrice.ForeColor = System.Drawing.Color.Black;
-            this.nudPrice.Location = new System.Drawing.Point(15, 368);
+            this.nudPrice.Location = new System.Drawing.Point(7, 468);
             this.nudPrice.Margin = new System.Windows.Forms.Padding(5);
             this.nudPrice.Name = "nudPrice";
             this.nudPrice.ShadowDecoration.Parent = this.nudPrice;
-            this.nudPrice.Size = new System.Drawing.Size(211, 33);
+            this.nudPrice.Size = new System.Drawing.Size(141, 26);
             this.nudPrice.TabIndex = 59;
             this.nudPrice.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudPrice.UpDownButtonForeColor = System.Drawing.Color.White;
@@ -157,7 +209,7 @@
             this.chbParking.CheckMarkColor = System.Drawing.Color.Purple;
             this.chbParking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbParking.ForeColor = System.Drawing.Color.White;
-            this.chbParking.Location = new System.Drawing.Point(141, 77);
+            this.chbParking.Location = new System.Drawing.Point(65, 116);
             this.chbParking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbParking.Name = "chbParking";
             this.chbParking.Size = new System.Drawing.Size(87, 24);
@@ -181,7 +233,7 @@
             this.chbTerasse.CheckMarkColor = System.Drawing.Color.Purple;
             this.chbTerasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbTerasse.ForeColor = System.Drawing.Color.White;
-            this.chbTerasse.Location = new System.Drawing.Point(16, 77);
+            this.chbTerasse.Location = new System.Drawing.Point(65, 88);
             this.chbTerasse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbTerasse.Name = "chbTerasse";
             this.chbTerasse.Size = new System.Drawing.Size(92, 24);
@@ -193,41 +245,12 @@
             this.chbTerasse.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chbTerasse.UseVisualStyleBackColor = false;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Animated = true;
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BorderRadius = 15;
-            this.btnSearch.CheckedState.Parent = this.btnSearch;
-            this.btnSearch.CustomImages.Parent = this.btnSearch;
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.DisabledState.Parent = this.btnSearch;
-            this.btnSearch.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.HoverState.Parent = this.btnSearch;
-            this.btnSearch.Location = new System.Drawing.Point(100, 428);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnSearch.ShadowDecoration.Depth = 5;
-            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
-            this.btnSearch.Size = new System.Drawing.Size(126, 36);
-            this.btnSearch.TabIndex = 42;
-            this.btnSearch.Text = "Seach";
-            this.btnSearch.UseTransparentBackground = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(13, 12);
+            this.label10.Location = new System.Drawing.Point(4, 18);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 20);
             this.label10.TabIndex = 38;
@@ -242,11 +265,11 @@
             this.nudShowers.FocusedState.Parent = this.nudShowers;
             this.nudShowers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudShowers.ForeColor = System.Drawing.Color.Black;
-            this.nudShowers.Location = new System.Drawing.Point(21, 247);
+            this.nudShowers.Location = new System.Drawing.Point(65, 230);
             this.nudShowers.Margin = new System.Windows.Forms.Padding(5);
             this.nudShowers.Name = "nudShowers";
             this.nudShowers.ShadowDecoration.Parent = this.nudShowers;
-            this.nudShowers.Size = new System.Drawing.Size(75, 32);
+            this.nudShowers.Size = new System.Drawing.Size(75, 28);
             this.nudShowers.TabIndex = 21;
             this.nudShowers.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudShowers.UpDownButtonForeColor = System.Drawing.Color.White;
@@ -261,11 +284,11 @@
             this.nudRooms.FocusedState.Parent = this.nudRooms;
             this.nudRooms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudRooms.ForeColor = System.Drawing.Color.Black;
-            this.nudRooms.Location = new System.Drawing.Point(151, 165);
+            this.nudRooms.Location = new System.Drawing.Point(65, 352);
             this.nudRooms.Margin = new System.Windows.Forms.Padding(5);
             this.nudRooms.Name = "nudRooms";
             this.nudRooms.ShadowDecoration.Parent = this.nudRooms;
-            this.nudRooms.Size = new System.Drawing.Size(75, 32);
+            this.nudRooms.Size = new System.Drawing.Size(75, 28);
             this.nudRooms.TabIndex = 16;
             this.nudRooms.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudRooms.UpDownButtonForeColor = System.Drawing.Color.White;
@@ -276,7 +299,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(147, 136);
+            this.label2.Location = new System.Drawing.Point(61, 327);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 17;
@@ -287,7 +310,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 136);
+            this.label3.Location = new System.Drawing.Point(66, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 17;
@@ -298,7 +321,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(17, 222);
+            this.label4.Location = new System.Drawing.Point(61, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 17;
@@ -307,7 +330,7 @@
             // btnStars
             // 
             this.btnStars.BorderColor = System.Drawing.Color.White;
-            this.btnStars.Location = new System.Drawing.Point(61, 300);
+            this.btnStars.Location = new System.Drawing.Point(26, 399);
             this.btnStars.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStars.Name = "btnStars";
             this.btnStars.RatingColor = System.Drawing.Color.Gold;
@@ -324,11 +347,11 @@
             this.nudExibition.FocusedState.Parent = this.nudExibition;
             this.nudExibition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudExibition.ForeColor = System.Drawing.Color.Black;
-            this.nudExibition.Location = new System.Drawing.Point(151, 247);
+            this.nudExibition.Location = new System.Drawing.Point(65, 292);
             this.nudExibition.Margin = new System.Windows.Forms.Padding(5);
             this.nudExibition.Name = "nudExibition";
             this.nudExibition.ShadowDecoration.Parent = this.nudExibition;
-            this.nudExibition.Size = new System.Drawing.Size(75, 32);
+            this.nudExibition.Size = new System.Drawing.Size(75, 28);
             this.nudExibition.TabIndex = 29;
             this.nudExibition.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudExibition.UpDownButtonForeColor = System.Drawing.Color.White;
@@ -339,7 +362,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 335);
+            this.label1.Location = new System.Drawing.Point(21, 434);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 28);
             this.label1.TabIndex = 20;
@@ -350,7 +373,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(147, 222);
+            this.label8.Location = new System.Drawing.Point(61, 267);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 20);
             this.label8.TabIndex = 28;
@@ -365,19 +388,31 @@
             this.nudKitchens.FocusedState.Parent = this.nudKitchens;
             this.nudKitchens.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudKitchens.ForeColor = System.Drawing.Color.Black;
-            this.nudKitchens.Location = new System.Drawing.Point(16, 165);
+            this.nudKitchens.Location = new System.Drawing.Point(65, 171);
             this.nudKitchens.Margin = new System.Windows.Forms.Padding(5);
             this.nudKitchens.Name = "nudKitchens";
             this.nudKitchens.ShadowDecoration.Parent = this.nudKitchens;
-            this.nudKitchens.Size = new System.Drawing.Size(75, 32);
+            this.nudKitchens.Size = new System.Drawing.Size(75, 28);
             this.nudKitchens.TabIndex = 21;
             this.nudKitchens.UpDownButtonFillColor = System.Drawing.SystemColors.MenuHighlight;
             this.nudKitchens.UpDownButtonForeColor = System.Drawing.Color.White;
             this.nudKitchens.ValueChanged += new System.EventHandler(this.nudKitchens_ValueChanged);
             // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.lvShowHousing);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1168, 690);
+            this.panel1.TabIndex = 65;
+            // 
             // lvShowHousing
             // 
-            this.lvShowHousing.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lvShowHousing.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            this.lvShowHousing.AutoArrange = false;
+            this.lvShowHousing.BackColor = System.Drawing.Color.White;
             this.lvShowHousing.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -401,10 +436,11 @@
             this.lvShowHousing.MultiSelect = false;
             this.lvShowHousing.Name = "lvShowHousing";
             this.lvShowHousing.ShowItemToolTips = true;
-            this.lvShowHousing.Size = new System.Drawing.Size(1103, 690);
-            this.lvShowHousing.TabIndex = 39;
+            this.lvShowHousing.Size = new System.Drawing.Size(1168, 690);
+            this.lvShowHousing.TabIndex = 40;
             this.lvShowHousing.UseCompatibleStateImageBehavior = false;
             this.lvShowHousing.View = System.Windows.Forms.View.Details;
+            this.lvShowHousing.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lvShowHousing_MouseDoubleClick);
             // 
             // columnHeader1
             // 
@@ -456,39 +492,63 @@
             this.columnHeader9.Text = "Status";
             this.columnHeader9.Width = 80;
             // 
+            // btnSee
+            // 
+            this.btnSee.CheckedState.Parent = this.btnSee;
+            this.btnSee.CustomImages.Parent = this.btnSee;
+            this.btnSee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSee.DisabledState.Parent = this.btnSee;
+            this.btnSee.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSee.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSee.ForeColor = System.Drawing.Color.White;
+            this.btnSee.HoverState.Parent = this.btnSee;
+            this.btnSee.Image = global::LogementImobilier.Winform.Properties.Resources.back_32px;
+            this.btnSee.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSee.Location = new System.Drawing.Point(1168, 0);
+            this.btnSee.Name = "btnSee";
+            this.btnSee.ShadowDecoration.Parent = this.btnSee;
+            this.btnSee.Size = new System.Drawing.Size(30, 690);
+            this.btnSee.TabIndex = 64;
+            this.btnSee.Visible = false;
+            this.btnSee.Click += new System.EventHandler(this.btnSee_Click);
+            // 
             // frmRenting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1353, 690);
-            this.Controls.Add(this.lvShowHousing);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnSee);
+            this.Controls.Add(this.panelRight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRenting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRenting";
             this.Load += new System.EventHandler(this.frmRenting_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelRight.ResumeLayout(false);
+            this.panelRight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelRight;
         private Guna.UI2.WinForms.Guna2ComboBox cbbLocation;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudPrice;
         private Guna.UI2.WinForms.Guna2CheckBox chbParking;
         private Guna.UI2.WinForms.Guna2CheckBox chbTerasse;
-        private Guna.UI2.WinForms.Guna2GradientButton btnSearch;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudShowers;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudRooms;
@@ -500,16 +560,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudKitchens;
-        private System.Windows.Forms.ListView lvShowHousing;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
+        private Guna.UI2.WinForms.Guna2Button btnSee;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        public System.Windows.Forms.ListView lvShowHousing;
     }
 }
