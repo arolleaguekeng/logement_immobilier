@@ -83,6 +83,16 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_26px {
+            get {
+                object obj = ResourceManager.GetObject("back_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back_32px {
             get {
                 object obj = ResourceManager.GetObject("back_32px", resourceCulture);
@@ -123,6 +133,16 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap forward_26px {
+            get {
+                object obj = ResourceManager.GetObject("forward_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forward_32px {
             get {
                 object obj = ResourceManager.GetObject("forward_32px", resourceCulture);
@@ -143,9 +163,29 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap notification_26px {
+            get {
+                object obj = ResourceManager.GetObject("notification_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play_26px {
             get {
                 object obj = ResourceManager.GetObject("play_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash_can_26px {
+            get {
+                object obj = ResourceManager.GetObject("trash_can_26px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

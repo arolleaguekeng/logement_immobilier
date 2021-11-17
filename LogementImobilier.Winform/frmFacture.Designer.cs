@@ -48,6 +48,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmFacture";
             this.Text = "frmFacture";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmFacture_FormClosed);
             this.Load += new System.EventHandler(this.frmFacture_Load);
             this.ResumeLayout(false);

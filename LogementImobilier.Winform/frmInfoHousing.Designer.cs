@@ -67,10 +67,11 @@
             this.Used = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panelRight = new System.Windows.Forms.Panel();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.panelRight = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSale = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -83,7 +84,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelRight.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -523,10 +524,13 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Price";
             // 
+            // guna2ShadowForm1
+            // 
+            this.guna2ShadowForm1.TargetForm = this;
+            // 
             // panelRight
             // 
-            this.panelRight.Controls.Add(this.guna2GradientButton1);
-            this.panelRight.Controls.Add(this.btnSale);
+            this.panelRight.AutoScroll = true;
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRight.Location = new System.Drawing.Point(292, 39);
             this.panelRight.Name = "panelRight";
@@ -548,6 +552,7 @@
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
+            this.guna2GradientButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -556,14 +561,14 @@
             this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.guna2GradientButton1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(345, 440);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(375, 0);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2GradientButton1.ShadowDecoration.Depth = 5;
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(131, 41);
-            this.guna2GradientButton1.TabIndex = 57;
+            this.guna2GradientButton1.Size = new System.Drawing.Size(131, 52);
+            this.guna2GradientButton1.TabIndex = 59;
             this.guna2GradientButton1.Text = "Liberer";
             // 
             // btnSale
@@ -581,6 +586,7 @@
             this.btnSale.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSale.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSale.DisabledState.Parent = this.btnSale;
+            this.btnSale.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSale.FillColor = System.Drawing.Color.Transparent;
             this.btnSale.FillColor2 = System.Drawing.Color.Transparent;
             this.btnSale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -589,26 +595,33 @@
             this.btnSale.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnSale.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnSale.HoverState.Parent = this.btnSale;
-            this.btnSale.Location = new System.Drawing.Point(494, 440);
+            this.btnSale.Location = new System.Drawing.Point(506, 0);
             this.btnSale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSale.Name = "btnSale";
             this.btnSale.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSale.ShadowDecoration.Depth = 5;
             this.btnSale.ShadowDecoration.Parent = this.btnSale;
-            this.btnSale.Size = new System.Drawing.Size(131, 41);
-            this.btnSale.TabIndex = 56;
+            this.btnSale.Size = new System.Drawing.Size(131, 52);
+            this.btnSale.TabIndex = 58;
             this.btnSale.Text = "Sale";
-            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
+            this.btnSale.Click += new System.EventHandler(this.btnSale_Click_1);
             // 
-            // guna2ShadowForm1
+            // panel1
             // 
-            this.guna2ShadowForm1.TargetForm = this;
+            this.panel1.Controls.Add(this.guna2GradientButton1);
+            this.panel1.Controls.Add(this.btnSale);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(292, 479);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(637, 52);
+            this.panel1.TabIndex = 60;
             // 
             // frmInfoHousing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 531);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panel2);
@@ -631,7 +644,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelRight.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -642,7 +655,6 @@
         private Guna.UI2.WinForms.Guna2Button btnCose;
         private System.Windows.Forms.Label lbHouseName;
         private System.Windows.Forms.Panel panelLeft;
-        private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -677,8 +689,10 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2GradientButton btnSale;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private System.Windows.Forms.FlowLayoutPanel panelRight;
     }
 }

@@ -20,10 +20,10 @@ namespace LogementImobilier.BO
         public bool Parking { get; set; }
         public bool Used { get; set; }
         public int NumberOfLevel { get; set; }
-        public List<byte[]> HousingPitctures { get; set; }
+        public List<HousingPicture> HousingPitctures { get; set; }
 
         public Housing(string id,string name,decimal price, string location, int numberRoom, int numberKitchen, int numberShower,
-                        int numberExibition, float numberStart, bool used,Client client,bool terasse,bool parking,int numberOfLevel)
+                        int numberExibition, float numberStart, bool used,Client client,bool terasse,bool parking,int numberOfLevel,List<HousingPicture> picture)
         {
             Id = id;
             Name = name;
@@ -39,6 +39,7 @@ namespace LogementImobilier.BO
             Terrasse = terasse;
             Parking = parking;
             NumberOfLevel = numberOfLevel;
+            HousingPitctures = picture;
         }
 
         public Housing()

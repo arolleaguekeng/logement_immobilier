@@ -115,6 +115,12 @@
     <Compile Include="frmRenting.Designer.cs">
       <DependentUpon>frmRenting.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmShowPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowPicture.Designer.cs">
+      <DependentUpon>frmShowPicture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmLogin.cs">
@@ -123,7 +129,6 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="fmExemple.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRenting.resx">
       <DependentUpon>frmRenting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowPicture.resx">
+      <DependentUpon>frmShowPicture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -228,19 +236,16 @@
     <None Include="Resources\edit_white_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\back_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_can_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_26px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

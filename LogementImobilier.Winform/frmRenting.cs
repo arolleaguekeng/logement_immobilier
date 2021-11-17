@@ -158,6 +158,8 @@ namespace LogementImobilier.Winform
             Program.InfoHouse = lvShowHousing.SelectedItems[0].Tag as Housing;
             infoHousing.ShowDialog();
 
+
         }
+
     }
 }

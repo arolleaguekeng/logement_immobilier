@@ -47,6 +47,7 @@
     <Compile Include="BaseModel.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Housing.cs" />
+    <Compile Include="HousingPicture.cs" />
     <Compile Include="HousingRenting.cs" />
     <Compile Include="HousingSale.cs" />
     <Compile Include="Item.cs" />

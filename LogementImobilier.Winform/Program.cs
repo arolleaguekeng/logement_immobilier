@@ -9,6 +9,7 @@ namespace LogementImobilier.Winform
 {
     static class Program
     {
+        public static List<HousingPicture> picture;
         public static Housing InfoHouse;
         
         /// <summary>
