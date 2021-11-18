@@ -10,14 +10,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.FileIO;
 
 namespace LogementImobilier.Winform
 {
     public partial class frmAddHouse : Form
     {
+        string Path;
         PictureBox box;
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
         public List<HousingPicture> LiPicture;
+
         public frmAddHouse()
         {
            
@@ -36,12 +39,14 @@ namespace LogementImobilier.Winform
 
 
 
-                lbPrice.Text = housing.CalculPrice((int)nudRooms.Value, (int)nudKitchen.Value,
-                    (int)starNotation.Value, (int)nudExibition.Value, (int)nudShowers.Value,
-                    1,(int )nudLevel.Value).ToString();
+                lbPrice.Text =   housing.CalculPrice((int)nudRooms.Value, (int)nudKitchen.Value,
+                                (int)starNotation.Value, (int)nudExibition.Value, (int)nudShowers.Value,
+                                1,(int )nudLevel.Value).ToString();
+
+                        
                 housing.CreateHousing(new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
-                    (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
-                    false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value, LiPicture));
+                                        (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
+                                            false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value, LiPicture));
 
                 timer1.Enabled = true;
                 panelMessage.Visible = true;
@@ -82,10 +87,11 @@ namespace LogementImobilier.Winform
             if(openFile.ShowDialog() == DialogResult.OK)
             {
                 int n = 0;
+                Path = $"Data/Img/{openFile.SafeFileName}";
                 var a = File.ReadAllBytes(openFile.FileName);
                 HousingPicture picture = new HousingPicture();
-
-
+                CopyPicture(openFile.FileName, Path);
+                MessageBox.Show(openFile.SafeFileName);
                 lbItems.Text = LiPicture.Count().ToString();
                 box = new PictureBox();
                 picture = new HousingPicture(File.ReadAllBytes(openFile.FileName), openFile.FileName);
@@ -94,7 +100,7 @@ namespace LogementImobilier.Winform
                 box.Size = new Size(100, 100);
                 box.SizeMode = PictureBoxSizeMode.StretchImage;
                 box.TabStop = false;
-                box.ImageLocation = openFile.FileName;
+                box.ImageLocation = Path;
 
                 this.box.DoubleClick += new System.EventHandler(this.box_DoubleClick);
                 //box.BackColor = Color.Black;
@@ -133,5 +139,38 @@ namespace LogementImobilier.Winform
         {
 
         }
+
+        //    static void CopyPicture(string sourcePath, string destinationPath)
+        //{
+        //        sourcePath = @"C:\Users\PHARAON\Pictures\Capture.png";
+        //    FileInfo fileInfo = new FileInfo(destinationPath);
+        //    if (!fileInfo.Directory.Exists)
+        //        fileInfo.Directory.Create();
+        //    FileSystem.CopyDirectory(sourcePath, destinationPath,
+        //        UIOption.AllDialogs);
+        //}
+
+
+
+        // Simple synchronous file copy operations with no user interface.
+        // To run this sample, first create the following directories and files:
+        // C:\Users\Public\TestFolder
+        // C:\Users\Public\TestFolder\test.txt
+        // C:\Users\Public\TestFolder\SubDir\test.txt
+        static void CopyPicture(string fileName, string targetPath)
+        {
+
+            // Use Path class to manipulate file and directory paths.
+            // To copy a file to another location and
+            // overwrite the destination file if it already exists.
+           
+            FileInfo fileInfo = new FileInfo(targetPath);
+            if (!fileInfo.Directory.Exists)
+                fileInfo.Directory.Create();
+            System.IO.File.Copy(fileName, targetPath, true);
+
+
+        }
+
     }
 }
