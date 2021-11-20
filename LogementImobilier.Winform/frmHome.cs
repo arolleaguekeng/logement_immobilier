@@ -17,9 +17,22 @@ namespace LogementImobilier.Winform
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
+        private void btnAddHouse_Click(object sender, EventArgs e)
+        {
+            frmAddHouse addHouse = new frmAddHouse();
+            addHouse.ShowDialog();
+        }
+
+        private void btn_StarRenting_Click(object sender, EventArgs e)
+        {
+            frmRenting renting = new frmRenting();
+            renting.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

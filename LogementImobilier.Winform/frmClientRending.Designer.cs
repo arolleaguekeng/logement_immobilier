@@ -48,11 +48,12 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Purple;
-            this.label11.Location = new System.Drawing.Point(217, 57);
+            this.label11.Location = new System.Drawing.Point(267, 57);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(156, 65);
             this.label11.TabIndex = 49;
             this.label11.Text = "Client";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // guna2TextBox4
             // 
@@ -110,7 +111,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(524, 276);
+            this.label10.Location = new System.Drawing.Point(524, 277);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 28);
             this.label10.TabIndex = 44;
@@ -129,7 +130,7 @@
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Purple;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;

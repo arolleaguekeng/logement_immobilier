@@ -31,9 +31,25 @@ namespace LogementImobilier.Winform
         private void btnNext_Click(object sender, EventArgs e)
         {
             panelEmail.Visible = false;
+            panelPassword.Visible = true;
         }
 
         private void btnValidate_Click(object sender, EventArgs e)
+        {
+            frmIndex index = new frmIndex();
+            this.Close();
+            index.Show();
+           
+            
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void bnt_back_Click(object sender, EventArgs e)
         {
             panelEmail.Visible = true;
             user = manager.LoginUser(tbEmail.Text, tbPassword.Text);
@@ -52,6 +68,7 @@ namespace LogementImobilier.Winform
                 MessageBox.Show($"Email or password is invalid!", "Caution", MessageBoxButtons.OK);
                 return;
             }
+
         }
     }
 }
