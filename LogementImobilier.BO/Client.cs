@@ -9,8 +9,13 @@ namespace LogementImobilier.BO
     public class Client : BaseModel
     {
         public int PhoneNumber { get; set; }
-        public string  Location { get; set; }
 
-
+        public Client(string email, string name,int phoneNumber)
+        {
+            Id = email;
+            PhoneNumber = phoneNumber;
+            Name = name;
+        }
+        
     }
 }
