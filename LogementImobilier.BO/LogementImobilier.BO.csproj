@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BaseModel.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Historic.cs" />
     <Compile Include="Housing.cs" />
     <Compile Include="HousingPicture.cs" />
     <Compile Include="HousingRenting.cs" />

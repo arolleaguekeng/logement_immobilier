@@ -138,5 +138,27 @@ namespace LogementImobilier.Winform
         {
             Application.Exit();
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            btnNext.Visible = false;
+            btnPreview.Visible = true;
+            panelmenu.Size = new Size(212,618);
+
+               
+        }
+
+        private void btnPreview_Click(object sender, EventArgs e)
+        {
+            panelmenu.Size = new Size(68, 618);
+            btnPreview.Visible = false;
+            btnNext.Visible = true;
+        }
+
+        private void btnHistoric_Click(object sender, EventArgs e)
+        {
+            frmHistory history = new frmHistory();
+            history.Show();
+        }
     }
 }

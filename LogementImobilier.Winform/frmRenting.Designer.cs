@@ -46,26 +46,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.nudKitchens = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lvShowHousing = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnSee = new Guna.UI2.WinForms.Guna2Button();
+            this.panelcontein = new System.Windows.Forms.FlowLayoutPanel();
             this.panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelRight
@@ -398,102 +386,9 @@
             this.nudKitchens.UpDownButtonForeColor = System.Drawing.Color.White;
             this.nudKitchens.ValueChanged += new System.EventHandler(this.nudKitchens_ValueChanged);
             // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.lvShowHousing);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1168, 690);
-            this.panel1.TabIndex = 65;
-            // 
-            // lvShowHousing
-            // 
-            this.lvShowHousing.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
-            this.lvShowHousing.AutoArrange = false;
-            this.lvShowHousing.BackColor = System.Drawing.Color.White;
-            this.lvShowHousing.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader8,
-            this.columnHeader10,
-            this.columnHeader7,
-            this.columnHeader9});
-            this.lvShowHousing.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lvShowHousing.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvShowHousing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvShowHousing.FullRowSelect = true;
-            this.lvShowHousing.GridLines = true;
-            this.lvShowHousing.HideSelection = false;
-            this.lvShowHousing.HoverSelection = true;
-            this.lvShowHousing.Location = new System.Drawing.Point(0, 0);
-            this.lvShowHousing.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.lvShowHousing.MultiSelect = false;
-            this.lvShowHousing.Name = "lvShowHousing";
-            this.lvShowHousing.ShowItemToolTips = true;
-            this.lvShowHousing.Size = new System.Drawing.Size(1168, 690);
-            this.lvShowHousing.TabIndex = 40;
-            this.lvShowHousing.UseCompatibleStateImageBehavior = false;
-            this.lvShowHousing.View = System.Windows.Forms.View.Details;
-            this.lvShowHousing.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lvShowHousing_MouseDoubleClick);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Location";
-            this.columnHeader1.Width = 163;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Name";
-            this.columnHeader2.Width = 131;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Level";
-            this.columnHeader3.Width = 88;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "douch";
-            this.columnHeader4.Width = 80;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "salon";
-            this.columnHeader5.Width = 68;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "cuisine";
-            this.columnHeader6.Width = 81;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Parking";
-            this.columnHeader8.Width = 90;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Etage";
-            this.columnHeader10.Width = 82;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Price";
-            this.columnHeader7.Width = 148;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Status";
-            this.columnHeader9.Width = 80;
-            // 
             // btnSee
             // 
+            this.btnSee.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnSee.CheckedState.Parent = this.btnSee;
             this.btnSee.CustomImages.Parent = this.btnSee;
             this.btnSee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -515,13 +410,24 @@
             this.btnSee.Visible = false;
             this.btnSee.Click += new System.EventHandler(this.btnSee_Click);
             // 
+            // panelcontein
+            // 
+            this.panelcontein.AutoScroll = true;
+            this.panelcontein.BackgroundImage = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
+            this.panelcontein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelcontein.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelcontein.Location = new System.Drawing.Point(0, 0);
+            this.panelcontein.Name = "panelcontein";
+            this.panelcontein.Size = new System.Drawing.Size(1168, 690);
+            this.panelcontein.TabIndex = 65;
+            // 
             // frmRenting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1353, 690);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelcontein);
             this.Controls.Add(this.btnSee);
             this.Controls.Add(this.panelRight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -537,7 +443,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -562,18 +467,7 @@
         private Guna.UI2.WinForms.Guna2NumericUpDown nudKitchens;
         private Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2Button btnSee;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        public System.Windows.Forms.ListView lvShowHousing;
+        private System.Windows.Forms.FlowLayoutPanel panelcontein;
     }
 }

@@ -17,22 +17,123 @@ namespace LogementImobilier.Winform
     public partial class frmRenting : Form
     {
         HousingManager housing;
+        Label description;
+        PictureBox icon;
+        Guna2RatingStar star;
+        Guna2Button more;
         List<Housing> housings;
+        FlowLayoutPanel layoutPanel;
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
         public frmRenting()
         {
+          
             InitializeComponent();
             housing = new HousingManager();
             frmHome frmHome = new frmHome();
             housings = housing.GetAllHousing();
-            ShowLvHousing();
-            
-
+            // ShowLvHousing();
         }
 
         private void frmRenting_Load(object sender, EventArgs e)
         {
+            int n = 0;
+            foreach(var house in housings)
+            {
+                string name = $"label{n++}";
+                string nameButton = $"button{n++}";
+                //option du panel conteneur
+                var Picture = new PictureBox();
+                layoutPanel = new FlowLayoutPanel();
+                layoutPanel.BorderStyle = BorderStyle.FixedSingle;
+                layoutPanel.Size = new Size(180, 350);
+
+                panelcontein.Controls.Add(layoutPanel);
+                Picture = new PictureBox();
+                Picture.Name = "pic";
+                Picture.Image = ((Image)(resources.GetObject("Picture.Image")));
+                Picture.Size = new Size(100, 100);
+                Picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                Picture.TabStop = false;
+                Picture.ImageLocation = house.HousingPitctures[0].Title;
+                Picture.BackColor = Color.Black;
+                layoutPanel.Controls.Add(Picture);
+
+
+
+
+
+                //affichage de la description
+
+                NewLabel(house,name,house.Name);
+                NewLabel(house,name,house.Location);
+                NewLabel(house,name,"Room:     "+house.NumberRoom.ToString());
+                NewLabel(house,name,"SHW:      "+house.NumberShower.ToString());
+                NewLabel(house, name, "Price:  " + house.Price.ToString());
+                NewLabel(house,name, "Use:     " + house.Used.ToString());
+
+
+                //affichage de l'image d'icone de la maison dans 
+
+
+
+
+
+
+
+
+
+                //afficher les étoiles de la maison
+                star = new Guna2RatingStar();
+                layoutPanel.Controls.Add(star);
+                star.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                star.Name = "starNotation";
+                star.RatingColor = System.Drawing.Color.Gold;
+                //star.Size = new System.Drawing.Size(124, 33);
+
+
+
+
+                //affcihage du bouton plus d'information 
+
+                more = new Guna2Button();
+                layoutPanel.Controls.Add(more);
+                more.Text = "More";
+                more.Name = nameButton;
+                more.Click += new System.EventHandler(more_Click);
+                more.Tag = house;
+
+
+            }
+
 
         }
+        private void more_Click(object sender, EventArgs e)
+        {
+            frmInfoHousing infoHousing = new frmInfoHousing();
+            Program.InfoHouse =more.Tag as Housing;
+            infoHousing.ShowDialog();
+        }
+
+        private static void ShowHousingInfo(Housing housing)
+        {
+            frmInfoHousing infoHousing = new frmInfoHousing();
+            Program.InfoHouse = housing;
+            infoHousing.ShowDialog();
+        }
+
+        //fonction qui ajoute un label dans le formulaire
+        private void NewLabel(Housing house,string name,string text)
+        {
+            description = new Label();
+            description.Text = text;
+            description.ForeColor = Color.Black;
+            description.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            description.ForeColor = System.Drawing.Color.Purple;
+            description.Name = name;
+            description.Size = new System.Drawing.Size(400, 20);
+            layoutPanel.Controls.Add(description);
+        }
+
         private void btnSeach_Click(object sender, EventArgs e)
         {
         }
@@ -54,21 +155,19 @@ namespace LogementImobilier.Winform
             housings = housing.GetAllHousing();
             housings = housing.Search(cbbLocation.SelectedItem.ToString(), (int)nudExibition.Value, (int)nudKitchens.Value,
                 (int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
-            lvShowHousing.Items.Clear();
-            ShowLvHousing();
+            //ShowLvHousing();
         }
 
-        private void ShowLvHousing()
-        {
-            foreach (var house in housings)
-            {
-                var Lvi = new ListViewItem(new string[] { house.Location, house.Name, house.NumberOfLevel.ToString(),house.NumberShower.ToString(),
-                house.NumberExibition.ToString(),house.NumberKitchen.ToString(),house.Parking.ToString(),house.NumberOfLevel.ToString(),house.Price.ToString(),house.Used.ToString()});
-                Lvi.Tag = house;
-                lvShowHousing.Items.Add(Lvi);
-
-            }
-        }
+        //private void ShowLvHousing()
+        //{
+        //    foreach (var house in housings)
+        //    {
+        //        var Lvi = new ListViewItem(new string[] { house.Location, house.Name, house.NumberOfLevel.ToString(),house.NumberShower.ToString(),
+        //        house.NumberExibition.ToString(),house.NumberKitchen.ToString(),house.Parking.ToString(),house.NumberOfLevel.ToString(),house.Price.ToString(),house.Used.ToString()});
+        //        Lvi.Tag = house;
+        //        lvShowHousing.Items.Add(Lvi);
+        //    }
+        //}
 
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
@@ -152,14 +251,34 @@ namespace LogementImobilier.Winform
             btnSee.Visible = true;
         }
         public static Housing hous;
-        private void lvShowHousing_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            frmInfoHousing infoHousing = new frmInfoHousing();
-            Program.InfoHouse = lvShowHousing.SelectedItems[0].Tag as Housing;
-            infoHousing.ShowDialog();
+        //private void lvShowHousing_MouseDoubleClick(object sender, MouseEventArgs e)
+        //{
+        //    frmInfoHousing infoHousing = new frmInfoHousing();
+        //    Program.InfoHouse = lvShowHousing.SelectedItems[0].Tag as Housing;
+        //    infoHousing.ShowDialog();
+        //}
+        //private void populate()
+        //{
+        //    lvShowHousing.View = View.Details;
+        //    lvShowHousing.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        //    ImageList imageList = new ImageList();
+        //    imageList.ImageSize = new Size(100,100);
+            
+        //    string[] paths = { };
+        //    try
+        //    {
+        //        foreach(var path in housings)
+        //        {
+        //            imageList.Images.Add(Image.FromFile(@"C:\Users\PHARAON\Pictures\Capture.png"));
+        //        }
+        //    }
+        //    catch(Exception e)
+        //    {
+        //        MessageBox.Show(e.Message);
+        //    }
+        //    lvShowHousing.SmallImageList = imageList;
 
-
-        }
+        //}
 
     }
 }

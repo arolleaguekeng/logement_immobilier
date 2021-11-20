@@ -53,6 +53,7 @@
             this.label11.Size = new System.Drawing.Size(156, 65);
             this.label11.TabIndex = 49;
             this.label11.Text = "Client";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // guna2TextBox4
             // 

@@ -46,15 +46,15 @@ namespace LogementImobilier.Winform
                         
                 housing.CreateHousing(new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
                                         (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
-                                            false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value, LiPicture));
+                                            false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value, LiPicture,LiPicture[0].Location));
 
                 timer1.Enabled = true;
                 panelMessage.Visible = true;
                 lbMessages.Text = "Added Succesfully";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw new Exception("Faild to Add");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -86,11 +86,12 @@ namespace LogementImobilier.Winform
             OpenFileDialog openFile = new OpenFileDialog();
             if(openFile.ShowDialog() == DialogResult.OK)
             {
+                PictureManager pictureManager = new PictureManager();
                 int n = 0;
                 Path = $"Data/Img/{openFile.SafeFileName}";
                 var a = File.ReadAllBytes(openFile.FileName);
                 HousingPicture picture = new HousingPicture();
-                CopyPicture(openFile.FileName, Path);
+                pictureManager.AddPicture(openFile.FileName, Path);
                 MessageBox.Show(openFile.SafeFileName);
                 lbItems.Text = LiPicture.Count().ToString();
                 box = new PictureBox();
@@ -140,6 +141,8 @@ namespace LogementImobilier.Winform
 
         }
 
+
+
         //    static void CopyPicture(string sourcePath, string destinationPath)
         //{
         //        sourcePath = @"C:\Users\PHARAON\Pictures\Capture.png";
@@ -157,20 +160,7 @@ namespace LogementImobilier.Winform
         // C:\Users\Public\TestFolder
         // C:\Users\Public\TestFolder\test.txt
         // C:\Users\Public\TestFolder\SubDir\test.txt
-        static void CopyPicture(string fileName, string targetPath)
-        {
 
-            // Use Path class to manipulate file and directory paths.
-            // To copy a file to another location and
-            // overwrite the destination file if it already exists.
-           
-            FileInfo fileInfo = new FileInfo(targetPath);
-            if (!fileInfo.Directory.Exists)
-                fileInfo.Directory.Create();
-            System.IO.File.Copy(fileName, targetPath, true);
-
-
-        }
 
     }
 }

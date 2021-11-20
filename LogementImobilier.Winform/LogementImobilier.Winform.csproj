@@ -92,6 +92,12 @@
     <Compile Include="frmFacture.Designer.cs">
       <DependentUpon>frmFacture.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFacture.resx">
       <DependentUpon>frmFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -247,6 +256,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\notification_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historic_time_machine_26px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
