@@ -17,7 +17,6 @@ namespace LogementImobilier.Winform
             InitializeComponent();
         }
 
-
         private void btnAddHouse_Click(object sender, EventArgs e)
         {
             frmAddHouse addHouse = new frmAddHouse();
