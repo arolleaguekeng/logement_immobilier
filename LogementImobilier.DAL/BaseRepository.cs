@@ -30,6 +30,7 @@ namespace LogementImobilier.DAL
                 if (data.Equals(obj))
                     throw new DuplicateWaitObjectException($"{typeof(T)} already exits ! ");
             datas.Add(obj);
+            Save();
         }
 
 
