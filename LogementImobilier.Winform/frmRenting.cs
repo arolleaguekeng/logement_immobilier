@@ -109,10 +109,12 @@ namespace LogementImobilier.Winform
         }
         private void more_Click(object sender, EventArgs e)
         {
+            Guna2Button more = (Guna2Button)sender;
             frmInfoHousing infoHousing = new frmInfoHousing();
-            Program.InfoHouse =more.Tag as Housing;
+            Program.InfoHouse = more.Tag as Housing;
             infoHousing.ShowDialog();
         }
+
 
         private static void ShowHousingInfo(Housing housing)
         {
@@ -128,7 +130,7 @@ namespace LogementImobilier.Winform
             description.Text = text;
             description.ForeColor = Color.Black;
             description.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            description.ForeColor = System.Drawing.Color.Purple;
+            description.ForeColor = System.Drawing.Color.Black;
             description.Name = name;
             description.Size = new System.Drawing.Size(400, 20);
             layoutPanel.Controls.Add(description);
