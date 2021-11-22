@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LogementImobilier.BO
 {
-    class HousingSale:Housing
+    class HousingSale
     {
     }
 }

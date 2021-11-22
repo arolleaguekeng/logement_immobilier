@@ -36,6 +36,25 @@
     <Reference Include="Guna.UI2, Version=2.0.2.4, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.4\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,11 +74,31 @@
     <Compile Include="fmExemple.Designer.cs">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="frmAddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddClient.Designer.cs">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+
+    </Compile>
     <Compile Include="frmClientRending.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmClientRending.Designer.cs">
       <DependentUpon>frmClientRending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacture.Designer.cs">
+      <DependentUpon>frmFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory.Designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
@@ -73,11 +112,23 @@
     <Compile Include="frmIndex.Designer.cs">
       <DependentUpon>frmIndex.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInfoHousing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoHousing.Designer.cs">
+      <DependentUpon>frmInfoHousing.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRenting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRenting.Designer.cs">
       <DependentUpon>frmRenting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowPicture.Designer.cs">
+      <DependentUpon>frmShowPicture.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,8 +141,19 @@
     <EmbeddedResource Include="fmExemple.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="frmAddClient.resx">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+
+    </EmbeddedResource>
     <EmbeddedResource Include="frmClientRending.resx">
       <DependentUpon>frmClientRending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacture.resx">
+      <DependentUpon>frmFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -99,27 +161,39 @@
     <EmbeddedResource Include="frmIndex.resx">
       <DependentUpon>frmIndex.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoHousing.resx">
+      <DependentUpon>frmInfoHousing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRenting.resx">
       <DependentUpon>frmRenting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmShowPicture.resx">
+      <DependentUpon>frmShowPicture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RpFacture.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\LogementImobilier.BLL.HousingManager.datasource" />
+    <None Include="Properties\DataSources\LogementImobilier.BO.Client.datasource" />
+    <None Include="Properties\DataSources\LogementImobilier.BO.Housing.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -140,10 +214,64 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wallpaper_meuble.jpg" />
+    <None Include="Resources\home_26px1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo_logeme2.png" />
+    <None Include="Resources\wallpaper_meuble1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_new_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_logeme21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_blue_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeF0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator_male_26px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_white_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_can_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historic_time_machine_26px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

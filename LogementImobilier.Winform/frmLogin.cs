@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LogementImobilier.BLL;
+using LogementImobilier.BO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,10 @@ namespace LogementImobilier.Winform
 {
     public partial class frmLogin : Form
     {
+
+        public static User user = null;
+        bool isLogin = true;
+        UserManager manager = new UserManager();
         public frmLogin()
         {
             InitializeComponent();
@@ -25,11 +31,44 @@ namespace LogementImobilier.Winform
         private void btnNext_Click(object sender, EventArgs e)
         {
             panelEmail.Visible = false;
+            panelPassword.Visible = true;
         }
 
         private void btnValidate_Click(object sender, EventArgs e)
         {
+            frmIndex index = new frmIndex();
+            this.Close();
+            index.Show();
+           
+            
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void bnt_back_Click(object sender, EventArgs e)
+        {
             panelEmail.Visible = true;
+            user = manager.LoginUser(tbEmail.Text, tbPassword.Text);
+            if (user != null)
+            {
+                MessageBox.Show($"Welcome {user.Name}", "Welcome message", MessageBoxButtons.OK);
+                var mainfrm = new frmHome();
+                mainfrm.Show();
+                if (!isLogin)
+                    Application.Exit();
+                this.Close();
+                return;
+            }
+            else
+            {
+                MessageBox.Show($"Email or password is invalid!", "Caution", MessageBoxButtons.OK);
+                return;
+            }
+
         }
     }
 }

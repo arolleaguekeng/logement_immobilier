@@ -30,6 +30,7 @@ namespace LogementImobilier.DAL
                 if (data.Equals(obj))
                     throw new DuplicateWaitObjectException($"{typeof(T)} already exits ! ");
             datas.Add(obj);
+            Save();
         }
 
 
@@ -73,14 +74,7 @@ namespace LogementImobilier.DAL
             if (fi.Exists && fi.Length > 0)
                 datas = serializer.Deserialize();
         }
-        public List<T> FindByName(string value)
-        {
-            List<T> list = new List<T>();
-            foreach (var data in datas)
-                if (data.Name.ToLower().Contains(value.ToLower()))
-                    list.Add(data);
-            return list;
-        }
+
         public List<T> GetAll()
         {
             T[] copy = new T[datas.Count];
