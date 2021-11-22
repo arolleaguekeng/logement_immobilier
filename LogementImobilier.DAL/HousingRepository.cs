@@ -16,7 +16,7 @@ namespace LogementImobilier.DAL
             )
         {
             var result = from h in datas
-                         where h.Location.Contains(location)&&(
+                         where h.Location.Contains(location)&& (
          h.Price == price || h.NumberExibition == numberExibition ||
          h.NumberKitchen == numberKitchen || h.NumberRoom == numberRoom ||
          h.NumberShower == numberShower || h.NumberStart == numberStars ||

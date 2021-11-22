@@ -505,7 +505,7 @@
             this.guna2Transition1.SetDecoration(this.panelMessage, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panelMessage.FillColor = System.Drawing.Color.Purple;
             this.panelMessage.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.panelMessage.Location = new System.Drawing.Point(707, -1);
+            this.panelMessage.Location = new System.Drawing.Point(707, 53);
             this.panelMessage.Name = "panelMessage";
             this.panelMessage.ShadowDecoration.Parent = this.panelMessage;
             this.panelMessage.Size = new System.Drawing.Size(345, 107);

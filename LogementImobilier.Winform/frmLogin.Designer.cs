@@ -29,9 +29,14 @@
         private void InitializeComponent()
         {
             this.panelEmail = new System.Windows.Forms.Panel();
+            this.lineName = new System.Windows.Forms.PictureBox();
             this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.tbEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelPassword = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bnt_back = new Guna.UI2.WinForms.Guna2GradientButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.tbPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnValidate = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
@@ -40,19 +45,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bnt_back = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.tbPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lineName = new System.Windows.Forms.PictureBox();
-            this.tbEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelEmail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
             this.panelPassword.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +66,15 @@
             this.panelEmail.Name = "panelEmail";
             this.panelEmail.Size = new System.Drawing.Size(376, 292);
             this.panelEmail.TabIndex = 0;
+            // 
+            // lineName
+            // 
+            this.lineName.BackColor = System.Drawing.Color.Black;
+            this.lineName.Location = new System.Drawing.Point(24, 78);
+            this.lineName.Name = "lineName";
+            this.lineName.Size = new System.Drawing.Size(336, 2);
+            this.lineName.TabIndex = 72;
+            this.lineName.TabStop = false;
             // 
             // btnNext
             // 
@@ -101,6 +110,36 @@
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
+            // tbEmail
+            // 
+            this.tbEmail.Animated = true;
+            this.tbEmail.BackColor = System.Drawing.Color.Red;
+            this.tbEmail.BorderColor = System.Drawing.Color.White;
+            this.tbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbEmail.DefaultText = "";
+            this.tbEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbEmail.DisabledState.Parent = this.tbEmail;
+            this.tbEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbEmail.FocusedState.Parent = this.tbEmail;
+            this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.ForeColor = System.Drawing.Color.Black;
+            this.tbEmail.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.tbEmail.HoverState.Parent = this.tbEmail;
+            this.tbEmail.IconLeft = global::LogementImobilier.Winform.Properties.Resources.administrator_male_26px;
+            this.tbEmail.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.tbEmail.Location = new System.Drawing.Point(24, 31);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(5);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PasswordChar = '\0';
+            this.tbEmail.PlaceholderText = "Enter your email";
+            this.tbEmail.SelectedText = "";
+            this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
+            this.tbEmail.Size = new System.Drawing.Size(336, 50);
+            this.tbEmail.TabIndex = 11;
+            // 
             // panelPassword
             // 
             this.panelPassword.Controls.Add(this.pictureBox1);
@@ -114,6 +153,50 @@
             this.panelPassword.Size = new System.Drawing.Size(376, 292);
             this.panelPassword.TabIndex = 13;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 78);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(336, 2);
+            this.pictureBox1.TabIndex = 73;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bnt_back
+            // 
+            this.bnt_back.Animated = true;
+            this.bnt_back.BackColor = System.Drawing.Color.Transparent;
+            this.bnt_back.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bnt_back.BorderRadius = 15;
+            this.bnt_back.BorderThickness = 2;
+            this.bnt_back.CheckedState.Parent = this.bnt_back;
+            this.bnt_back.CustomImages.Parent = this.bnt_back;
+            this.bnt_back.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bnt_back.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bnt_back.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bnt_back.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bnt_back.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bnt_back.DisabledState.Parent = this.bnt_back;
+            this.bnt_back.FillColor = System.Drawing.Color.Transparent;
+            this.bnt_back.FillColor2 = System.Drawing.Color.Transparent;
+            this.bnt_back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnt_back.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bnt_back.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.bnt_back.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
+            this.bnt_back.HoverState.ForeColor = System.Drawing.Color.White;
+            this.bnt_back.HoverState.Image = global::LogementImobilier.Winform.Properties.Resources.back_32px;
+            this.bnt_back.HoverState.Parent = this.bnt_back;
+            this.bnt_back.Image = global::LogementImobilier.Winform.Properties.Resources.back_blue_32px;
+            this.bnt_back.Location = new System.Drawing.Point(3, 241);
+            this.bnt_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bnt_back.Name = "bnt_back";
+            this.bnt_back.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bnt_back.ShadowDecoration.Depth = 5;
+            this.bnt_back.ShadowDecoration.Parent = this.bnt_back;
+            this.bnt_back.Size = new System.Drawing.Size(56, 49);
+            this.bnt_back.TabIndex = 15;
+            this.bnt_back.Click += new System.EventHandler(this.bnt_back_Click);
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -123,6 +206,35 @@
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot password";
+            // 
+            // tbPassword
+            // 
+            this.tbPassword.Animated = true;
+            this.tbPassword.BorderColor = System.Drawing.Color.White;
+            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbPassword.DefaultText = "";
+            this.tbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPassword.DisabledState.Parent = this.tbPassword;
+            this.tbPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbPassword.FocusedState.Parent = this.tbPassword;
+            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.tbPassword.HoverState.Parent = this.tbPassword;
+            this.tbPassword.IconLeft = global::LogementImobilier.Winform.Properties.Resources.password_26px;
+            this.tbPassword.IconRightSize = new System.Drawing.Size(40, 40);
+            this.tbPassword.Location = new System.Drawing.Point(20, 31);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '\0';
+            this.tbPassword.PlaceholderText = "Enter your password";
+            this.tbPassword.SelectedText = "";
+            this.tbPassword.ShadowDecoration.Parent = this.tbPassword;
+            this.tbPassword.Size = new System.Drawing.Size(336, 50);
+            this.tbPassword.TabIndex = 13;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // btnValidate
             // 
@@ -264,122 +376,10 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Login";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 78);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(336, 2);
-            this.pictureBox1.TabIndex = 73;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bnt_back
-            // 
-            this.bnt_back.Animated = true;
-            this.bnt_back.BackColor = System.Drawing.Color.Transparent;
-            this.bnt_back.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bnt_back.BorderRadius = 15;
-            this.bnt_back.BorderThickness = 2;
-            this.bnt_back.CheckedState.Parent = this.bnt_back;
-            this.bnt_back.CustomImages.Parent = this.bnt_back;
-            this.bnt_back.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bnt_back.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bnt_back.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bnt_back.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bnt_back.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bnt_back.DisabledState.Parent = this.bnt_back;
-            this.bnt_back.FillColor = System.Drawing.Color.Transparent;
-            this.bnt_back.FillColor2 = System.Drawing.Color.Transparent;
-            this.bnt_back.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnt_back.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bnt_back.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.bnt_back.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.bnt_back.HoverState.ForeColor = System.Drawing.Color.White;
-            this.bnt_back.HoverState.Image = global::LogementImobilier.Winform.Properties.Resources.back_32px;
-            this.bnt_back.HoverState.Parent = this.bnt_back;
-            this.bnt_back.Image = global::LogementImobilier.Winform.Properties.Resources.back_blue_32px;
-            this.bnt_back.Location = new System.Drawing.Point(3, 241);
-            this.bnt_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bnt_back.Name = "bnt_back";
-            this.bnt_back.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bnt_back.ShadowDecoration.Depth = 5;
-            this.bnt_back.ShadowDecoration.Parent = this.bnt_back;
-            this.bnt_back.Size = new System.Drawing.Size(56, 49);
-            this.bnt_back.TabIndex = 15;
-            this.bnt_back.Click += new System.EventHandler(this.bnt_back_Click);
-            // 
-            // tbPassword
-            // 
-            this.tbPassword.Animated = true;
-            this.tbPassword.BorderColor = System.Drawing.Color.White;
-            this.tbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbPassword.DefaultText = "";
-            this.tbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPassword.DisabledState.Parent = this.tbPassword;
-            this.tbPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbPassword.FocusedState.Parent = this.tbPassword;
-            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.HoverState.BorderColor = System.Drawing.Color.Purple;
-            this.tbPassword.HoverState.Parent = this.tbPassword;
-            this.tbPassword.IconLeft = global::LogementImobilier.Winform.Properties.Resources.password_26px;
-            this.tbPassword.IconRightSize = new System.Drawing.Size(40, 40);
-            this.tbPassword.Location = new System.Drawing.Point(20, 31);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '\0';
-            this.tbPassword.PlaceholderText = "Enter your password";
-            this.tbPassword.SelectedText = "";
-            this.tbPassword.ShadowDecoration.Parent = this.tbPassword;
-            this.tbPassword.Size = new System.Drawing.Size(336, 50);
-            this.tbPassword.TabIndex = 13;
-            this.tbPassword.UseSystemPasswordChar = true;
-            // 
-            // lineName
-            // 
-            this.lineName.BackColor = System.Drawing.Color.Black;
-            this.lineName.Location = new System.Drawing.Point(24, 78);
-            this.lineName.Name = "lineName";
-            this.lineName.Size = new System.Drawing.Size(336, 2);
-            this.lineName.TabIndex = 72;
-            this.lineName.TabStop = false;
-            // 
-            // tbEmail
-            // 
-            this.tbEmail.Animated = true;
-            this.tbEmail.BackColor = System.Drawing.Color.Red;
-            this.tbEmail.BorderColor = System.Drawing.Color.White;
-            this.tbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbEmail.DefaultText = "";
-            this.tbEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbEmail.DisabledState.Parent = this.tbEmail;
-            this.tbEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbEmail.FocusedState.Parent = this.tbEmail;
-            this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEmail.ForeColor = System.Drawing.Color.Black;
-            this.tbEmail.HoverState.BorderColor = System.Drawing.Color.Purple;
-            this.tbEmail.HoverState.Parent = this.tbEmail;
-            this.tbEmail.IconLeft = global::LogementImobilier.Winform.Properties.Resources.administrator_male_26px;
-            this.tbEmail.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.tbEmail.Location = new System.Drawing.Point(24, 31);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.PasswordChar = '\0';
-            this.tbEmail.PlaceholderText = "Enter your email";
-            this.tbEmail.SelectedText = "";
-            this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
-            this.tbEmail.Size = new System.Drawing.Size(336, 50);
-            this.tbEmail.TabIndex = 11;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
+            this.pictureBox2.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1233, 581);
@@ -406,15 +406,15 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.panelEmail.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
             this.panelPassword.ResumeLayout(false);
             this.panelPassword.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 

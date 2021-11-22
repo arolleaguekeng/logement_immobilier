@@ -113,6 +113,26 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bambu {
+            get {
+                object obj = ResourceManager.GetObject("bambu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bambu1 {
+            get {
+                object obj = ResourceManager.GetObject("bambu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_32px {
             get {
                 object obj = ResourceManager.GetObject("edit_32px", resourceCulture);
@@ -236,6 +256,16 @@ namespace LogementImobilier.Winform.Properties {
         internal static System.Drawing.Bitmap wallpaper_meuble {
             get {
                 object obj = ResourceManager.GetObject("wallpaper_meuble", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper_meuble1 {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper_meuble1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

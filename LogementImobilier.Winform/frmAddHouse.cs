@@ -92,7 +92,6 @@ namespace LogementImobilier.Winform
                 var a = File.ReadAllBytes(openFile.FileName);
                 HousingPicture picture = new HousingPicture();
                 pictureManager.AddPicture(openFile.FileName, Path);
-                MessageBox.Show(openFile.SafeFileName);
                 lbItems.Text = LiPicture.Count().ToString();
                 box = new PictureBox();
                 picture = new HousingPicture(File.ReadAllBytes(openFile.FileName), openFile.FileName);
@@ -102,11 +101,11 @@ namespace LogementImobilier.Winform
                 box.SizeMode = PictureBoxSizeMode.StretchImage;
                 box.TabStop = false;
                 box.ImageLocation = Path;
-
                 this.box.DoubleClick += new System.EventHandler(this.box_DoubleClick);
                 //box.BackColor = Color.Black;
                 panelPicture.Controls.Add(box);
                 LiPicture.Add(picture);
+
             }
         }
         

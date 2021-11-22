@@ -22,12 +22,15 @@ namespace LogementImobilier.Winform
         Guna2RatingStar star;
         Guna2Button more;
         List<Housing> housings;
+        List<Housing> SeachinHousing;
         FlowLayoutPanel layoutPanel;
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
         public frmRenting()
         {
-          
+
+
             InitializeComponent();
+            SeachinHousing = new List<Housing>();
             housing = new HousingManager();
             frmHome frmHome = new frmHome();
             housings = housing.GetAllHousing();
@@ -36,8 +39,15 @@ namespace LogementImobilier.Winform
 
         private void frmRenting_Load(object sender, EventArgs e)
         {
+            //cbbLocation.SelectedIndex = 0;
+            ShowHousings(housings);
+
+        }
+
+        private void ShowHousings(List<Housing> housings)
+        {
             int n = 0;
-            foreach(var house in housings)
+            foreach (var house in housings)
             {
                 string name = $"label{n++}";
                 string nameButton = $"button{n++}";
@@ -64,21 +74,15 @@ namespace LogementImobilier.Winform
 
                 //affichage de la description
 
-                NewLabel(house,name,house.Name);
-                NewLabel(house,name,house.Location);
-                NewLabel(house,name,"Room:     "+house.NumberRoom.ToString());
-                NewLabel(house,name,"SHW:      "+house.NumberShower.ToString());
+                NewLabel(house, name, house.Name);
+                NewLabel(house, name, house.Location);
+                NewLabel(house, name, "Room:     " + house.NumberRoom.ToString());
+                NewLabel(house, name, "SHW:      " + house.NumberShower.ToString());
                 NewLabel(house, name, "Price:  " + house.Price.ToString());
-                NewLabel(house,name, "Use:     " + house.Used.ToString());
+                NewLabel(house, name, "Use:     " + house.Used.ToString());
 
 
                 //affichage de l'image d'icone de la maison dans 
-
-
-
-
-
-
 
 
 
@@ -89,7 +93,6 @@ namespace LogementImobilier.Winform
                 star.Name = "starNotation";
                 star.RatingColor = System.Drawing.Color.Gold;
                 //star.Size = new System.Drawing.Size(124, 33);
-
 
 
 
@@ -104,9 +107,8 @@ namespace LogementImobilier.Winform
 
 
             }
-
-
         }
+
         private void more_Click(object sender, EventArgs e)
         {
             Guna2Button more = (Guna2Button)sender;
@@ -154,11 +156,21 @@ namespace LogementImobilier.Winform
 
         private void FindShow()
         {
-            housings = housing.GetAllHousing();
-            housings = housing.Search(cbbLocation.SelectedItem.ToString(), (int)nudExibition.Value, (int)nudKitchens.Value,
-                (int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
-            //ShowLvHousing();
+            SeachinHousing = housing.GetAllHousing();
+            try
+            {
+                SeachinHousing = housing.Search(cbbLocation.SelectedItem.ToString(), (int)nudExibition.Value, (int)nudKitchens.Value,
+                    (int)nudRooms.Value, (int)nudShowers.Value, chbParking.Checked, chbTerasse.Checked, nudPrice.Value, btnStars.Value);
+                panelcontein.Controls.Clear();
+                ShowHousings(SeachinHousing);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, ex.Source);
+            }
+
         }
+
 
         //private void ShowLvHousing()
         //{

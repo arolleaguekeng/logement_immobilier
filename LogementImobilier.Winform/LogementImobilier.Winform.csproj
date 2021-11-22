@@ -128,6 +128,12 @@
     <Compile Include="frmShowPicture.Designer.cs">
       <DependentUpon>frmShowPicture.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmLogin.cs">
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmShowPicture.resx">
       <DependentUpon>frmShowPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -268,6 +277,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\historic_time_machine_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper_meuble1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bambu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bambu1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
