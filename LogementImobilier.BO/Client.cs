@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace LogementImobilier.BO
 {
-    class Client : BaseModel
+    public class Client : BaseModel
     {
-        
+        public int PhoneNumber { get; set; }
+        public string  Location { get; set; }
+
+
     }
 }

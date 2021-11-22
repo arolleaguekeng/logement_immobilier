@@ -11,9 +11,6 @@ namespace LogementImobilier.BLL
     public class HousingManager
     {
         public HousingRepository housinRepository;
-        public Dictionary<int,string> levelItems;
-        public Dictionary<int,string> levelHousing;
-        public Dictionary<int, string> levelLocation;
 
         public HousingManager()
         {
@@ -31,16 +28,51 @@ namespace LogementImobilier.BLL
         {
             housinRepository.Delete(housing);
         }
-        public void GetAllHousing()
+        public List<Housing> GetAllHousing()
         {
-            housinRepository.GetAll();
+            return housinRepository.GetAll();
         }
         public decimal CalculSurface(decimal longs, decimal larg)
         {
             return (longs * larg );
         }
 
+        public List<Housing> Search( string location, int numberExibition, int numberKitchen, int numberRoom, int numberShower, bool parking, bool terasse, decimal price, float numberStars)
+        {
+            return housinRepository.Find(location,numberExibition,numberKitchen,numberRoom,
+                                                numberShower,parking,terasse,price,numberStars);
+        }
 
 
+
+
+        public List<Housing> SearchName(string name)
+        {
+            return housinRepository.FindByName(name);
+        }
+
+
+        public decimal CalculPrice(int numberRoom, int numberKitchens, int levelOfHousing, int numberExhibition, int numberShower, int duration,int level)
+        {
+            return ((numberRoom * 2000) + (numberShower * 3000) + (numberKitchens * 3000) + 
+                    (levelOfHousing * 5000) + ((numberExhibition * 15000)) * duration+(level*1000));
+
+        }
+
+        public void Rending(Housing housing, Housing rentingHousing)
+        {
+            if (housing.Used == false)
+                housing.Used = true;
+            housinRepository.Set(housing, rentingHousing);
+        }
+
+        public void EndRending(Housing housing, Housing newHousing, DateTime endRendingDate)
+        {
+            if (housing.Used == true)
+            {
+                housing.Used = false;
+                housinRepository.Set(housing, newHousing);
+            }
+        }
     }
 }
