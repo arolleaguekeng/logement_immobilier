@@ -94,10 +94,8 @@
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-
             this.guna2GradientButton1.Location = new System.Drawing.Point(20, 498);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2GradientButton1.ShadowDecoration.Depth = 5;
@@ -122,7 +120,6 @@
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-
             this.guna2TextBox1.Location = new System.Drawing.Point(20, 194);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox1.Name = "guna2TextBox1";
@@ -150,10 +147,8 @@
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-
             this.guna2TextBox2.Location = new System.Drawing.Point(20, 113);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5);
-
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "ECRIRE UN TEXTE ICI";
@@ -165,7 +160,6 @@
             // guna2TrackBar1
             // 
             this.guna2TrackBar1.HoverState.Parent = this.guna2TrackBar1;
-
             this.guna2TrackBar1.Location = new System.Drawing.Point(727, 262);
             this.guna2TrackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2TrackBar1.Name = "guna2TrackBar1";
@@ -178,7 +172,6 @@
             this.guna2VScrollBar1.HoverState.Parent = null;
             this.guna2VScrollBar1.InUpdate = false;
             this.guna2VScrollBar1.LargeChange = 10;
-
             this.guna2VScrollBar1.Location = new System.Drawing.Point(545, -31);
             this.guna2VScrollBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
@@ -194,7 +187,6 @@
             this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-
             this.guna2ToggleSwitch1.Location = new System.Drawing.Point(727, 433);
             this.guna2ToggleSwitch1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
@@ -209,7 +201,6 @@
             // 
             // guna2RatingStar1
             // 
-
             this.guna2RatingStar1.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2RatingStar1.Location = new System.Drawing.Point(727, 386);
             this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -227,7 +218,6 @@
             this.guna2NumericUpDown1.FocusedState.Parent = this.guna2NumericUpDown1;
             this.guna2NumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2NumericUpDown1.ForeColor = System.Drawing.Color.Black;
-
             this.guna2NumericUpDown1.Location = new System.Drawing.Point(20, 262);
             this.guna2NumericUpDown1.Margin = new System.Windows.Forms.Padding(5);
             this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
@@ -248,7 +238,6 @@
             this.guna2RadioButton1.CheckedState.InnerOffset = -4;
             this.guna2RadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.guna2RadioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
             this.guna2RadioButton1.Location = new System.Drawing.Point(20, 338);
             this.guna2RadioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2RadioButton1.Name = "guna2RadioButton1";
@@ -269,7 +258,6 @@
             this.guna2RadialGauge1.ForeColor = System.Drawing.Color.Purple;
             this.guna2RadialGauge1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2RadialGauge1.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
-
             this.guna2RadialGauge1.Location = new System.Drawing.Point(781, 33);
             this.guna2RadialGauge1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2RadialGauge1.MinimumSize = new System.Drawing.Size(29, 30);
@@ -282,7 +270,6 @@
             // 
             // guna2ProgressIndicator1
             // 
-
             this.guna2ProgressIndicator1.Location = new System.Drawing.Point(727, 290);
             this.guna2ProgressIndicator1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ProgressIndicator1.Name = "guna2ProgressIndicator1";
@@ -302,7 +289,6 @@
             this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(20, 583);
             this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -335,7 +321,6 @@
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemsAppearance.SelectedBackColor = System.Drawing.Color.Purple;
             this.guna2ComboBox1.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-
             this.guna2ComboBox1.Location = new System.Drawing.Point(23, 418);
             this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
@@ -347,7 +332,6 @@
             // 
             this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
-
             this.guna2CircleProgressBar1.InnerColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2CircleProgressBar1.Location = new System.Drawing.Point(727, 514);
             this.guna2CircleProgressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -370,7 +354,6 @@
             this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.Purple;
             this.guna2CheckBox1.CheckMarkColor = System.Drawing.Color.Purple;
             this.guna2CheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
             this.guna2CheckBox1.Location = new System.Drawing.Point(23, 373);
             this.guna2CheckBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CheckBox1.Name = "guna2CheckBox1";
@@ -394,7 +377,6 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-
             this.listView1.Location = new System.Drawing.Point(23, 658);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
@@ -438,7 +420,6 @@
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fmExemple";
