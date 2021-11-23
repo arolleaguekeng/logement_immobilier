@@ -76,5 +76,10 @@ namespace LogementImobilier.Winform
                 n = 0;
             }
         }
+
+        private void btnExpend_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+        }
     }
 }

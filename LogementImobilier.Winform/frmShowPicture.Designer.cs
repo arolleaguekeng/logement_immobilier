@@ -41,6 +41,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Animated = true;
             this.btnClose.CheckedState.Parent = this.btnClose;
             this.btnClose.CustomImages.Parent = this.btnClose;
@@ -54,7 +55,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Location = new System.Drawing.Point(753, 1);
+            this.btnClose.Location = new System.Drawing.Point(755, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
             this.btnClose.Size = new System.Drawing.Size(46, 43);
@@ -69,6 +70,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button2.Animated = true;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
@@ -81,7 +83,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(705, 1);
+            this.guna2Button2.Location = new System.Drawing.Point(707, 0);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(48, 43);
@@ -121,6 +123,7 @@
             this.btnExpend.ShadowDecoration.Parent = this.btnExpend;
             this.btnExpend.Size = new System.Drawing.Size(54, 41);
             this.btnExpend.TabIndex = 79;
+            this.btnExpend.Click += new System.EventHandler(this.btnExpend_Click);
             // 
             // guna2GradientButton1
             // 
@@ -212,7 +215,7 @@
             this.btnNext.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnNext.HoverState.Parent = this.btnNext;
             this.btnNext.Image = global::LogementImobilier.Winform.Properties.Resources.forward_26px;
-            this.btnNext.Location = new System.Drawing.Point(734, 205);
+            this.btnNext.Location = new System.Drawing.Point(746, 205);
             this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
             this.btnNext.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -246,7 +249,7 @@
             this.btnPreview.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnPreview.HoverState.Parent = this.btnPreview;
             this.btnPreview.Image = global::LogementImobilier.Winform.Properties.Resources.back_26px;
-            this.btnPreview.Location = new System.Drawing.Point(7, 205);
+            this.btnPreview.Location = new System.Drawing.Point(0, 205);
             this.btnPreview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -272,6 +275,7 @@
             this.Name = "frmShowPicture";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmShowPicture";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmShowPicture_Load);
             this.ResumeLayout(false);
 

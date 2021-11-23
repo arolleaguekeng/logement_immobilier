@@ -86,6 +86,12 @@
     <Compile Include="frmClientRending.Designer.cs">
       <DependentUpon>frmClientRending.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditHousing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditHousing.Designer.cs">
+      <DependentUpon>frmEditHousing.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFacture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientRending.resx">
       <DependentUpon>frmClientRending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditHousing.resx">
+      <DependentUpon>frmEditHousing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFacture.resx">
       <DependentUpon>frmFacture.cs</DependentUpon>

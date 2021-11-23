@@ -18,7 +18,6 @@ namespace LogementImobilier.Winform
     {
         HousingManager housing;
         Label description;
-        PictureBox icon;
         Guna2RatingStar star;
         Guna2Button more;
         List<Housing> housings;
@@ -34,16 +33,21 @@ namespace LogementImobilier.Winform
             housing = new HousingManager();
             frmHome frmHome = new frmHome();
             housings = housing.GetAllHousing();
+            ShowHousings(housings);
             // ShowLvHousing();
         }
 
         private void frmRenting_Load(object sender, EventArgs e)
         {
             //cbbLocation.SelectedIndex = 0;
-            ShowHousings(housings);
+           
 
         }
 
+        private void layoutPanel_MouseUp(object sender, EventArgs e)
+        {
+            layoutPanel.BackColor = Color.LightSkyBlue;
+        }
         private void ShowHousings(List<Housing> housings)
         {
             int n = 0;
@@ -55,7 +59,9 @@ namespace LogementImobilier.Winform
                 var Picture = new PictureBox();
                 layoutPanel = new FlowLayoutPanel();
                 layoutPanel.BorderStyle = BorderStyle.FixedSingle;
-                layoutPanel.Size = new Size(180, 350);
+                layoutPanel.Size = new Size(170, 320);
+                layoutPanel.Cursor = Cursors.Hand;
+                layoutPanel.MouseUp += new MouseEventHandler(layoutPanel_MouseUp);
 
                 panelcontein.Controls.Add(layoutPanel);
                 Picture = new PictureBox();
@@ -66,11 +72,8 @@ namespace LogementImobilier.Winform
                 Picture.TabStop = false;
                 Picture.ImageLocation = house.HousingPitctures[0].Title;
                 Picture.BackColor = Color.Black;
+                
                 layoutPanel.Controls.Add(Picture);
-
-
-
-
 
                 //affichage de la description
 
@@ -103,11 +106,13 @@ namespace LogementImobilier.Winform
                 more.Text = "More";
                 more.Name = nameButton;
                 more.Click += new System.EventHandler(more_Click);
+
                 more.Tag = house;
 
 
             }
         }
+
 
         private void more_Click(object sender, EventArgs e)
         {

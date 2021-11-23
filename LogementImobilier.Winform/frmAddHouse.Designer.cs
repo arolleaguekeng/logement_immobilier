@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
             this.label10 = new System.Windows.Forms.Label();
             this.nudShowers = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.cbbLocation = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -71,8 +69,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
@@ -92,7 +88,6 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(498, 52);
@@ -106,7 +101,6 @@
             this.nudShowers.BackColor = System.Drawing.Color.Transparent;
             this.nudShowers.BorderRadius = 8;
             this.nudShowers.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.nudShowers, Guna.UI2.AnimatorNS.DecorationType.None);
             this.nudShowers.DisabledState.Parent = this.nudShowers;
             this.nudShowers.FocusedState.Parent = this.nudShowers;
             this.nudShowers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -124,7 +118,6 @@
             // 
             this.cbbLocation.BackColor = System.Drawing.Color.Transparent;
             this.cbbLocation.BorderColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.cbbLocation, Guna.UI2.AnimatorNS.DecorationType.None);
             this.cbbLocation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbbLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbLocation.FocusedColor = System.Drawing.Color.Purple;
@@ -159,7 +152,6 @@
             this.nudRooms.BackColor = System.Drawing.Color.Transparent;
             this.nudRooms.BorderRadius = 8;
             this.nudRooms.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.nudRooms, Guna.UI2.AnimatorNS.DecorationType.None);
             this.nudRooms.DisabledState.Parent = this.nudRooms;
             this.nudRooms.FocusedState.Parent = this.nudRooms;
             this.nudRooms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,7 +168,6 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(506, 208);
@@ -188,7 +179,6 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(814, 46);
@@ -200,7 +190,6 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(507, 124);
@@ -212,7 +201,6 @@
             // starNotation
             // 
             this.starNotation.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2Transition1.SetDecoration(this.starNotation, Guna.UI2.AnimatorNS.DecorationType.None);
             this.starNotation.Location = new System.Drawing.Point(510, 318);
             this.starNotation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.starNotation.Name = "starNotation";
@@ -225,7 +213,6 @@
             this.nudExibition.BackColor = System.Drawing.Color.Transparent;
             this.nudExibition.BorderRadius = 8;
             this.nudExibition.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.nudExibition, Guna.UI2.AnimatorNS.DecorationType.None);
             this.nudExibition.DisabledState.Parent = this.nudExibition;
             this.nudExibition.FocusedState.Parent = this.nudExibition;
             this.nudExibition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -242,7 +229,6 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label8, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(641, 119);
@@ -256,7 +242,6 @@
             this.nudKitchen.BackColor = System.Drawing.Color.Transparent;
             this.nudKitchen.BorderRadius = 8;
             this.nudKitchen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.nudKitchen, Guna.UI2.AnimatorNS.DecorationType.None);
             this.nudKitchen.DisabledState.Parent = this.nudKitchen;
             this.nudKitchen.FocusedState.Parent = this.nudKitchen;
             this.nudKitchen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -272,7 +257,6 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(495, 293);
@@ -287,7 +271,6 @@
             this.tbId.BackColor = System.Drawing.Color.Transparent;
             this.tbId.BorderColor = System.Drawing.Color.White;
             this.tbId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.tbId, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tbId.DefaultText = "";
             this.tbId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -318,7 +301,6 @@
             this.tbName.BackColor = System.Drawing.Color.Transparent;
             this.tbName.BorderColor = System.Drawing.Color.White;
             this.tbName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.tbName, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tbName.DefaultText = "";
             this.tbName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.tbName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -351,8 +333,8 @@
             this.btnSave.BorderRadius = 15;
             this.btnSave.BorderThickness = 2;
             this.btnSave.CheckedState.Parent = this.btnSave;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.CustomImages.Parent = this.btnSave;
-            this.guna2Transition1.SetDecoration(this.btnSave, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -388,7 +370,6 @@
             this.chbTerasse.CheckedState.BorderThickness = 0;
             this.chbTerasse.CheckedState.FillColor = System.Drawing.Color.Purple;
             this.chbTerasse.CheckMarkColor = System.Drawing.Color.Purple;
-            this.guna2Transition1.SetDecoration(this.chbTerasse, Guna.UI2.AnimatorNS.DecorationType.None);
             this.chbTerasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbTerasse.Location = new System.Drawing.Point(676, 327);
             this.chbTerasse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -412,7 +393,6 @@
             this.chbParking.CheckedState.BorderThickness = 0;
             this.chbParking.CheckedState.FillColor = System.Drawing.Color.Purple;
             this.chbParking.CheckMarkColor = System.Drawing.Color.Purple;
-            this.guna2Transition1.SetDecoration(this.chbParking, Guna.UI2.AnimatorNS.DecorationType.None);
             this.chbParking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbParking.Location = new System.Drawing.Point(807, 327);
             this.chbParking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -429,7 +409,6 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(267, 484);
             this.label5.Name = "label5";
@@ -440,7 +419,6 @@
             // lbPrice
             // 
             this.lbPrice.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.lbPrice, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.ForeColor = System.Drawing.Color.Purple;
             this.lbPrice.Location = new System.Drawing.Point(459, 484);
@@ -454,7 +432,6 @@
             this.nudLevel.BackColor = System.Drawing.Color.Transparent;
             this.nudLevel.BorderRadius = 8;
             this.nudLevel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2Transition1.SetDecoration(this.nudLevel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.nudLevel.DisabledState.Parent = this.nudLevel;
             this.nudLevel.FocusedState.Parent = this.nudLevel;
             this.nudLevel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -471,7 +448,6 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(642, 208);
@@ -487,7 +463,6 @@
             this.guna2ShadowPanel1.Controls.Add(this.panelMessage);
             this.guna2ShadowPanel1.Controls.Add(this.guna2ShadowPanel2);
             this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
-            this.guna2Transition1.SetDecoration(this.guna2ShadowPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 0);
@@ -502,7 +477,6 @@
             this.panelMessage.Controls.Add(this.pictureBox4);
             this.panelMessage.Controls.Add(this.btnClosePanel);
             this.panelMessage.Controls.Add(this.lbMessages);
-            this.guna2Transition1.SetDecoration(this.panelMessage, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panelMessage.FillColor = System.Drawing.Color.Purple;
             this.panelMessage.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.panelMessage.Location = new System.Drawing.Point(707, 53);
@@ -514,7 +488,6 @@
             // 
             // pictureBox4
             // 
-            this.guna2Transition1.SetDecoration(this.pictureBox4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox4.Image = global::LogementImobilier.Winform.Properties.Resources.notification_26px;
             this.pictureBox4.Location = new System.Drawing.Point(3, 1);
             this.pictureBox4.Name = "pictureBox4";
@@ -528,7 +501,6 @@
             this.btnClosePanel.Animated = true;
             this.btnClosePanel.CheckedState.Parent = this.btnClosePanel;
             this.btnClosePanel.CustomImages.Parent = this.btnClosePanel;
-            this.guna2Transition1.SetDecoration(this.btnClosePanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnClosePanel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnClosePanel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClosePanel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -551,7 +523,6 @@
             // 
             this.lbMessages.AutoSize = true;
             this.lbMessages.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.lbMessages, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMessages.ForeColor = System.Drawing.Color.White;
             this.lbMessages.Location = new System.Drawing.Point(61, 26);
@@ -594,7 +565,6 @@
             this.guna2ShadowPanel2.Controls.Add(this.label7);
             this.guna2ShadowPanel2.Controls.Add(this.btnSave);
             this.guna2ShadowPanel2.Controls.Add(this.label10);
-            this.guna2Transition1.SetDecoration(this.guna2ShadowPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(77, 50);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
@@ -608,7 +578,6 @@
             // 
             this.panelPicture.AutoScroll = true;
             this.panelPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.guna2Transition1.SetDecoration(this.panelPicture, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panelPicture.Location = new System.Drawing.Point(32, 210);
             this.panelPicture.Name = "panelPicture";
             this.panelPicture.Size = new System.Drawing.Size(442, 213);
@@ -617,7 +586,6 @@
             // lbItems
             // 
             this.lbItems.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.lbItems, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lbItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbItems.Location = new System.Drawing.Point(413, 426);
             this.lbItems.Name = "lbItems";
@@ -633,8 +601,8 @@
             this.btnRemovePicture.BorderRadius = 15;
             this.btnRemovePicture.BorderThickness = 2;
             this.btnRemovePicture.CheckedState.Parent = this.btnRemovePicture;
+            this.btnRemovePicture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemovePicture.CustomImages.Parent = this.btnRemovePicture;
-            this.guna2Transition1.SetDecoration(this.btnRemovePicture, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnRemovePicture.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRemovePicture.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRemovePicture.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -667,8 +635,8 @@
             this.btnAddpicture.BorderRadius = 15;
             this.btnAddpicture.BorderThickness = 2;
             this.btnAddpicture.CheckedState.Parent = this.btnAddpicture;
+            this.btnAddpicture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddpicture.CustomImages.Parent = this.btnAddpicture;
-            this.guna2Transition1.SetDecoration(this.btnAddpicture, Guna.UI2.AnimatorNS.DecorationType.None);
             this.btnAddpicture.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddpicture.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddpicture.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -697,7 +665,6 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.guna2Transition1.SetDecoration(this.pictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox2.Location = new System.Drawing.Point(512, 114);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(282, 2);
@@ -707,7 +674,6 @@
             // lineName
             // 
             this.lineName.BackColor = System.Drawing.Color.Black;
-            this.guna2Transition1.SetDecoration(this.lineName, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lineName.Location = new System.Drawing.Point(29, 160);
             this.lineName.Name = "lineName";
             this.lineName.Size = new System.Drawing.Size(282, 2);
@@ -717,7 +683,6 @@
             // lineId
             // 
             this.lineId.BackColor = System.Drawing.Color.Black;
-            this.guna2Transition1.SetDecoration(this.lineId, Guna.UI2.AnimatorNS.DecorationType.None);
             this.lineId.Location = new System.Drawing.Point(27, 109);
             this.lineId.Name = "lineId";
             this.lineId.Size = new System.Drawing.Size(282, 2);
@@ -728,7 +693,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.label6);
-            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -738,7 +702,6 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(425, 7);
@@ -750,7 +713,6 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.linkLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.Location = new System.Drawing.Point(564, 383);
             this.linkLabel1.Name = "linkLabel1";
@@ -762,7 +724,6 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.guna2Transition1.SetDecoration(this.label9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(24, 178);
@@ -773,7 +734,6 @@
             // 
             // pictureBox1
             // 
-            this.guna2Transition1.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -788,39 +748,16 @@
             this.timer1.Interval = 4000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
-            this.guna2Transition1.TimeStep = 11F;
-            // 
             // frmAddHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 584);
             this.Controls.Add(this.guna2ShadowPanel1);
-            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddHouse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmAddHouse";
-            ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
+            this.Text = "frmAddHouse";            ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
@@ -870,8 +807,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox lineName;
         private System.Windows.Forms.PictureBox lineId;

@@ -51,19 +51,20 @@ namespace LogementImobilier.Winform
                 boxSingle.SizeMode = PictureBoxSizeMode.StretchImage;
                 boxSingle.TabStop = false;
                 boxSingle.ImageLocation = pic.Title;
+                boxSingle.Cursor = Cursors.Hand;
                 panelRight.Controls.Add(boxSingle);
-                this.boxSingle.DoubleClick += new System.EventHandler(this.boxSingle_DoubleClick);
+
+                this.boxSingle.Click += new System.EventHandler(this.boxSingle_Click);
                 //box.BackColor = Color.Black;
                 
             }
             Program.picture = images;
         }
-        private void boxSingle_DoubleClick(object sender, EventArgs e)
+        private void boxSingle_Click(object sender, EventArgs e)
         {
             frmShowPicture showPicture = new frmShowPicture();
             showPicture.Show();
         }
-
             private void btnCose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -74,6 +75,11 @@ namespace LogementImobilier.Winform
         {
             frmFacture facture = new frmFacture();
             facture.Show();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

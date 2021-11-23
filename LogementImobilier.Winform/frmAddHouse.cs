@@ -101,7 +101,8 @@ namespace LogementImobilier.Winform
                 box.SizeMode = PictureBoxSizeMode.StretchImage;
                 box.TabStop = false;
                 box.ImageLocation = Path;
-                this.box.DoubleClick += new System.EventHandler(this.box_DoubleClick);
+                box.Cursor = Cursors.Hand;
+                this.box.Click += new System.EventHandler(this.box_Click);
                 //box.BackColor = Color.Black;
                 panelPicture.Controls.Add(box);
                 LiPicture.Add(picture);
@@ -109,7 +110,7 @@ namespace LogementImobilier.Winform
             }
         }
         
-        private void box_DoubleClick(object sender, EventArgs e)
+        private void box_Click(object sender, EventArgs e)
         {
 
             //for(int i= 0 ; i<LiPicture.Count; i++ ) 
@@ -139,6 +140,7 @@ namespace LogementImobilier.Winform
         {
 
         }
+
 
 
 
