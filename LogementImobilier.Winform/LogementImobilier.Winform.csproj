@@ -74,11 +74,13 @@
     <Compile Include="fmExemple.Designer.cs">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddHouse.cs">
+
+    <Compile Include="frmAddClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddHouse.Designer.cs">
-      <DependentUpon>frmAddHouse.cs</DependentUpon>
+    <Compile Include="frmAddClient.Designer.cs">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+
     </Compile>
     <Compile Include="frmClientRending.cs">
       <SubType>Form</SubType>
@@ -151,8 +153,10 @@
     <EmbeddedResource Include="fmExemple.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddHouse.resx">
-      <DependentUpon>frmAddHouse.cs</DependentUpon>
+
+    <EmbeddedResource Include="frmAddClient.resx">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientRending.resx">
       <DependentUpon>frmClientRending.cs</DependentUpon>
