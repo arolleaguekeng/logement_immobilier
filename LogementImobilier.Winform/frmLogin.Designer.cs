@@ -61,18 +61,18 @@
             this.panelEmail.Controls.Add(this.lineName);
             this.panelEmail.Controls.Add(this.btnNext);
             this.panelEmail.Controls.Add(this.tbEmail);
-            this.panelEmail.Location = new System.Drawing.Point(87, 145);
-            this.panelEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.panelEmail.Location = new System.Drawing.Point(65, 118);
             this.panelEmail.Name = "panelEmail";
-            this.panelEmail.Size = new System.Drawing.Size(376, 292);
+            this.panelEmail.Size = new System.Drawing.Size(282, 237);
             this.panelEmail.TabIndex = 0;
             // 
             // lineName
             // 
             this.lineName.BackColor = System.Drawing.Color.Black;
-            this.lineName.Location = new System.Drawing.Point(24, 78);
+            this.lineName.Location = new System.Drawing.Point(18, 63);
+            this.lineName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lineName.Name = "lineName";
-            this.lineName.Size = new System.Drawing.Size(336, 2);
+            this.lineName.Size = new System.Drawing.Size(252, 2);
             this.lineName.TabIndex = 72;
             this.lineName.TabStop = false;
             // 
@@ -99,13 +99,13 @@
             this.btnNext.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnNext.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnNext.HoverState.Parent = this.btnNext;
-            this.btnNext.Location = new System.Drawing.Point(103, 135);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Location = new System.Drawing.Point(77, 110);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNext.Name = "btnNext";
             this.btnNext.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnNext.ShadowDecoration.Depth = 5;
             this.btnNext.ShadowDecoration.Parent = this.btnNext;
-            this.btnNext.Size = new System.Drawing.Size(179, 49);
+            this.btnNext.Size = new System.Drawing.Size(134, 40);
             this.btnNext.TabIndex = 12;
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
@@ -130,14 +130,14 @@
             this.tbEmail.HoverState.Parent = this.tbEmail;
             this.tbEmail.IconLeft = global::LogementImobilier.Winform.Properties.Resources.administrator_male_26px;
             this.tbEmail.IconLeftSize = new System.Drawing.Size(30, 30);
-            this.tbEmail.Location = new System.Drawing.Point(24, 31);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(5);
+            this.tbEmail.Location = new System.Drawing.Point(18, 25);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.PasswordChar = '\0';
             this.tbEmail.PlaceholderText = "Enter your email";
             this.tbEmail.SelectedText = "";
             this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
-            this.tbEmail.Size = new System.Drawing.Size(336, 50);
+            this.tbEmail.Size = new System.Drawing.Size(252, 41);
             this.tbEmail.TabIndex = 11;
             // 
             // panelPassword
@@ -147,18 +147,18 @@
             this.panelPassword.Controls.Add(this.linkLabel1);
             this.panelPassword.Controls.Add(this.tbPassword);
             this.panelPassword.Controls.Add(this.btnValidate);
-            this.panelPassword.Location = new System.Drawing.Point(87, 145);
-            this.panelPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.panelPassword.Location = new System.Drawing.Point(65, 118);
             this.panelPassword.Name = "panelPassword";
-            this.panelPassword.Size = new System.Drawing.Size(376, 292);
+            this.panelPassword.Size = new System.Drawing.Size(282, 237);
             this.panelPassword.TabIndex = 13;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 78);
+            this.pictureBox1.Location = new System.Drawing.Point(15, 63);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(336, 2);
+            this.pictureBox1.Size = new System.Drawing.Size(252, 2);
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
             // 
@@ -187,22 +187,23 @@
             this.bnt_back.HoverState.Image = global::LogementImobilier.Winform.Properties.Resources.back_32px;
             this.bnt_back.HoverState.Parent = this.bnt_back;
             this.bnt_back.Image = global::LogementImobilier.Winform.Properties.Resources.back_blue_32px;
-            this.bnt_back.Location = new System.Drawing.Point(3, 241);
-            this.bnt_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bnt_back.Location = new System.Drawing.Point(2, 196);
+            this.bnt_back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bnt_back.Name = "bnt_back";
             this.bnt_back.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bnt_back.ShadowDecoration.Depth = 5;
             this.bnt_back.ShadowDecoration.Parent = this.bnt_back;
-            this.bnt_back.Size = new System.Drawing.Size(56, 49);
+            this.bnt_back.Size = new System.Drawing.Size(42, 40);
             this.bnt_back.TabIndex = 15;
             this.bnt_back.Click += new System.EventHandler(this.bnt_back_Click);
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(21, 100);
+            this.linkLabel1.Location = new System.Drawing.Point(16, 81);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(85, 13);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot password";
@@ -225,14 +226,14 @@
             this.tbPassword.HoverState.Parent = this.tbPassword;
             this.tbPassword.IconLeft = global::LogementImobilier.Winform.Properties.Resources.password_26px;
             this.tbPassword.IconRightSize = new System.Drawing.Size(40, 40);
-            this.tbPassword.Location = new System.Drawing.Point(20, 31);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.tbPassword.Location = new System.Drawing.Point(15, 25);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '\0';
             this.tbPassword.PlaceholderText = "Enter your password";
             this.tbPassword.SelectedText = "";
             this.tbPassword.ShadowDecoration.Parent = this.tbPassword;
-            this.tbPassword.Size = new System.Drawing.Size(336, 50);
+            this.tbPassword.Size = new System.Drawing.Size(252, 41);
             this.tbPassword.TabIndex = 13;
             this.tbPassword.UseSystemPasswordChar = true;
             // 
@@ -259,13 +260,13 @@
             this.btnValidate.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnValidate.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnValidate.HoverState.Parent = this.btnValidate;
-            this.btnValidate.Location = new System.Drawing.Point(99, 137);
-            this.btnValidate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnValidate.Location = new System.Drawing.Point(74, 111);
+            this.btnValidate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnValidate.Name = "btnValidate";
             this.btnValidate.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnValidate.ShadowDecoration.Depth = 5;
             this.btnValidate.ShadowDecoration.Parent = this.btnValidate;
-            this.btnValidate.Size = new System.Drawing.Size(179, 49);
+            this.btnValidate.Size = new System.Drawing.Size(134, 40);
             this.btnValidate.TabIndex = 12;
             this.btnValidate.Text = "Validate";
             this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
@@ -277,8 +278,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1233, 42);
+            this.panel1.Size = new System.Drawing.Size(925, 34);
             this.panel1.TabIndex = 14;
             // 
             // btnClose
@@ -297,10 +299,11 @@
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Location = new System.Drawing.Point(1183, 0);
+            this.btnClose.Location = new System.Drawing.Point(887, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
-            this.btnClose.Size = new System.Drawing.Size(50, 42);
+            this.btnClose.Size = new System.Drawing.Size(38, 34);
             this.btnClose.TabIndex = 64;
             this.btnClose.Text = "X";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -311,9 +314,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(558, 2);
+            this.label1.Location = new System.Drawing.Point(418, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 32);
+            this.label1.Size = new System.Drawing.Size(92, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Housing";
             // 
@@ -325,10 +329,11 @@
             this.guna2ShadowPanel1.Controls.Add(this.panelEmail);
             this.guna2ShadowPanel1.Controls.Add(this.panelPassword);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(359, 75);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(269, 61);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(548, 459);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(411, 373);
             this.guna2ShadowPanel1.TabIndex = 15;
             // 
             // panel2
@@ -338,8 +343,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(548, 52);
+            this.panel2.Size = new System.Drawing.Size(411, 42);
             this.panel2.TabIndex = 15;
             // 
             // guna2Button1
@@ -358,10 +364,11 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(498, 0);
+            this.guna2Button1.Location = new System.Drawing.Point(373, 0);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(50, 52);
+            this.guna2Button1.Size = new System.Drawing.Size(38, 42);
             this.guna2Button1.TabIndex = 64;
             this.guna2Button1.Text = "X";
             // 
@@ -370,9 +377,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(218, 0);
+            this.label2.Location = new System.Drawing.Point(164, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 38);
+            this.label2.Size = new System.Drawing.Size(80, 31);
             this.label2.TabIndex = 0;
             this.label2.Text = "Login";
             // 
@@ -381,23 +389,23 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1233, 581);
+            this.pictureBox2.Size = new System.Drawing.Size(925, 472);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1233, 581);
+            this.ClientSize = new System.Drawing.Size(925, 472);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
