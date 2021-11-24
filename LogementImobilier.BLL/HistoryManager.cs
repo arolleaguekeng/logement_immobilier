@@ -20,7 +20,7 @@ namespace LogementImobilier.BLL
         {
             historic.Add(history);
         }
-        public List<Historic> ShowHistory(Historic history)
+        public List<Historic> ShowHistory()
         {
             return historic.GetAll();
         }

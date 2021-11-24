@@ -39,6 +39,9 @@
             this.lbItems = new System.Windows.Forms.Label();
             this.btnRemovePicture = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAddpicture = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lineName = new System.Windows.Forms.PictureBox();
+            this.lineId = new System.Windows.Forms.PictureBox();
             this.tbId = new Guna.UI2.WinForms.Guna2TextBox();
             this.nudKitchen = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.tbName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -65,15 +68,16 @@
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.panelMessage = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lineName = new System.Windows.Forms.PictureBox();
-            this.lineId = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             this.guna2ShadowPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
@@ -81,9 +85,6 @@
             this.guna2ShadowPanel1.SuspendLayout();
             this.panelMessage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -279,6 +280,34 @@
             this.btnAddpicture.Size = new System.Drawing.Size(54, 41);
             this.btnAddpicture.TabIndex = 73;
             this.btnAddpicture.Text = "+";
+            this.btnAddpicture.Click += new System.EventHandler(this.btnAddpicture_Click_1);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Location = new System.Drawing.Point(512, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(282, 2);
+            this.pictureBox2.TabIndex = 72;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lineName
+            // 
+            this.lineName.BackColor = System.Drawing.Color.Black;
+            this.lineName.Location = new System.Drawing.Point(29, 160);
+            this.lineName.Name = "lineName";
+            this.lineName.Size = new System.Drawing.Size(282, 2);
+            this.lineName.TabIndex = 71;
+            this.lineName.TabStop = false;
+            // 
+            // lineId
+            // 
+            this.lineId.BackColor = System.Drawing.Color.Black;
+            this.lineId.Location = new System.Drawing.Point(27, 109);
+            this.lineId.Name = "lineId";
+            this.lineId.Size = new System.Drawing.Size(282, 2);
+            this.lineId.TabIndex = 70;
+            this.lineId.TabStop = false;
             // 
             // tbId
             // 
@@ -631,6 +660,7 @@
             this.btnSave.Size = new System.Drawing.Size(131, 41);
             this.btnSave.TabIndex = 55;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // label10
             // 
@@ -669,6 +699,7 @@
             // timer1
             // 
             this.timer1.Interval = 4000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // guna2ShadowPanel1
             // 
@@ -711,33 +742,6 @@
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(512, 114);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(282, 2);
-            this.pictureBox2.TabIndex = 72;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lineName
-            // 
-            this.lineName.BackColor = System.Drawing.Color.Black;
-            this.lineName.Location = new System.Drawing.Point(29, 160);
-            this.lineName.Name = "lineName";
-            this.lineName.Size = new System.Drawing.Size(282, 2);
-            this.lineName.TabIndex = 71;
-            this.lineName.TabStop = false;
-            // 
-            // lineId
-            // 
-            this.lineId.BackColor = System.Drawing.Color.Black;
-            this.lineId.Location = new System.Drawing.Point(27, 109);
-            this.lineId.Name = "lineId";
-            this.lineId.Size = new System.Drawing.Size(282, 2);
-            this.lineId.TabIndex = 70;
-            this.lineId.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -748,16 +752,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1088, 30);
-            this.panel2.TabIndex = 74;
             // 
             // label11
             // 
@@ -770,6 +764,41 @@
             this.label11.TabIndex = 68;
             this.label11.Text = "Edit";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel2.Controls.Add(this.btnClose);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1088, 30);
+            this.panel2.TabIndex = 74;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Animated = true;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.DisabledState.Parent = this.btnClose;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Location = new System.Drawing.Point(1027, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(61, 30);
+            this.btnClose.TabIndex = 69;
+            this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmEditHousing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -779,11 +808,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEditHousing";
             this.Text = "frmEditHousing";
+            this.Load += new System.EventHandler(this.frmEditHousing_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
@@ -792,9 +825,6 @@
             this.panelMessage.ResumeLayout(false);
             this.panelMessage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -846,5 +876,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
     }
 }

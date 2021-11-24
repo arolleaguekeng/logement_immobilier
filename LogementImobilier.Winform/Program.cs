@@ -22,7 +22,7 @@ namespace LogementImobilier.Winform
             InfoHouse.Name = "fdfdfdf";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmLogin index = new frmLogin();
+            frmIndex index = new frmIndex();
             index.Show();
             Application.Run();
         }

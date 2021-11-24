@@ -43,14 +43,20 @@ namespace LogementImobilier.Winform
                                 (int)starNotation.Value, (int)nudExibition.Value, (int)nudShowers.Value,
                                 1,(int )nudLevel.Value).ToString();
 
-                        
-                housing.CreateHousing(new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
+
+
+                var house = new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
                                         (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
-                                            false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value, LiPicture,LiPicture[0].Location));
+                                            false, client, chbTerasse.Checked, chbParking.Checked, (int)nudLevel.Value, LiPicture);
+
+
+                housing.CreateHousing(house);
 
                 timer1.Enabled = true;
                 panelMessage.Visible = true;
                 lbMessages.Text = "Added Succesfully";
+                HistoryManager history = new HistoryManager();
+                history.AddHistory(new Historic(DateTime.Now, "Added",house));
             }
             catch (Exception ex)
             {
