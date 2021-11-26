@@ -27,7 +27,7 @@ namespace LogementImobilier.Winform
 
         private void Text_box_name_TextChanged(object sender, EventArgs e)
         {
-            numéro.Visible = true;
+            numéro.Visible = true; 
         }
     }
 }
