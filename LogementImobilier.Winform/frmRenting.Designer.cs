@@ -413,7 +413,7 @@
             // panelcontein
             // 
             this.panelcontein.AutoScroll = true;
-            this.panelcontein.BackgroundImage = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
+            this.panelcontein.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelcontein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelcontein.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelcontein.Location = new System.Drawing.Point(0, 0);

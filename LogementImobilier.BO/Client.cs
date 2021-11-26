@@ -18,5 +18,9 @@ namespace LogementImobilier.BO
             PhoneNumber = phoneNumber;
             Location = location;
         }
+        public Client()
+        {
+
+        }
     }
 }

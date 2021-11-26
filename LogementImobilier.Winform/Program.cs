@@ -11,6 +11,7 @@ namespace LogementImobilier.Winform
     {
         public static List<HousingPicture> picture;
         public static Housing InfoHouse;
+        public static string messagebox;
         
         /// <summary>
         /// The main entry point for the application.
@@ -22,7 +23,7 @@ namespace LogementImobilier.Winform
             InfoHouse.Name = "fdfdfdf";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmDeleteClient index = new frmDeleteClient ();
+            frmIndex index = new frmIndex();
             index.Show();
             Application.Run();
         }

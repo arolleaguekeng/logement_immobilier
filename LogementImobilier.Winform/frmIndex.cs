@@ -158,7 +158,8 @@ namespace LogementImobilier.Winform
         private void btnHistoric_Click(object sender, EventArgs e)
         {
             frmHistory history = new frmHistory();
-            history.Show();
+            OpenChildform(history, sender);
         }
     }
 }
+    

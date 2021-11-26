@@ -36,7 +36,6 @@ namespace LogementImobilier.Winform
         private void frmHistory_Load(object sender, EventArgs e)
         {
             ShowLvHousing(lvShow);
-            ShowLvHousing(lvShow2);
         }
         private void ShowLvHousing(ListView lv)
         {

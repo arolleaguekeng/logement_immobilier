@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lbMessages = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.nudRooms = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -39,9 +38,6 @@
             this.lbItems = new System.Windows.Forms.Label();
             this.btnRemovePicture = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAddpicture = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lineName = new System.Windows.Forms.PictureBox();
-            this.lineId = new System.Windows.Forms.PictureBox();
             this.tbId = new Guna.UI2.WinForms.Guna2TextBox();
             this.nudKitchen = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.tbName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,43 +59,29 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnClosePanel = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.panelMessage = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lineName = new System.Windows.Forms.PictureBox();
+            this.lineId = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             this.guna2ShadowPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
-            this.panelMessage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lbMessages
-            // 
-            this.lbMessages.AutoSize = true;
-            this.lbMessages.BackColor = System.Drawing.Color.Transparent;
-            this.lbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMessages.ForeColor = System.Drawing.Color.White;
-            this.lbMessages.Location = new System.Drawing.Point(61, 26);
-            this.lbMessages.Name = "lbMessages";
-            this.lbMessages.Size = new System.Drawing.Size(133, 32);
-            this.lbMessages.TabIndex = 2;
-            this.lbMessages.Text = "Welcome";
             // 
             // panel1
             // 
@@ -108,7 +90,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(931, 30);
+            this.panel1.Size = new System.Drawing.Size(1088, 30);
             this.panel1.TabIndex = 69;
             // 
             // label6
@@ -185,13 +167,14 @@
             this.guna2ShadowPanel2.Controls.Add(this.label7);
             this.guna2ShadowPanel2.Controls.Add(this.btnSave);
             this.guna2ShadowPanel2.Controls.Add(this.label10);
+            this.guna2ShadowPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(77, 50);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 233;
             this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(931, 521);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(1088, 638);
             this.guna2ShadowPanel2.TabIndex = 68;
             // 
             // panelPicture
@@ -281,33 +264,6 @@
             this.btnAddpicture.TabIndex = 73;
             this.btnAddpicture.Text = "+";
             this.btnAddpicture.Click += new System.EventHandler(this.btnAddpicture_Click_1);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(512, 114);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(282, 2);
-            this.pictureBox2.TabIndex = 72;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lineName
-            // 
-            this.lineName.BackColor = System.Drawing.Color.Black;
-            this.lineName.Location = new System.Drawing.Point(29, 160);
-            this.lineName.Name = "lineName";
-            this.lineName.Size = new System.Drawing.Size(282, 2);
-            this.lineName.TabIndex = 71;
-            this.lineName.TabStop = false;
-            // 
-            // lineId
-            // 
-            this.lineId.BackColor = System.Drawing.Color.Black;
-            this.lineId.Location = new System.Drawing.Point(27, 109);
-            this.lineId.Name = "lineId";
-            this.lineId.Size = new System.Drawing.Size(282, 2);
-            this.lineId.TabIndex = 70;
-            this.lineId.TabStop = false;
             // 
             // tbId
             // 
@@ -673,29 +629,6 @@
             this.label10.TabIndex = 38;
             this.label10.Text = "Location";
             // 
-            // btnClosePanel
-            // 
-            this.btnClosePanel.Animated = true;
-            this.btnClosePanel.CheckedState.Parent = this.btnClosePanel;
-            this.btnClosePanel.CustomImages.Parent = this.btnClosePanel;
-            this.btnClosePanel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClosePanel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClosePanel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClosePanel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClosePanel.DisabledState.Parent = this.btnClosePanel;
-            this.btnClosePanel.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnClosePanel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClosePanel.ForeColor = System.Drawing.Color.White;
-            this.btnClosePanel.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btnClosePanel.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnClosePanel.HoverState.Parent = this.btnClosePanel;
-            this.btnClosePanel.Location = new System.Drawing.Point(307, 0);
-            this.btnClosePanel.Name = "btnClosePanel";
-            this.btnClosePanel.ShadowDecoration.Parent = this.btnClosePanel;
-            this.btnClosePanel.Size = new System.Drawing.Size(38, 31);
-            this.btnClosePanel.TabIndex = 4;
-            this.btnClosePanel.Text = "X";
-            // 
             // timer1
             // 
             this.timer1.Interval = 4000;
@@ -706,7 +639,6 @@
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2ShadowPanel1.Controls.Add(this.panel2);
-            this.guna2ShadowPanel1.Controls.Add(this.panelMessage);
             this.guna2ShadowPanel1.Controls.Add(this.guna2ShadowPanel2);
             this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
             this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -716,53 +648,6 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1090, 640);
             this.guna2ShadowPanel1.TabIndex = 64;
-            // 
-            // panelMessage
-            // 
-            this.panelMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelMessage.Controls.Add(this.pictureBox4);
-            this.panelMessage.Controls.Add(this.btnClosePanel);
-            this.panelMessage.Controls.Add(this.lbMessages);
-            this.panelMessage.FillColor = System.Drawing.Color.Purple;
-            this.panelMessage.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.panelMessage.Location = new System.Drawing.Point(744, 53);
-            this.panelMessage.Name = "panelMessage";
-            this.panelMessage.ShadowDecoration.Parent = this.panelMessage;
-            this.panelMessage.Size = new System.Drawing.Size(345, 107);
-            this.panelMessage.TabIndex = 73;
-            this.panelMessage.Visible = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::LogementImobilier.Winform.Properties.Resources.notification_26px;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 57);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1088, 638);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 69;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(505, 10);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 20);
-            this.label11.TabIndex = 68;
-            this.label11.Text = "Edit";
             // 
             // panel2
             // 
@@ -799,6 +684,55 @@
             this.btnClose.Text = "X";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(505, 10);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 20);
+            this.label11.TabIndex = 68;
+            this.label11.Text = "Edit";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Location = new System.Drawing.Point(512, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(282, 2);
+            this.pictureBox2.TabIndex = 72;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lineName
+            // 
+            this.lineName.BackColor = System.Drawing.Color.Black;
+            this.lineName.Location = new System.Drawing.Point(29, 160);
+            this.lineName.Name = "lineName";
+            this.lineName.Size = new System.Drawing.Size(282, 2);
+            this.lineName.TabIndex = 71;
+            this.lineName.TabStop = false;
+            // 
+            // lineId
+            // 
+            this.lineId.BackColor = System.Drawing.Color.Black;
+            this.lineId.Location = new System.Drawing.Point(27, 109);
+            this.lineId.Name = "lineId";
+            this.lineId.Size = new System.Drawing.Size(282, 2);
+            this.lineId.TabIndex = 70;
+            this.lineId.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1088, 638);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 69;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmEditHousing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -814,28 +748,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
-            this.panelMessage.ResumeLayout(false);
-            this.panelMessage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox4;
-        public System.Windows.Forms.Label lbMessages;
         private System.Windows.Forms.PictureBox lineId;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
@@ -869,10 +797,8 @@
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2GradientButton btnSave;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2Button btnClosePanel;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
-        private Guna.UI2.WinForms.Guna2GradientPanel panelMessage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;

@@ -17,8 +17,10 @@ namespace LogementImobilier.Winform
     {
         PictureBox boxSingle;
         List<HousingPicture> images;
+        frmMessageBox message;
         public frmEditHousing()
         {
+            message = new frmMessageBox();
             LiPicture = new List<HousingPicture>();
             images = new List<HousingPicture>();
             InitializeComponent();
@@ -117,8 +119,8 @@ namespace LogementImobilier.Winform
                 housing.EditHousing(Program.InfoHouse, newHousing);
 
                 timer1.Enabled = true;
-                panelMessage.Visible = true;
-                lbMessages.Text = "Added Succesfully";
+               Program.messagebox = "Added Succesfully";
+                message.ShowDialog();
             }
             catch (Exception ex)
             {
@@ -152,13 +154,14 @@ namespace LogementImobilier.Winform
                 //box.BackColor = Color.Black;
                 panelPicture.Controls.Add(box);
                 Program.picture.Add(picture);
+                
 
             }
         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            panelMessage.Visible = false;
+            message.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

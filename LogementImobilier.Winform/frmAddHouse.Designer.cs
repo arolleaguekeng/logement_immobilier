@@ -565,13 +565,14 @@
             this.guna2ShadowPanel2.Controls.Add(this.label7);
             this.guna2ShadowPanel2.Controls.Add(this.btnSave);
             this.guna2ShadowPanel2.Controls.Add(this.label10);
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(77, 50);
+            this.guna2ShadowPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2ShadowPanel2.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 233;
             this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(931, 521);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(1051, 582);
             this.guna2ShadowPanel2.TabIndex = 68;
             // 
             // panelPicture
@@ -696,7 +697,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(931, 30);
+            this.panel1.Size = new System.Drawing.Size(1051, 30);
             this.panel1.TabIndex = 69;
             // 
             // label6
@@ -735,7 +736,6 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1051, 582);
@@ -757,7 +757,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddHouse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmAddHouse";            ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
+            this.Text = "frmAddHouse";
+            ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
