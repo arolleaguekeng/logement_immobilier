@@ -18,17 +18,19 @@ namespace LogementImobilier.Winform
         PictureBox boxSingle;
         List<HousingPicture> images;
         frmMessageBox message;
+        string Path;
+        PictureBox box;
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
+        public List<HousingPicture> LiPicture;
+        public HistoryManager history;
         public frmEditHousing()
         {
+            history = new HistoryManager();
             message = new frmMessageBox();
             LiPicture = new List<HousingPicture>();
             images = new List<HousingPicture>();
             InitializeComponent();
         }
-        string Path;
-        PictureBox box;
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
-        public List<HousingPicture> LiPicture;
 
 
         private void box_Click(object sender, EventArgs e)
@@ -120,7 +122,9 @@ namespace LogementImobilier.Winform
 
                 timer1.Enabled = true;
                Program.messagebox = "Added Succesfully";
+                history.AddHistory(new Historic(DateTime.Now, "Edited", newHousing));
                 message.ShowDialog();
+
             }
             catch (Exception ex)
             {

@@ -62,6 +62,7 @@ namespace LogementImobilier.Winform
                 layoutPanel.Size = new Size(170, 320);
                 layoutPanel.Cursor = Cursors.Hand;
                 layoutPanel.MouseUp += new MouseEventHandler(layoutPanel_MouseUp);
+                layoutPanel.BackColor = Color.White;
 
                 panelcontein.Controls.Add(layoutPanel);
                 Picture = new PictureBox();
@@ -270,6 +271,7 @@ namespace LogementImobilier.Winform
             btnSee.Visible = true;
         }
         public static Housing hous;
+
         //private void lvShowHousing_MouseDoubleClick(object sender, MouseEventArgs e)
         //{
         //    frmInfoHousing infoHousing = new frmInfoHousing();
@@ -282,7 +284,7 @@ namespace LogementImobilier.Winform
         //    lvShowHousing.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         //    ImageList imageList = new ImageList();
         //    imageList.ImageSize = new Size(100,100);
-            
+
         //    string[] paths = { };
         //    try
         //    {

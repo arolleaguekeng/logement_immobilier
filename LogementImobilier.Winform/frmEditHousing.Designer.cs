@@ -68,6 +68,7 @@
             this.lineName = new System.Windows.Forms.PictureBox();
             this.lineId = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             this.guna2ShadowPanel2.SuspendLayout();
@@ -81,6 +82,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -136,16 +138,15 @@
             // guna2ShadowPanel2
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.flowLayoutPanel1);
             this.guna2ShadowPanel2.Controls.Add(this.panelPicture);
             this.guna2ShadowPanel2.Controls.Add(this.lbItems);
             this.guna2ShadowPanel2.Controls.Add(this.btnRemovePicture);
             this.guna2ShadowPanel2.Controls.Add(this.btnAddpicture);
             this.guna2ShadowPanel2.Controls.Add(this.pictureBox2);
             this.guna2ShadowPanel2.Controls.Add(this.lineName);
-            this.guna2ShadowPanel2.Controls.Add(this.lineId);
             this.guna2ShadowPanel2.Controls.Add(this.panel1);
             this.guna2ShadowPanel2.Controls.Add(this.nudRooms);
-            this.guna2ShadowPanel2.Controls.Add(this.tbId);
             this.guna2ShadowPanel2.Controls.Add(this.label3);
             this.guna2ShadowPanel2.Controls.Add(this.nudKitchen);
             this.guna2ShadowPanel2.Controls.Add(this.tbName);
@@ -285,7 +286,7 @@
             this.tbId.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.tbId.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbId.HoverState.Parent = this.tbId;
-            this.tbId.Location = new System.Drawing.Point(28, 72);
+            this.tbId.Location = new System.Drawing.Point(5, 5);
             this.tbId.Margin = new System.Windows.Forms.Padding(5);
             this.tbId.Name = "tbId";
             this.tbId.PasswordChar = '\0';
@@ -716,7 +717,7 @@
             // lineId
             // 
             this.lineId.BackColor = System.Drawing.Color.Black;
-            this.lineId.Location = new System.Drawing.Point(27, 109);
+            this.lineId.Location = new System.Drawing.Point(3, 53);
             this.lineId.Name = "lineId";
             this.lineId.Size = new System.Drawing.Size(282, 2);
             this.lineId.TabIndex = 70;
@@ -732,6 +733,15 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.tbId);
+            this.flowLayoutPanel1.Controls.Add(this.lineId);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 61);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(291, 78);
+            this.flowLayoutPanel1.TabIndex = 77;
             // 
             // frmEditHousing
             // 
@@ -759,6 +769,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -803,5 +814,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Button btnClose;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

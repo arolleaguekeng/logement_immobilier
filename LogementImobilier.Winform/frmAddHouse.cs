@@ -18,11 +18,13 @@ namespace LogementImobilier.Winform
     {
         string Path;
         PictureBox box;
+        frmMessageBox message;
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
         public List<HousingPicture> LiPicture;
 
         public frmAddHouse()
         {
+            message = new frmMessageBox();
            
             LiPicture = new List<HousingPicture>();
             InitializeComponent();
@@ -53,10 +55,10 @@ namespace LogementImobilier.Winform
                 housing.CreateHousing(house);
 
                 timer1.Enabled = true;
-                panelMessage.Visible = true;
-                lbMessages.Text = "Added Succesfully";
+                Program.messagebox = "Edited Succesfully";
                 HistoryManager history = new HistoryManager();
                 history.AddHistory(new Historic(DateTime.Now, "Added",house));
+                message.ShowDialog();
             }
             catch (Exception ex)
             {
@@ -71,7 +73,7 @@ namespace LogementImobilier.Winform
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            panelMessage.Visible = false;
+            
         }
 
         //public int IndexOf(List<HousingPicture> pictures , HousingPicture phousing)
