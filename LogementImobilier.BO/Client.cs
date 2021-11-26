@@ -11,6 +11,12 @@ namespace LogementImobilier.BO
         public int PhoneNumber { get; set; }
         public string  Location { get; set; }
 
-
+        public Client(string id , string name ,int phoneNumber, string location)
+        {
+            Id = id;
+            Name = name;
+            PhoneNumber = phoneNumber;
+            Location = location;
+        }
     }
 }
