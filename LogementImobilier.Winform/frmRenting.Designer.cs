@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.panelRight = new System.Windows.Forms.Panel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.cbbLocation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.nudPrice = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.chbParking = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -46,14 +47,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.nudKitchens = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.panelcontein = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSee = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.lbCountHousings = new System.Windows.Forms.Label();
             this.lineName = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbbFilter = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.panelcontein = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSee = new Guna.UI2.WinForms.Guna2Button();
             this.panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
@@ -61,16 +62,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelRight
             // 
             this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRight.Controls.Add(this.label6);
             this.panelRight.Controls.Add(this.guna2Button1);
-            this.panelRight.Controls.Add(this.btnClose);
             this.panelRight.Controls.Add(this.cbbLocation);
             this.panelRight.Controls.Add(this.nudPrice);
             this.panelRight.Controls.Add(this.chbParking);
@@ -92,28 +94,40 @@
             this.panelRight.Size = new System.Drawing.Size(155, 690);
             this.panelRight.TabIndex = 38;
             // 
-            // btnClose
+            // label6
             // 
-            this.btnClose.Animated = true;
-            this.btnClose.CheckedState.Parent = this.btnClose;
-            this.btnClose.CustomImages.Parent = this.btnClose;
-            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.DisabledState.Parent = this.btnClose;
-            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Location = new System.Drawing.Point(120, -1);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.ShadowDecoration.Parent = this.btnClose;
-            this.btnClose.Size = new System.Drawing.Size(34, 28);
-            this.btnClose.TabIndex = 63;
-            this.btnClose.Text = "X";
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_3);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(28, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(99, 36);
+            this.label6.TabIndex = 65;
+            this.label6.Text = "Seach";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = global::LogementImobilier.Winform.Properties.Resources.forward_32px;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(20, 35);
+            this.guna2Button1.Location = new System.Drawing.Point(-1, 244);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(34, 43);
+            this.guna2Button1.TabIndex = 64;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // cbbLocation
             // 
@@ -143,7 +157,7 @@
             this.cbbLocation.ItemsAppearance.Parent = this.cbbLocation;
             this.cbbLocation.ItemsAppearance.SelectedBackColor = System.Drawing.Color.Purple;
             this.cbbLocation.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-            this.cbbLocation.Location = new System.Drawing.Point(6, 43);
+            this.cbbLocation.Location = new System.Drawing.Point(6, 81);
             this.cbbLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbLocation.Name = "cbbLocation";
             this.cbbLocation.ShadowDecoration.Parent = this.cbbLocation;
@@ -160,7 +174,7 @@
             this.nudPrice.FocusedState.Parent = this.nudPrice;
             this.nudPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudPrice.ForeColor = System.Drawing.Color.Black;
-            this.nudPrice.Location = new System.Drawing.Point(7, 468);
+            this.nudPrice.Location = new System.Drawing.Point(7, 506);
             this.nudPrice.Margin = new System.Windows.Forms.Padding(5);
             this.nudPrice.Name = "nudPrice";
             this.nudPrice.ShadowDecoration.Parent = this.nudPrice;
@@ -182,7 +196,7 @@
             this.chbParking.CheckMarkColor = System.Drawing.Color.Purple;
             this.chbParking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbParking.ForeColor = System.Drawing.Color.White;
-            this.chbParking.Location = new System.Drawing.Point(65, 116);
+            this.chbParking.Location = new System.Drawing.Point(65, 154);
             this.chbParking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbParking.Name = "chbParking";
             this.chbParking.Size = new System.Drawing.Size(87, 24);
@@ -206,7 +220,7 @@
             this.chbTerasse.CheckMarkColor = System.Drawing.Color.Purple;
             this.chbTerasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbTerasse.ForeColor = System.Drawing.Color.White;
-            this.chbTerasse.Location = new System.Drawing.Point(65, 88);
+            this.chbTerasse.Location = new System.Drawing.Point(65, 126);
             this.chbTerasse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbTerasse.Name = "chbTerasse";
             this.chbTerasse.Size = new System.Drawing.Size(92, 24);
@@ -223,7 +237,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(4, 18);
+            this.label10.Location = new System.Drawing.Point(4, 56);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(73, 20);
             this.label10.TabIndex = 38;
@@ -238,7 +252,7 @@
             this.nudShowers.FocusedState.Parent = this.nudShowers;
             this.nudShowers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudShowers.ForeColor = System.Drawing.Color.Black;
-            this.nudShowers.Location = new System.Drawing.Point(65, 230);
+            this.nudShowers.Location = new System.Drawing.Point(65, 268);
             this.nudShowers.Margin = new System.Windows.Forms.Padding(5);
             this.nudShowers.Name = "nudShowers";
             this.nudShowers.ShadowDecoration.Parent = this.nudShowers;
@@ -257,7 +271,7 @@
             this.nudRooms.FocusedState.Parent = this.nudRooms;
             this.nudRooms.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudRooms.ForeColor = System.Drawing.Color.Black;
-            this.nudRooms.Location = new System.Drawing.Point(65, 352);
+            this.nudRooms.Location = new System.Drawing.Point(65, 390);
             this.nudRooms.Margin = new System.Windows.Forms.Padding(5);
             this.nudRooms.Name = "nudRooms";
             this.nudRooms.ShadowDecoration.Parent = this.nudRooms;
@@ -272,7 +286,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(61, 327);
+            this.label2.Location = new System.Drawing.Point(61, 365);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 17;
@@ -283,7 +297,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(66, 146);
+            this.label3.Location = new System.Drawing.Point(66, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 17;
@@ -294,7 +308,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(61, 205);
+            this.label4.Location = new System.Drawing.Point(61, 243);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 17;
@@ -303,7 +317,7 @@
             // btnStars
             // 
             this.btnStars.BorderColor = System.Drawing.Color.White;
-            this.btnStars.Location = new System.Drawing.Point(26, 399);
+            this.btnStars.Location = new System.Drawing.Point(26, 437);
             this.btnStars.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStars.Name = "btnStars";
             this.btnStars.RatingColor = System.Drawing.Color.Gold;
@@ -320,7 +334,7 @@
             this.nudExibition.FocusedState.Parent = this.nudExibition;
             this.nudExibition.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudExibition.ForeColor = System.Drawing.Color.Black;
-            this.nudExibition.Location = new System.Drawing.Point(65, 292);
+            this.nudExibition.Location = new System.Drawing.Point(65, 330);
             this.nudExibition.Margin = new System.Windows.Forms.Padding(5);
             this.nudExibition.Name = "nudExibition";
             this.nudExibition.ShadowDecoration.Parent = this.nudExibition;
@@ -335,7 +349,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 434);
+            this.label1.Location = new System.Drawing.Point(21, 472);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 28);
             this.label1.TabIndex = 20;
@@ -346,7 +360,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(61, 267);
+            this.label8.Location = new System.Drawing.Point(61, 305);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 20);
             this.label8.TabIndex = 28;
@@ -361,7 +375,7 @@
             this.nudKitchens.FocusedState.Parent = this.nudKitchens;
             this.nudKitchens.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudKitchens.ForeColor = System.Drawing.Color.Black;
-            this.nudKitchens.Location = new System.Drawing.Point(65, 171);
+            this.nudKitchens.Location = new System.Drawing.Point(65, 209);
             this.nudKitchens.Margin = new System.Windows.Forms.Padding(5);
             this.nudKitchens.Name = "nudKitchens";
             this.nudKitchens.ShadowDecoration.Parent = this.nudKitchens;
@@ -373,71 +387,95 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.lineName);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.guna2ComboBox1);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.cbbFilter);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1168, 59);
             this.panel1.TabIndex = 66;
             // 
-            // guna2ComboBox1
+            // flowLayoutPanel1
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.White;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Purple;
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.Purple;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.HoverState.BorderColor = System.Drawing.Color.Purple;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Bafoussam",
-            "Douala",
-            "Kribi",
-            "Limbé",
-            "Maroua",
-            "Garoua",
-            "Nkongsamba",
-            "Dschang"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemsAppearance.SelectedBackColor = System.Drawing.Color.Purple;
-            this.guna2ComboBox1.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(358, 15);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(138, 36);
-            this.guna2ComboBox1.TabIndex = 63;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(216, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(23, 25);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "0";
+            this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.flowLayoutPanel1.Controls.Add(this.lbCountHousings);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(28, 19);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 32);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(21, 19);
+            this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 25);
+            this.label5.Size = new System.Drawing.Size(144, 25);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Housing found";
+            this.label5.Text = "Housing found:";
+            // 
+            // lbCountHousings
+            // 
+            this.lbCountHousings.AutoSize = true;
+            this.lbCountHousings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountHousings.ForeColor = System.Drawing.Color.Green;
+            this.lbCountHousings.Location = new System.Drawing.Point(153, 0);
+            this.lbCountHousings.Name = "lbCountHousings";
+            this.lbCountHousings.Size = new System.Drawing.Size(23, 25);
+            this.lbCountHousings.TabIndex = 1;
+            this.lbCountHousings.Text = "0";
+            // 
+            // lineName
+            // 
+            this.lineName.BackColor = System.Drawing.Color.Black;
+            this.lineName.Location = new System.Drawing.Point(358, 43);
+            this.lineName.Name = "lineName";
+            this.lineName.Size = new System.Drawing.Size(138, 2);
+            this.lineName.TabIndex = 72;
+            this.lineName.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.filter_32px;
+            this.pictureBox1.Location = new System.Drawing.Point(317, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 64;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cbbFilter
+            // 
+            this.cbbFilter.BackColor = System.Drawing.Color.Transparent;
+            this.cbbFilter.BorderColor = System.Drawing.Color.White;
+            this.cbbFilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbFilter.FocusedColor = System.Drawing.Color.Purple;
+            this.cbbFilter.FocusedState.BorderColor = System.Drawing.Color.Purple;
+            this.cbbFilter.FocusedState.Parent = this.cbbFilter;
+            this.cbbFilter.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cbbFilter.ForeColor = System.Drawing.Color.Black;
+            this.cbbFilter.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.cbbFilter.HoverState.Parent = this.cbbFilter;
+            this.cbbFilter.ItemHeight = 30;
+            this.cbbFilter.Items.AddRange(new object[] {
+            "ascending price",
+            "descending price",
+            "ascending starts",
+            "descending starts"});
+            this.cbbFilter.ItemsAppearance.Parent = this.cbbFilter;
+            this.cbbFilter.ItemsAppearance.SelectedBackColor = System.Drawing.Color.Purple;
+            this.cbbFilter.ItemsAppearance.SelectedForeColor = System.Drawing.Color.White;
+            this.cbbFilter.Location = new System.Drawing.Point(358, 15);
+            this.cbbFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbFilter.Name = "cbbFilter";
+            this.cbbFilter.ShadowDecoration.Parent = this.cbbFilter;
+            this.cbbFilter.Size = new System.Drawing.Size(138, 36);
+            this.cbbFilter.TabIndex = 63;
+            this.cbbFilter.SelectedIndexChanged += new System.EventHandler(this.cbbFilter_SelectedIndexChanged);
             // 
             // panelcontein
             // 
@@ -449,16 +487,6 @@
             this.panelcontein.Name = "panelcontein";
             this.panelcontein.Size = new System.Drawing.Size(1168, 631);
             this.panelcontein.TabIndex = 67;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.filter_32px;
-            this.pictureBox1.Location = new System.Drawing.Point(317, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 64;
-            this.pictureBox1.TabStop = false;
             // 
             // btnSee
             // 
@@ -484,39 +512,6 @@
             this.btnSee.Visible = false;
             this.btnSee.Click += new System.EventHandler(this.btnSee_Click);
             // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::LogementImobilier.Winform.Properties.Resources.forward_32px;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(20, 35);
-            this.guna2Button1.Location = new System.Drawing.Point(-1, 244);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(34, 43);
-            this.guna2Button1.TabIndex = 64;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // lineName
-            // 
-            this.lineName.BackColor = System.Drawing.Color.Black;
-            this.lineName.Location = new System.Drawing.Point(358, 43);
-            this.lineName.Name = "lineName";
-            this.lineName.Size = new System.Drawing.Size(138, 2);
-            this.lineName.TabIndex = 72;
-            this.lineName.TabStop = false;
-            // 
             // frmRenting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -541,9 +536,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchens)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -566,15 +562,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2NumericUpDown nudKitchens;
-        private Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2Button btnSee;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel panelcontein;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbFilter;
+        private System.Windows.Forms.Label lbCountHousings;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox lineName;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -33,6 +33,7 @@ namespace LogementImobilier.Winform
             housing = new HousingManager();
             frmHome frmHome = new frmHome();
             housings = housing.GetAllHousing();
+            lbCountHousings.Text = housings.Count().ToString();
             ShowHousings(housings);
             // ShowLvHousing();
         }
@@ -96,6 +97,7 @@ namespace LogementImobilier.Winform
                 star.BorderColor = System.Drawing.SystemColors.MenuHighlight;
                 star.Name = "starNotation";
                 star.RatingColor = System.Drawing.Color.Gold;
+                star.Value = house.NumberStart;
                 //star.Size = new System.Drawing.Size(124, 33);
 
 
@@ -271,6 +273,39 @@ namespace LogementImobilier.Winform
             btnSee.Visible = true;
         }
         public static Housing hous;
+
+        private void cbbFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*ascending price
+descending price
+starts*/
+            if ( cbbFilter.SelectedItem.ToString() == "descending price")
+            {
+                SeachinHousing = housing.FilterByPricedesc();
+                panelcontein.Controls.Clear();
+                ShowHousings(SeachinHousing);
+            }
+            if (cbbFilter.SelectedItem.ToString() == "ascending price")
+            {
+                SeachinHousing = housing.FilterByPriceasc();
+                panelcontein.Controls.Clear();
+                ShowHousings(SeachinHousing);
+            }
+            if (cbbFilter.SelectedItem.ToString() == "ascending starts")
+            {
+                SeachinHousing = housing.FilterByStarsasc();
+                panelcontein.Controls.Clear();
+                ShowHousings(SeachinHousing);
+            }
+            if (cbbFilter.SelectedItem.ToString() == "descending starts")
+            {
+                SeachinHousing = housing.FilterByStarsdesc();
+                panelcontein.Controls.Clear();
+                ShowHousings(SeachinHousing);
+            }
+
+        }
+
 
         //private void lvShowHousing_MouseDoubleClick(object sender, MouseEventArgs e)
         //{

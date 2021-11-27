@@ -25,5 +25,7 @@ namespace LogementImobilier.BLL
             return historic.GetAll();
         }
 
+
+
     }
 }
