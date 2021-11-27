@@ -80,6 +80,8 @@ namespace LogementImobilier.Winform
         private void btnEdit_Click(object sender, EventArgs e)
         {
 
+            frmEditHousing editHousing = new frmEditHousing();
+            editHousing.Show();
         }
     }
 }

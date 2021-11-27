@@ -104,8 +104,10 @@ namespace LogementImobilier.Winform
 
         private void btnStartRenting_Click_1(object sender, EventArgs e)
         {
+
             frmRenting renting = new frmRenting();
             OpenChildform(renting, sender);
+
         }
 
         private void frmIndex_Load(object sender, EventArgs e)
@@ -120,8 +122,6 @@ namespace LogementImobilier.Winform
             OpenChildform(addHouse, sender);
 
         }
-
-
 
         private void frmIndex_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -147,7 +147,8 @@ namespace LogementImobilier.Winform
         private void btnHistoric_Click(object sender, EventArgs e)
         {
             frmHistory history = new frmHistory();
-            history.Show();
+            OpenChildform(history, sender);
         }
     }
 }
+    

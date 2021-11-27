@@ -166,6 +166,9 @@
   <data name="notification_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notification_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bambu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bambu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wallpaper_meuble1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wallpaper_meuble1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,5 +183,8 @@
   </data>
   <data name="bambu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bambu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filter_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filter_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

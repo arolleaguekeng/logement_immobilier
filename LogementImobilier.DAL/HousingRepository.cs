@@ -29,6 +29,28 @@ namespace LogementImobilier.DAL
 
 
 
+        public List<Housing> FindByPriceasc()
+
+        {
+            var result = from h in datas
+                         orderby h.Price ascending
+                         select h;
+            return result.ToList();
+
+        }
+        public List<Housing> FindByPricedesc()
+
+        {
+            var result = from h in datas
+                         orderby h.Price descending
+                         select h;
+            return result.ToList();
+
+        }
+
+
+
+
         public List<Housing> FindByName(string name)
         {
             var result = from h in datas
@@ -36,6 +58,21 @@ namespace LogementImobilier.DAL
                          select h;
             return result.ToList();
 
+        }
+
+        public List<Housing> FindBystartsasc()
+        {
+            var result = from h in datas
+                         orderby h.NumberStart ascending
+                         select h;
+            return result.ToList();
+        }
+        public List<Housing> FindBystartdesc()
+        {
+            var result = from h in datas
+                         orderby h.NumberStart descending
+                         select h;
+            return result.ToList();
         }
     }
 }

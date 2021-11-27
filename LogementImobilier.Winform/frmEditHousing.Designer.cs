@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditHousing));
-            this.lbMessages = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.nudRooms = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -70,38 +68,49 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lineName = new System.Windows.Forms.PictureBox();
+            this.lineId = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             this.guna2ShadowPanel2.SuspendLayout();
-            this.panelMessage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbMessages
             // 
-            resources.ApplyResources(this.lbMessages, "lbMessages");
+            this.lbMessages.AutoSize = true;
             this.lbMessages.BackColor = System.Drawing.Color.Transparent;
+            this.lbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMessages.ForeColor = System.Drawing.Color.White;
+            this.lbMessages.Location = new System.Drawing.Point(61, 26);
             this.lbMessages.Name = "lbMessages";
+            this.lbMessages.Size = new System.Drawing.Size(133, 32);
+            this.lbMessages.TabIndex = 2;
+            this.lbMessages.Text = "Welcome";
             // 
             // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel1.Size = new System.Drawing.Size(1088, 30);
+            this.panel1.TabIndex = 69;
             this.panel1.Controls.Add(this.label6);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(931, 30);
+            this.panel1.TabIndex = 69;
             // 
             // label6
             // 
@@ -132,6 +141,7 @@
             // guna2ShadowPanel2
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.flowLayoutPanel1);
             this.guna2ShadowPanel2.Controls.Add(this.panelPicture);
             this.guna2ShadowPanel2.Controls.Add(this.panelMessage);
             this.guna2ShadowPanel2.Controls.Add(this.lbItems);
@@ -139,10 +149,8 @@
             this.guna2ShadowPanel2.Controls.Add(this.btnAddpicture);
             this.guna2ShadowPanel2.Controls.Add(this.pictureBox2);
             this.guna2ShadowPanel2.Controls.Add(this.lineName);
-            this.guna2ShadowPanel2.Controls.Add(this.lineId);
             this.guna2ShadowPanel2.Controls.Add(this.panel1);
             this.guna2ShadowPanel2.Controls.Add(this.nudRooms);
-            this.guna2ShadowPanel2.Controls.Add(this.tbId);
             this.guna2ShadowPanel2.Controls.Add(this.label3);
             this.guna2ShadowPanel2.Controls.Add(this.nudKitchen);
             this.guna2ShadowPanel2.Controls.Add(this.tbName);
@@ -161,15 +169,19 @@
             this.guna2ShadowPanel2.Controls.Add(this.nudShowers);
             this.guna2ShadowPanel2.Controls.Add(this.label9);
             this.guna2ShadowPanel2.Controls.Add(this.cbbLocation);
-            this.guna2ShadowPanel2.Controls.Add(this.label7);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.guna2ShadowPanel2, "guna2ShadowPanel2");
             this.guna2ShadowPanel2.Controls.Add(this.btnSave);
             this.guna2ShadowPanel2.Controls.Add(this.label10);
+            this.guna2ShadowPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.guna2ShadowPanel2, "guna2ShadowPanel2");
-            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(1088, 638);
+            this.guna2ShadowPanel2.TabIndex = 68;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 233;
             this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(931, 521);
+            this.guna2ShadowPanel2.TabIndex = 68;
             // 
             // panelPicture
             // 
@@ -271,11 +283,15 @@
             this.btnAddpicture.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnAddpicture.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnAddpicture.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAddpicture.HoverState.Parent = this.btnAddpicture;
-            this.btnAddpicture.Name = "btnAddpicture";
-            this.btnAddpicture.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAddpicture.Size = new System.Drawing.Size(54, 41);
+            this.btnAddpicture.TabIndex = 73;
+            this.btnAddpicture.Text = "+";
+            this.btnAddpicture.Click += new System.EventHandler(this.btnAddpicture_Click_1);
             this.btnAddpicture.ShadowDecoration.Depth = 5;
             this.btnAddpicture.ShadowDecoration.Parent = this.btnAddpicture;
+            this.btnAddpicture.Size = new System.Drawing.Size(54, 41);
+            this.btnAddpicture.TabIndex = 73;
+            this.btnAddpicture.Text = "+";
             // 
             // pictureBox2
             // 
@@ -313,11 +329,13 @@
             this.tbId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbId.FocusedState.Parent = this.tbId;
             resources.ApplyResources(this.tbId, "tbId");
-            this.tbId.ForeColor = System.Drawing.Color.Black;
-            this.tbId.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.tbId.Location = new System.Drawing.Point(5, 5);
+            this.tbId.Margin = new System.Windows.Forms.Padding(5);
             this.tbId.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.tbId.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbId.HoverState.Parent = this.tbId;
+            this.tbId.Location = new System.Drawing.Point(28, 72);
+            this.tbId.Margin = new System.Windows.Forms.Padding(5);
             this.tbId.Name = "tbId";
             this.tbId.PasswordChar = '\0';
             this.tbId.PlaceholderText = "Enter id of Housing";
@@ -550,21 +568,29 @@
             this.btnSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSave.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnSave.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnSave.HoverState.Parent = this.btnSave;
-            this.btnSave.Name = "btnSave";
-            this.btnSave.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSave.Size = new System.Drawing.Size(131, 41);
+            this.btnSave.TabIndex = 55;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             this.btnSave.ShadowDecoration.Depth = 5;
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            // 
-            // label10
-            // 
+            this.btnSave.Size = new System.Drawing.Size(131, 41);
             resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Name = "label10";
+            this.btnSave.Text = "Save";
+            // 
+            this.label10.Size = new System.Drawing.Size(73, 20);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Location";
+            // 
+            this.btnClosePanel.ShadowDecoration.Parent = this.btnClosePanel;
+            this.btnClosePanel.Size = new System.Drawing.Size(38, 31);
+            this.btnClosePanel.TabIndex = 4;
+            this.btnClosePanel.Text = "X";
             // 
             // timer1
             // 
             this.timer1.Interval = 4000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // guna2ShadowPanel1
             // 
@@ -572,50 +598,116 @@
             this.guna2ShadowPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2ShadowPanel1.Controls.Add(this.panel2);
             this.guna2ShadowPanel1.Controls.Add(this.guna2ShadowPanel2);
-            this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
-            resources.ApplyResources(this.guna2ShadowPanel1, "guna2ShadowPanel1");
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1090, 640);
+            this.guna2ShadowPanel1.TabIndex = 64;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel2.Controls.Add(this.btnClose);
             this.panel2.Controls.Add(this.label11);
-            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1088, 30);
+            this.panel2.TabIndex = 74;
+            // 
+            // btnClose
+            // 
+            this.btnClose.Animated = true;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.DisabledState.Parent = this.btnClose;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Location = new System.Drawing.Point(1027, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(61, 30);
+            this.btnClose.TabIndex = 69;
+            this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label11
             // 
-            resources.ApplyResources(this.label11, "label11");
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(505, 10);
             this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 20);
+            this.label11.TabIndex = 68;
+            this.label11.Text = "Edit";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Location = new System.Drawing.Point(512, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(282, 2);
+            this.pictureBox2.TabIndex = 72;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lineName
+            // 
+            this.lineName.BackColor = System.Drawing.Color.Black;
+            this.lineName.Location = new System.Drawing.Point(29, 160);
+            this.lineName.Name = "lineName";
+            this.lineName.Size = new System.Drawing.Size(282, 2);
+            this.lineName.TabIndex = 71;
+            this.lineName.TabStop = false;
+            // 
+            // lineId
+            // 
+            this.lineId.BackColor = System.Drawing.Color.Black;
+            this.lineId.Location = new System.Drawing.Point(3, 53);
+            this.lineId.Name = "lineId";
+            this.lineId.Size = new System.Drawing.Size(282, 2);
+            this.lineId.TabIndex = 70;
+            this.lineId.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1088, 638);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Name = "pictureBox1";
+            // flowLayoutPanel1
+            this.panel2.Name = "panel2";
+            this.flowLayoutPanel1.Controls.Add(this.tbId);
+            this.flowLayoutPanel1.Controls.Add(this.lineId);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 61);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(291, 78);
+            this.flowLayoutPanel1.TabIndex = 77;
+            this.label11.Location = new System.Drawing.Point(505, 10);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 20);
+            this.label11.TabIndex = 68;
+            this.label11.Text = "Edit";
             // 
             // frmEditHousing
             // 
-            resources.ApplyResources(this, "$this");
+            this.Text = "frmEditHousing";
+            this.Load += new System.EventHandler(this.frmEditHousing_Load);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEditHousing";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
-            this.guna2ShadowPanel2.ResumeLayout(false);
-            this.guna2ShadowPanel2.PerformLayout();
-            this.panelMessage.ResumeLayout(false);
-            this.panelMessage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
+            this.Text = "frmEditHousing";
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
@@ -623,15 +715,21 @@
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
+            this.guna2ShadowPanel1.ResumeLayout(false);
+            this.panelMessage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox4;
-        public System.Windows.Forms.Label lbMessages;
         private System.Windows.Forms.PictureBox lineId;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
@@ -665,12 +763,12 @@
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2GradientButton btnSave;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2Button btnClosePanel;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
-        private Guna.UI2.WinForms.Guna2GradientPanel panelMessage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

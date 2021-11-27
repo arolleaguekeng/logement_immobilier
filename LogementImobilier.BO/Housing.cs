@@ -11,7 +11,6 @@ namespace LogementImobilier.BO
     {
         private Housing housing;
 
-        public byte[] ProfileIcon { get; set; }
         public decimal Price { get; set; }
         public string Location { get; set; }
         public int NumberRoom { get; set; }
@@ -27,7 +26,7 @@ namespace LogementImobilier.BO
         public List<HousingPicture> HousingPitctures { get; set; }
 
         public Housing(string id,string name,decimal price, string location, int numberRoom, int numberKitchen, int numberShower,
-                        int numberExibition, float numberStart, bool used,Client client,bool terasse,bool parking,int numberOfLevel,List<HousingPicture> picture,byte[] profile)
+                        int numberExibition, float numberStart, bool used,Client client,bool terasse,bool parking,int numberOfLevel,List<HousingPicture> picture)
         {
             Id = id;
             Name = name;
@@ -44,7 +43,6 @@ namespace LogementImobilier.BO
             Parking = parking;
             NumberOfLevel = numberOfLevel;
             HousingPitctures = picture;
-            ProfileIcon = profile;
         }
 
         public Housing()

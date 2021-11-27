@@ -14,14 +14,14 @@ namespace LogementImobilier.Winform
 {
     public partial class frmHistory : Form
     {
-        HousingManager manager;
-        List<Housing> housings;
+        HistoryManager manager;
+        List<Historic> housings;
         public frmHistory()
         {
-            manager = new HousingManager();
-            housings = new List<Housing>();
+            manager = new HistoryManager();
+            housings = new List<Historic>();
             InitializeComponent();
-            housings  = manager.GetAllHousing();
+            housings  = manager.ShowHistory();
 
            
             
@@ -35,9 +35,16 @@ namespace LogementImobilier.Winform
 
         private void frmHistory_Load(object sender, EventArgs e)
         {
+            ShowLvHousing(lvShow);
+        }
+        private void ShowLvHousing(ListView lv)
+        {
+            housings = manager.ShowHistory();
             foreach (var house in housings)
             {
-                housingBindingSource.Add(house);
+                var Lvi = new ListViewItem(new string[] {house.DateTime.ToString(),house.HousingHis.Location,house.Operation});
+                Lvi.Tag = house;
+                lv.Items.Add(Lvi);
             }
         }
     }

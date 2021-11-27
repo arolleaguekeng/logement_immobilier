@@ -74,5 +74,23 @@ namespace LogementImobilier.BLL
                 housinRepository.Set(housing, newHousing);
             }
         }
+
+        public List<Housing> FilterByPriceasc()
+        {
+            return housinRepository.FindByPriceasc();
+        }
+        public List<Housing> FilterByPricedesc()
+        {
+            return housinRepository.FindByPricedesc();
+        }
+
+        public List<Housing> FilterByStarsasc()
+        {
+            return housinRepository.FindBystartsasc();
+        }
+        public List<Housing> FilterByStarsdesc()
+        {
+            return housinRepository.FindBystartdesc();
+        }
     }
 }

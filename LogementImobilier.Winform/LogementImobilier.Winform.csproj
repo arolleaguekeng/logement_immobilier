@@ -122,12 +122,6 @@
     <Compile Include="frmInfoHousing.Designer.cs">
       <DependentUpon>frmInfoHousing.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMessageBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMessageBox.Designer.cs">
-      <DependentUpon>frmMessageBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmRenting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,8 +165,8 @@
     <EmbeddedResource Include="fmExemple.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddHouse.fr.resx">
-      <DependentUpon>frmAddHouse.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddClient.resx">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddHouse.resx">
       <DependentUpon>frmAddHouse.cs</DependentUpon>
@@ -183,8 +177,11 @@
     <EmbeddedResource Include="frmClientRending.resx">
       <DependentUpon>frmClientRending.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEditHousing.fr.resx">
-      <DependentUpon>frmEditHousing.cs</DependentUpon>
+    <EmbeddedResource Include="frmDeleteClient.resx">
+      <DependentUpon>frmDeleteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditclient.resx">
+      <DependentUpon>frmEditclient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditHousing.resx">
       <DependentUpon>frmEditHousing.cs</DependentUpon>
@@ -212,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInfoHousing.resx">
       <DependentUpon>frmInfoHousing.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.fr.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>

@@ -25,6 +25,7 @@ namespace LogementImobilier.Winform
         public frmAddHouse()
         {
             message = new frmMessageBox();
+           
             LiPicture = new List<HousingPicture>();
             InitializeComponent();
 
@@ -34,26 +35,38 @@ namespace LogementImobilier.Winform
         {
             try
             {
-                Client client = new Client();
-                frmIndex index = new frmIndex();
-                HousingManager housing = new HousingManager();
+                if(LiPicture.Count <=0 )
+                {
+                    MessageBox.Show("Vous devez ajouter des images !");
+                }
+                else
+                {
+                    Client client = new Client();
+                    frmIndex index = new frmIndex();
+                    HousingManager housing = new HousingManager();
 
 
 
-                lbPrice.Text =   housing.CalculPrice((int)nudRooms.Value, (int)nudKitchen.Value,
-                                (int)starNotation.Value, (int)nudExibition.Value, (int)nudShowers.Value,
-                                1,(int )nudLevel.Value).ToString();
+                    lbPrice.Text = housing.CalculPrice((int)nudRooms.Value, (int)nudKitchen.Value,
+                                    (int)starNotation.Value, (int)nudExibition.Value, (int)nudShowers.Value,
+                                    1, (int)nudLevel.Value).ToString();
 
-                        
-                housing.CreateHousing(new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
-                                        (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
-                                            false, client, chbTerasse.Checked, chbParking.Checked,(int) nudLevel.Value, LiPicture,LiPicture[0].Location));
 
-                timer1.Enabled = true;
-                panelMessage.Visible = true;
-               
-                Program.messagebox = ResourceTranslate.succes;
-                message.ShowDialog();
+
+                    var house = new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
+                                            (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
+                                                false, client, chbTerasse.Checked, chbParking.Checked, (int)nudLevel.Value, LiPicture);
+
+
+                    housing.CreateHousing(house);
+
+                    timer1.Enabled = true;
+                    Program.messagebox = "Edited Succesfully";
+                    HistoryManager history = new HistoryManager();
+                    history.AddHistory(new Historic(DateTime.Now, "Added", house));
+                    message.ShowDialog();
+                }
+
             }
             catch (Exception ex)
             {
