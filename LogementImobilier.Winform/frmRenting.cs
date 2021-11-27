@@ -270,6 +270,11 @@ namespace LogementImobilier.Winform
             btnSee.Visible = true;
         }
         public static Housing hous;
+
+        private void panelcontein_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         //private void lvShowHousing_MouseDoubleClick(object sender, MouseEventArgs e)
         //{
         //    frmInfoHousing infoHousing = new frmInfoHousing();
@@ -282,7 +287,7 @@ namespace LogementImobilier.Winform
         //    lvShowHousing.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         //    ImageList imageList = new ImageList();
         //    imageList.ImageSize = new Size(100,100);
-            
+
         //    string[] paths = { };
         //    try
         //    {

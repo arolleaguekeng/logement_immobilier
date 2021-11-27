@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHistory));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -65,44 +66,33 @@
             // 
             // guna2Panel1
             // 
+            resources.ApplyResources(this.guna2Panel1, "guna2Panel1");
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
             this.guna2Panel1.Controls.Add(this.guna2Button2);
             this.guna2Panel1.Controls.Add(this.btnClose);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1170, 40);
-            this.guna2Panel1.TabIndex = 2;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(499, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 32);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Housing";
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // guna2Button3
             // 
+            resources.ApplyResources(this.guna2Button3, "guna2Button3");
             this.guna2Button3.Animated = true;
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
@@ -111,20 +101,15 @@
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button3.DisabledState.Parent = this.guna2Button3;
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(987, 0);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(61, 40);
-            this.guna2Button3.TabIndex = 5;
-            this.guna2Button3.Text = "-";
             // 
             // guna2Button2
             // 
+            resources.ApplyResources(this.guna2Button2, "guna2Button2");
             this.guna2Button2.Animated = true;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
@@ -133,20 +118,15 @@
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(1048, 0);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(61, 40);
-            this.guna2Button2.TabIndex = 4;
-            this.guna2Button2.Text = "O";
             // 
             // btnClose
             // 
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Animated = true;
             this.btnClose.CheckedState.Parent = this.btnClose;
             this.btnClose.CustomImages.Parent = this.btnClose;
@@ -155,29 +135,19 @@
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClose.DisabledState.Parent = this.btnClose;
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Location = new System.Drawing.Point(1109, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
-            this.btnClose.Size = new System.Drawing.Size(61, 40);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "X";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 40);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1170, 579);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
             // housingBindingSource
@@ -187,125 +157,111 @@
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.idDataGridViewTextBoxColumn, "idDataGridViewTextBoxColumn");
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberOfLevelDataGridViewTextBoxColumn
             // 
             this.numberOfLevelDataGridViewTextBoxColumn.DataPropertyName = "NumberOfLevel";
-            this.numberOfLevelDataGridViewTextBoxColumn.HeaderText = "NumberOfLevel";
-            this.numberOfLevelDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.numberOfLevelDataGridViewTextBoxColumn, "numberOfLevelDataGridViewTextBoxColumn");
             this.numberOfLevelDataGridViewTextBoxColumn.Name = "numberOfLevelDataGridViewTextBoxColumn";
             this.numberOfLevelDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // usedDataGridViewCheckBoxColumn
             // 
             this.usedDataGridViewCheckBoxColumn.DataPropertyName = "Used";
-            this.usedDataGridViewCheckBoxColumn.HeaderText = "Used";
-            this.usedDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.usedDataGridViewCheckBoxColumn, "usedDataGridViewCheckBoxColumn");
             this.usedDataGridViewCheckBoxColumn.Name = "usedDataGridViewCheckBoxColumn";
             this.usedDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // parkingDataGridViewCheckBoxColumn
             // 
             this.parkingDataGridViewCheckBoxColumn.DataPropertyName = "Parking";
-            this.parkingDataGridViewCheckBoxColumn.HeaderText = "Parking";
-            this.parkingDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.parkingDataGridViewCheckBoxColumn, "parkingDataGridViewCheckBoxColumn");
             this.parkingDataGridViewCheckBoxColumn.Name = "parkingDataGridViewCheckBoxColumn";
             this.parkingDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // terrasseDataGridViewCheckBoxColumn
             // 
             this.terrasseDataGridViewCheckBoxColumn.DataPropertyName = "Terrasse";
-            this.terrasseDataGridViewCheckBoxColumn.HeaderText = "Terrasse";
-            this.terrasseDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.terrasseDataGridViewCheckBoxColumn, "terrasseDataGridViewCheckBoxColumn");
             this.terrasseDataGridViewCheckBoxColumn.Name = "terrasseDataGridViewCheckBoxColumn";
             this.terrasseDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // housingClientDataGridViewTextBoxColumn
             // 
             this.housingClientDataGridViewTextBoxColumn.DataPropertyName = "HousingClient";
-            this.housingClientDataGridViewTextBoxColumn.HeaderText = "HousingClient";
-            this.housingClientDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.housingClientDataGridViewTextBoxColumn, "housingClientDataGridViewTextBoxColumn");
             this.housingClientDataGridViewTextBoxColumn.Name = "housingClientDataGridViewTextBoxColumn";
             this.housingClientDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberStartDataGridViewTextBoxColumn
             // 
             this.numberStartDataGridViewTextBoxColumn.DataPropertyName = "NumberStart";
-            this.numberStartDataGridViewTextBoxColumn.HeaderText = "NumberStart";
-            this.numberStartDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.numberStartDataGridViewTextBoxColumn, "numberStartDataGridViewTextBoxColumn");
             this.numberStartDataGridViewTextBoxColumn.Name = "numberStartDataGridViewTextBoxColumn";
             this.numberStartDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberExibitionDataGridViewTextBoxColumn
             // 
             this.numberExibitionDataGridViewTextBoxColumn.DataPropertyName = "NumberExibition";
-            this.numberExibitionDataGridViewTextBoxColumn.HeaderText = "NumberExibition";
-            this.numberExibitionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.numberExibitionDataGridViewTextBoxColumn, "numberExibitionDataGridViewTextBoxColumn");
             this.numberExibitionDataGridViewTextBoxColumn.Name = "numberExibitionDataGridViewTextBoxColumn";
             this.numberExibitionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberShowerDataGridViewTextBoxColumn
             // 
             this.numberShowerDataGridViewTextBoxColumn.DataPropertyName = "NumberShower";
-            this.numberShowerDataGridViewTextBoxColumn.HeaderText = "NumberShower";
-            this.numberShowerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.numberShowerDataGridViewTextBoxColumn, "numberShowerDataGridViewTextBoxColumn");
             this.numberShowerDataGridViewTextBoxColumn.Name = "numberShowerDataGridViewTextBoxColumn";
             this.numberShowerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberKitchenDataGridViewTextBoxColumn
             // 
             this.numberKitchenDataGridViewTextBoxColumn.DataPropertyName = "NumberKitchen";
-            this.numberKitchenDataGridViewTextBoxColumn.HeaderText = "NumberKitchen";
-            this.numberKitchenDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.numberKitchenDataGridViewTextBoxColumn, "numberKitchenDataGridViewTextBoxColumn");
             this.numberKitchenDataGridViewTextBoxColumn.Name = "numberKitchenDataGridViewTextBoxColumn";
             this.numberKitchenDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numberRoomDataGridViewTextBoxColumn
             // 
             this.numberRoomDataGridViewTextBoxColumn.DataPropertyName = "NumberRoom";
-            this.numberRoomDataGridViewTextBoxColumn.HeaderText = "NumberRoom";
-            this.numberRoomDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.numberRoomDataGridViewTextBoxColumn, "numberRoomDataGridViewTextBoxColumn");
             this.numberRoomDataGridViewTextBoxColumn.Name = "numberRoomDataGridViewTextBoxColumn";
             this.numberRoomDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // locationDataGridViewTextBoxColumn
             // 
             this.locationDataGridViewTextBoxColumn.DataPropertyName = "Location";
-            this.locationDataGridViewTextBoxColumn.HeaderText = "Location";
-            this.locationDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.locationDataGridViewTextBoxColumn, "locationDataGridViewTextBoxColumn");
             this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
             this.locationDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // priceDataGridViewTextBoxColumn
             // 
             this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.priceDataGridViewTextBoxColumn, "priceDataGridViewTextBoxColumn");
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // profileIconDataGridViewImageColumn
             // 
             this.profileIconDataGridViewImageColumn.DataPropertyName = "ProfileIcon";
-            this.profileIconDataGridViewImageColumn.HeaderText = "ProfileIcon";
-            this.profileIconDataGridViewImageColumn.MinimumWidth = 6;
+            resources.ApplyResources(this.profileIconDataGridViewImageColumn, "profileIconDataGridViewImageColumn");
             this.profileIconDataGridViewImageColumn.Name = "profileIconDataGridViewImageColumn";
             this.profileIconDataGridViewImageColumn.ReadOnly = true;
             // 
             // dgvHistory
             // 
+            resources.ApplyResources(this.dgvHistory, "dgvHistory");
             this.dgvHistory.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvHistory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -323,7 +279,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvHistory.ColumnHeadersHeight = 27;
             this.dgvHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.profileIconDataGridViewImageColumn,
             this.priceDataGridViewTextBoxColumn,
@@ -349,18 +304,13 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvHistory.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvHistory.EnableHeadersVisualStyles = false;
             this.dgvHistory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvHistory.Location = new System.Drawing.Point(0, 40);
             this.dgvHistory.Name = "dgvHistory";
             this.dgvHistory.ReadOnly = true;
             this.dgvHistory.RowHeadersVisible = false;
-            this.dgvHistory.RowHeadersWidth = 51;
             this.dgvHistory.RowTemplate.Height = 24;
             this.dgvHistory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHistory.Size = new System.Drawing.Size(1170, 579);
-            this.dgvHistory.TabIndex = 4;
             this.dgvHistory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvHistory.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvHistory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -385,15 +335,13 @@
             // 
             // frmHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 619);
             this.Controls.Add(this.dgvHistory);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmHistory";
-            this.Text = "frmHistory";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHistory_Load);
             this.guna2Panel1.ResumeLayout(false);

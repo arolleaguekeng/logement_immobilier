@@ -5,8 +5,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,6 +22,22 @@ namespace LogementImobilier.Winform
         UserManager manager;
         public frmLogin()
         {
+            Language[] languages = new Language[]
+            {
+                new Language {Code = "en", NameLanguage = "English"},
+                new Language {Code = "fr", NameLanguage = "Français"}
+            };
+            combLanguage.DataSource = languages;
+            combLanguage.DisplayMember = "NameLanguage";
+            combLanguage.ValueMember = "Code";
+            combLanguage.SelectedIndex = -1;
+
+            var defaultLanguage = Properties.Settings.Default.langue;
+            if (!string.IsNullOrEmpty(defaultLanguage))
+            {
+                combLanguage.SelectedValue = defaultLanguage;
+
+            }
             manager = new UserManager();
             InitializeComponent();
         }
@@ -71,6 +89,23 @@ namespace LogementImobilier.Winform
         {
             panelEmail.Visible = true;
             panelPassword.Visible = false;
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            if (combLanguage.SelectedIndex < 0 )
+            {
+                MessageBox.Show("Chosse a language !");
+                return;
+            }
+
+            Properties.Settings.Default.langue = combLanguage.SelectedValue.ToString();
+            Properties.Settings.Default.Save();
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture(Properties.Settings.Default.langue);
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(Properties.Settings.Default.langue);
+
+            panelLangguage.Visible = false;
+            guna2ShadowPanel1.Visible = true;
         }
     }
 }

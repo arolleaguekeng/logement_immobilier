@@ -104,7 +104,7 @@ namespace LogementImobilier.Winform
 
         private void btnStartRenting_Click_1(object sender, EventArgs e)
         {
-            lbMessages.Text = "Double Click for show more details of Housing";
+            lbMessages.Text = ResourceTranslate.double_clik;
             frmRenting renting = new frmRenting();
             OpenChildform(renting, sender);
             panelMessage.Visible = true;
