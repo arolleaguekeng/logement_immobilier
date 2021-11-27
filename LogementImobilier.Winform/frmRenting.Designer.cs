@@ -425,7 +425,6 @@
             this.panelcontein.AutoScroll = true;
             this.panelcontein.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panelcontein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelcontein.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelcontein.Location = new System.Drawing.Point(0, 0);
             this.panelcontein.Margin = new System.Windows.Forms.Padding(2);
             this.panelcontein.Name = "panelcontein";

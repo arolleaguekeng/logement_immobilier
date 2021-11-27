@@ -51,9 +51,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnOk = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.combLanguage = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.combLanguage = new System.Windows.Forms.ComboBox();
+            this.btnOk = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelEmail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
             this.panelPassword.SuspendLayout();
@@ -323,8 +323,8 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble1;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
@@ -359,6 +359,19 @@
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
             // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Name = "label4";
+            // 
+            // combLanguage
+            // 
+            this.combLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.combLanguage, "combLanguage");
+            this.combLanguage.FormattingEnabled = true;
+            this.combLanguage.Name = "combLanguage";
+            // 
             // btnOk
             // 
             this.btnOk.Animated = true;
@@ -387,19 +400,6 @@
             this.btnOk.ShadowDecoration.Depth = 5;
             this.btnOk.ShadowDecoration.Parent = this.btnOk;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
-            // 
-            // combLanguage
-            // 
-            this.combLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.combLanguage, "combLanguage");
-            this.combLanguage.FormattingEnabled = true;
-            this.combLanguage.Name = "combLanguage";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Name = "label4";
             // 
             // frmLogin
             // 

@@ -27,7 +27,7 @@ namespace LogementImobilier.Winform
             Application.SetCompatibleTextRenderingDefault(false);
             //Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr");
             //Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr");
-            frmLogin index = new frmLogin();
+            frmIndex index = new frmIndex();
             index.Show();
             Application.Run();
         }

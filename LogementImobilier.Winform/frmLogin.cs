@@ -30,7 +30,7 @@ namespace LogementImobilier.Winform
             combLanguage.DataSource = languages;
             combLanguage.DisplayMember = "NameLanguage";
             combLanguage.ValueMember = "Code";
-            combLanguage.SelectedIndex = -1;
+            combLanguage.SelectedIndex = -1; 
 
             var defaultLanguage = Properties.Settings.Default.langue;
             if (!string.IsNullOrEmpty(defaultLanguage))

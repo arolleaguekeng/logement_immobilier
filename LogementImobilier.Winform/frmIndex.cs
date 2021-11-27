@@ -104,10 +104,8 @@ namespace LogementImobilier.Winform
 
         private void btnStartRenting_Click_1(object sender, EventArgs e)
         {
-            lbMessages.Text = ResourceTranslate.double_clik;
             frmRenting renting = new frmRenting();
             OpenChildform(renting, sender);
-            panelMessage.Visible = true;
         }
 
         private void frmIndex_Load(object sender, EventArgs e)
@@ -115,24 +113,15 @@ namespace LogementImobilier.Winform
 
         }
 
-        private void btn_Home_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
 
         private void btnAddHouse_Click_1(object sender, EventArgs e)
         {
-            panelMessage.Visible = false;
             frmAddHouse addHouse = new frmAddHouse();
             OpenChildform(addHouse, sender);
-            lbMessages.Text = "Add new house";
+
         }
 
-        private void btnClosePanel_Click(object sender, EventArgs e)
-        {
-            panelMessage.Visible = false;
-        }
+
 
         private void frmIndex_FormClosed(object sender, FormClosedEventArgs e)
         {

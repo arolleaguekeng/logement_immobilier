@@ -94,12 +94,12 @@
             // 
             // nudShowers
             // 
-            resources.ApplyResources(this.nudShowers, "nudShowers");
             this.nudShowers.BackColor = System.Drawing.Color.Transparent;
             this.nudShowers.BorderRadius = 8;
             this.nudShowers.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudShowers.DisabledState.Parent = this.nudShowers;
             this.nudShowers.FocusedState.Parent = this.nudShowers;
+            resources.ApplyResources(this.nudShowers, "nudShowers");
             this.nudShowers.ForeColor = System.Drawing.Color.Black;
             this.nudShowers.Name = "nudShowers";
             this.nudShowers.ShadowDecoration.Parent = this.nudShowers;
@@ -108,7 +108,6 @@
             // 
             // cbbLocation
             // 
-            resources.ApplyResources(this.cbbLocation, "cbbLocation");
             this.cbbLocation.BackColor = System.Drawing.Color.Transparent;
             this.cbbLocation.BorderColor = System.Drawing.Color.White;
             this.cbbLocation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -116,6 +115,7 @@
             this.cbbLocation.FocusedColor = System.Drawing.Color.Purple;
             this.cbbLocation.FocusedState.BorderColor = System.Drawing.Color.Purple;
             this.cbbLocation.FocusedState.Parent = this.cbbLocation;
+            resources.ApplyResources(this.cbbLocation, "cbbLocation");
             this.cbbLocation.ForeColor = System.Drawing.Color.Black;
             this.cbbLocation.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.cbbLocation.HoverState.Parent = this.cbbLocation;
@@ -136,12 +136,12 @@
             // 
             // nudRooms
             // 
-            resources.ApplyResources(this.nudRooms, "nudRooms");
             this.nudRooms.BackColor = System.Drawing.Color.Transparent;
             this.nudRooms.BorderRadius = 8;
             this.nudRooms.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudRooms.DisabledState.Parent = this.nudRooms;
             this.nudRooms.FocusedState.Parent = this.nudRooms;
+            resources.ApplyResources(this.nudRooms, "nudRooms");
             this.nudRooms.ForeColor = System.Drawing.Color.Black;
             this.nudRooms.Name = "nudRooms";
             this.nudRooms.ShadowDecoration.Parent = this.nudRooms;
@@ -168,19 +168,19 @@
             // 
             // starNotation
             // 
-            resources.ApplyResources(this.starNotation, "starNotation");
             this.starNotation.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            resources.ApplyResources(this.starNotation, "starNotation");
             this.starNotation.Name = "starNotation";
             this.starNotation.RatingColor = System.Drawing.Color.Gold;
             // 
             // nudExibition
             // 
-            resources.ApplyResources(this.nudExibition, "nudExibition");
             this.nudExibition.BackColor = System.Drawing.Color.Transparent;
             this.nudExibition.BorderRadius = 8;
             this.nudExibition.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudExibition.DisabledState.Parent = this.nudExibition;
             this.nudExibition.FocusedState.Parent = this.nudExibition;
+            resources.ApplyResources(this.nudExibition, "nudExibition");
             this.nudExibition.ForeColor = System.Drawing.Color.Black;
             this.nudExibition.Name = "nudExibition";
             this.nudExibition.ShadowDecoration.Parent = this.nudExibition;
@@ -195,12 +195,12 @@
             // 
             // nudKitchen
             // 
-            resources.ApplyResources(this.nudKitchen, "nudKitchen");
             this.nudKitchen.BackColor = System.Drawing.Color.Transparent;
             this.nudKitchen.BorderRadius = 8;
             this.nudKitchen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudKitchen.DisabledState.Parent = this.nudKitchen;
             this.nudKitchen.FocusedState.Parent = this.nudKitchen;
+            resources.ApplyResources(this.nudKitchen, "nudKitchen");
             this.nudKitchen.ForeColor = System.Drawing.Color.Black;
             this.nudKitchen.Name = "nudKitchen";
             this.nudKitchen.ShadowDecoration.Parent = this.nudKitchen;
@@ -214,7 +214,6 @@
             // 
             // tbId
             // 
-            resources.ApplyResources(this.tbId, "tbId");
             this.tbId.Animated = true;
             this.tbId.BackColor = System.Drawing.Color.Transparent;
             this.tbId.BorderColor = System.Drawing.Color.White;
@@ -227,6 +226,7 @@
             this.tbId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbId.FocusedState.Parent = this.tbId;
+            resources.ApplyResources(this.tbId, "tbId");
             this.tbId.ForeColor = System.Drawing.Color.Black;
             this.tbId.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbId.HoverState.FillColor = System.Drawing.Color.Transparent;
@@ -240,7 +240,6 @@
             // 
             // tbName
             // 
-            resources.ApplyResources(this.tbName, "tbName");
             this.tbName.Animated = true;
             this.tbName.BackColor = System.Drawing.Color.Transparent;
             this.tbName.BorderColor = System.Drawing.Color.White;
@@ -253,6 +252,7 @@
             this.tbName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbName.FocusedState.Parent = this.tbName;
+            resources.ApplyResources(this.tbName, "tbName");
             this.tbName.ForeColor = System.Drawing.Color.Black;
             this.tbName.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbName.HoverState.FillColor = System.Drawing.Color.Transparent;
@@ -266,7 +266,6 @@
             // 
             // btnSave
             // 
-            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.Animated = true;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -283,6 +282,7 @@
             this.btnSave.DisabledState.Parent = this.btnSave;
             this.btnSave.FillColor = System.Drawing.Color.Transparent;
             this.btnSave.FillColor2 = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSave.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
@@ -341,12 +341,12 @@
             // 
             // nudLevel
             // 
-            resources.ApplyResources(this.nudLevel, "nudLevel");
             this.nudLevel.BackColor = System.Drawing.Color.Transparent;
             this.nudLevel.BorderRadius = 8;
             this.nudLevel.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nudLevel.DisabledState.Parent = this.nudLevel;
             this.nudLevel.FocusedState.Parent = this.nudLevel;
+            resources.ApplyResources(this.nudLevel, "nudLevel");
             this.nudLevel.ForeColor = System.Drawing.Color.Black;
             this.nudLevel.Name = "nudLevel";
             this.nudLevel.ShadowDecoration.Parent = this.nudLevel;
@@ -361,12 +361,12 @@
             // 
             // guna2ShadowPanel1
             // 
-            resources.ApplyResources(this.guna2ShadowPanel1, "guna2ShadowPanel1");
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.guna2ShadowPanel1.Controls.Add(this.panelMessage);
             this.guna2ShadowPanel1.Controls.Add(this.guna2ShadowPanel2);
             this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.guna2ShadowPanel1, "guna2ShadowPanel1");
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
@@ -384,14 +384,13 @@
             // 
             // pictureBox4
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Image = global::LogementImobilier.Winform.Properties.Resources.notification_26px;
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
             // btnClosePanel
             // 
-            resources.ApplyResources(this.btnClosePanel, "btnClosePanel");
             this.btnClosePanel.Animated = true;
             this.btnClosePanel.CheckedState.Parent = this.btnClosePanel;
             this.btnClosePanel.CustomImages.Parent = this.btnClosePanel;
@@ -401,6 +400,7 @@
             this.btnClosePanel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnClosePanel.DisabledState.Parent = this.btnClosePanel;
             this.btnClosePanel.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            resources.ApplyResources(this.btnClosePanel, "btnClosePanel");
             this.btnClosePanel.ForeColor = System.Drawing.Color.White;
             this.btnClosePanel.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnClosePanel.HoverState.ForeColor = System.Drawing.Color.White;
@@ -417,7 +417,6 @@
             // 
             // guna2ShadowPanel2
             // 
-            resources.ApplyResources(this.guna2ShadowPanel2, "guna2ShadowPanel2");
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Controls.Add(this.panelPicture);
             this.guna2ShadowPanel2.Controls.Add(this.lbItems);
@@ -451,6 +450,7 @@
             this.guna2ShadowPanel2.Controls.Add(this.btnSave);
             this.guna2ShadowPanel2.Controls.Add(this.label10);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.guna2ShadowPanel2, "guna2ShadowPanel2");
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 233;
@@ -469,7 +469,6 @@
             // 
             // btnRemovePicture
             // 
-            resources.ApplyResources(this.btnRemovePicture, "btnRemovePicture");
             this.btnRemovePicture.Animated = true;
             this.btnRemovePicture.BackColor = System.Drawing.Color.Transparent;
             this.btnRemovePicture.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -486,6 +485,7 @@
             this.btnRemovePicture.DisabledState.Parent = this.btnRemovePicture;
             this.btnRemovePicture.FillColor = System.Drawing.Color.Transparent;
             this.btnRemovePicture.FillColor2 = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnRemovePicture, "btnRemovePicture");
             this.btnRemovePicture.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnRemovePicture.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnRemovePicture.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
@@ -498,7 +498,6 @@
             // 
             // btnAddpicture
             // 
-            resources.ApplyResources(this.btnAddpicture, "btnAddpicture");
             this.btnAddpicture.Animated = true;
             this.btnAddpicture.BackColor = System.Drawing.Color.Transparent;
             this.btnAddpicture.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -515,6 +514,7 @@
             this.btnAddpicture.DisabledState.Parent = this.btnAddpicture;
             this.btnAddpicture.FillColor = System.Drawing.Color.Transparent;
             this.btnAddpicture.FillColor2 = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnAddpicture, "btnAddpicture");
             this.btnAddpicture.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnAddpicture.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnAddpicture.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
@@ -528,30 +528,30 @@
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // lineName
             // 
-            resources.ApplyResources(this.lineName, "lineName");
             this.lineName.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.lineName, "lineName");
             this.lineName.Name = "lineName";
             this.lineName.TabStop = false;
             // 
             // lineId
             // 
-            resources.ApplyResources(this.lineId, "lineId");
             this.lineId.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.lineId, "lineId");
             this.lineId.Name = "lineId";
             this.lineId.TabStop = false;
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.label6);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // label6
@@ -574,8 +574,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.wallpaper_meuble;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
