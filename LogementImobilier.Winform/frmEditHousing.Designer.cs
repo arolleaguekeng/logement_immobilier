@@ -35,9 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.panelPicture = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelMessage = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnClosePanel = new Guna.UI2.WinForms.Guna2Button();
+
+
             this.lbItems = new System.Windows.Forms.Label();
             this.btnRemovePicture = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAddpicture = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -90,18 +89,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbMessages
-            // 
-            this.lbMessages.AutoSize = true;
-            this.lbMessages.BackColor = System.Drawing.Color.Transparent;
-            this.lbMessages.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMessages.ForeColor = System.Drawing.Color.White;
-            this.lbMessages.Location = new System.Drawing.Point(61, 26);
-            this.lbMessages.Name = "lbMessages";
-            this.lbMessages.Size = new System.Drawing.Size(133, 32);
-            this.lbMessages.TabIndex = 2;
-            this.lbMessages.Text = "Welcome";
+
             // 
             // panel1
             this.panel1.Size = new System.Drawing.Size(1088, 30);
@@ -143,7 +131,6 @@
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Controls.Add(this.flowLayoutPanel1);
             this.guna2ShadowPanel2.Controls.Add(this.panelPicture);
-            this.guna2ShadowPanel2.Controls.Add(this.panelMessage);
             this.guna2ShadowPanel2.Controls.Add(this.lbItems);
             this.guna2ShadowPanel2.Controls.Add(this.btnRemovePicture);
             this.guna2ShadowPanel2.Controls.Add(this.btnAddpicture);
@@ -189,42 +176,8 @@
             this.panelPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPicture.Name = "panelPicture";
             // 
-            // panelMessage
+
             // 
-            resources.ApplyResources(this.panelMessage, "panelMessage");
-            this.panelMessage.Controls.Add(this.pictureBox4);
-            this.panelMessage.Controls.Add(this.btnClosePanel);
-            this.panelMessage.Controls.Add(this.lbMessages);
-            this.panelMessage.FillColor = System.Drawing.Color.Purple;
-            this.panelMessage.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.panelMessage.Name = "panelMessage";
-            this.panelMessage.ShadowDecoration.Parent = this.panelMessage;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::LogementImobilier.Winform.Properties.Resources.notification_26px;
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnClosePanel
-            // 
-            this.btnClosePanel.Animated = true;
-            this.btnClosePanel.CheckedState.Parent = this.btnClosePanel;
-            this.btnClosePanel.CustomImages.Parent = this.btnClosePanel;
-            this.btnClosePanel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClosePanel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClosePanel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClosePanel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClosePanel.DisabledState.Parent = this.btnClosePanel;
-            this.btnClosePanel.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            resources.ApplyResources(this.btnClosePanel, "btnClosePanel");
-            this.btnClosePanel.ForeColor = System.Drawing.Color.White;
-            this.btnClosePanel.HoverState.FillColor = System.Drawing.Color.Red;
-            this.btnClosePanel.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnClosePanel.HoverState.Parent = this.btnClosePanel;
-            this.btnClosePanel.Name = "btnClosePanel";
-            this.btnClosePanel.ShadowDecoration.Parent = this.btnClosePanel;
             // 
             // lbItems
             // 
@@ -582,10 +535,7 @@
             this.label10.TabIndex = 38;
             this.label10.Text = "Location";
             // 
-            this.btnClosePanel.ShadowDecoration.Parent = this.btnClosePanel;
-            this.btnClosePanel.Size = new System.Drawing.Size(38, 31);
-            this.btnClosePanel.TabIndex = 4;
-            this.btnClosePanel.Text = "X";
+
             // 
             // timer1
             // 
@@ -717,7 +667,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
-            this.panelMessage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();

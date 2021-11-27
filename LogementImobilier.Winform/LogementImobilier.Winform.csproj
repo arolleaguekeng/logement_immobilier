@@ -122,6 +122,12 @@
     <Compile Include="frmInfoHousing.Designer.cs">
       <DependentUpon>frmInfoHousing.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRenting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,9 +203,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmIndex.fr.resx">
-      <DependentUpon>frmIndex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIndex.resx">
       <DependentUpon>frmIndex.cs</DependentUpon>

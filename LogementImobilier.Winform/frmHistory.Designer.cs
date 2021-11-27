@@ -89,7 +89,6 @@
             // 
             // frmHistory
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 705);
             this.Controls.Add(this.lvShow);
