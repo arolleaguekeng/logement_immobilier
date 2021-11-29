@@ -38,5 +38,18 @@ namespace LogementImobilier.Winform
                 MessageBox.Show(ex.Message, ex.Source, MessageBoxButtons.OK);
             }
         }
+
+        private void frmdefinitionPrice_Load(object sender, EventArgs e)
+        {
+            var val = File.ReadAllLines(path);
+            nudExibition.Value = decimal.Parse(val[0]);
+            nudKitchen.Value = decimal.Parse(val[1]);
+            nudLevel.Value = decimal.Parse(val[2]);
+            nudNotation.Value = decimal.Parse(val[3]);
+            nudParking.Value = decimal.Parse(val[4]);
+            nudRooms.Value = decimal.Parse(val[5]);
+            nudShowers.Value = decimal.Parse(val[6]);
+            nudTerrasse.Value = decimal.Parse(val[7]);
+        }
     }
 }

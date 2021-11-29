@@ -128,6 +128,12 @@
     <Compile Include="frmInfoHousing.Designer.cs">
       <DependentUpon>frmInfoHousing.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLanguageChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLanguageChange.Designer.cs">
+      <DependentUpon>frmLanguageChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInfoHousing.resx">
       <DependentUpon>frmInfoHousing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLanguageChange.resx">
+      <DependentUpon>frmLanguageChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
@@ -347,6 +356,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\price.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\translation_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

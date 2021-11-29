@@ -448,6 +448,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmdefinitionPrice";
             this.Text = "frmdefinitionPrice";
+            this.Load += new System.EventHandler(this.frmdefinitionPrice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudKitchen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();

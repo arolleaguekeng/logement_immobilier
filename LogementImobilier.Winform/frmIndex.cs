@@ -166,5 +166,11 @@ namespace LogementImobilier.Winform
             frmdefinitionPrice defauldPrice = new frmdefinitionPrice();
             OpenChildform(defauldPrice, sender);
         }
+
+        private void btnChangeLanguage_Click(object sender, EventArgs e)
+        {
+            frmLanguageChange languageChange = new frmLanguageChange();
+            OpenChildform(languageChange, sender);
+        }
     }
 }
