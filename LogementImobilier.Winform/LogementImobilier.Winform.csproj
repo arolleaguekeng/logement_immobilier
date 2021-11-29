@@ -86,6 +86,12 @@
     <Compile Include="frmClientRending.Designer.cs">
       <DependentUpon>frmClientRending.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmdefinitionPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdefinitionPrice.Designer.cs">
+      <DependentUpon>frmdefinitionPrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEditHousing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +177,6 @@
     <EmbeddedResource Include="fmExemple.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddClient.resx">
-      <DependentUpon>frmAddClient.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmAddHouse.resx">
       <DependentUpon>frmAddHouse.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,11 +186,8 @@
     <EmbeddedResource Include="frmClientRending.resx">
       <DependentUpon>frmClientRending.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDeleteClient.resx">
-      <DependentUpon>frmDeleteClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditclient.resx">
-      <DependentUpon>frmEditclient.cs</DependentUpon>
+    <EmbeddedResource Include="frmdefinitionPrice.resx">
+      <DependentUpon>frmdefinitionPrice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditHousing.resx">
       <DependentUpon>frmEditHousing.cs</DependentUpon>
@@ -344,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bambu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

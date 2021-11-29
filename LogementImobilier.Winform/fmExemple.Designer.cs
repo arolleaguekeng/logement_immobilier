@@ -78,29 +78,29 @@
             // 
             // guna2TrackBar1
             // 
-            resources.ApplyResources(this.guna2TrackBar1, "guna2TrackBar1");
             this.guna2TrackBar1.HoverState.Parent = this.guna2TrackBar1;
+            resources.ApplyResources(this.guna2TrackBar1, "guna2TrackBar1");
             this.guna2TrackBar1.Name = "guna2TrackBar1";
             this.guna2TrackBar1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
             // 
             // guna2VScrollBar1
             // 
-            resources.ApplyResources(this.guna2VScrollBar1, "guna2VScrollBar1");
             this.guna2VScrollBar1.HoverState.Parent = null;
             this.guna2VScrollBar1.InUpdate = false;
             this.guna2VScrollBar1.LargeChange = 10;
+            resources.ApplyResources(this.guna2VScrollBar1, "guna2VScrollBar1");
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
             this.guna2VScrollBar1.PressedState.Parent = this.guna2VScrollBar1;
-            this.guna2VScrollBar1.ScrollbarSize = 18;
+            this.guna2VScrollBar1.ScrollbarSize = 24;
             // 
             // guna2ToggleSwitch1
             // 
-            resources.ApplyResources(this.guna2ToggleSwitch1, "guna2ToggleSwitch1");
             this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
+            resources.ApplyResources(this.guna2ToggleSwitch1, "guna2ToggleSwitch1");
             this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
             this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
             this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -111,19 +111,19 @@
             // 
             // guna2RatingStar1
             // 
-            resources.ApplyResources(this.guna2RatingStar1, "guna2RatingStar1");
             this.guna2RatingStar1.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            resources.ApplyResources(this.guna2RatingStar1, "guna2RatingStar1");
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.Gold;
             // 
             // guna2NumericUpDown1
             // 
-            resources.ApplyResources(this.guna2NumericUpDown1, "guna2NumericUpDown1");
             this.guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent;
             this.guna2NumericUpDown1.BorderRadius = 8;
             this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2NumericUpDown1.DisabledState.Parent = this.guna2NumericUpDown1;
             this.guna2NumericUpDown1.FocusedState.Parent = this.guna2NumericUpDown1;
+            resources.ApplyResources(this.guna2NumericUpDown1, "guna2NumericUpDown1");
             this.guna2NumericUpDown1.ForeColor = System.Drawing.Color.Black;
             this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
             this.guna2NumericUpDown1.ShadowDecoration.Parent = this.guna2NumericUpDown1;
@@ -132,8 +132,8 @@
             // 
             // guna2RadioButton1
             // 
-            resources.ApplyResources(this.guna2RadioButton1, "guna2RadioButton1");
             this.guna2RadioButton1.Animated = true;
+            resources.ApplyResources(this.guna2RadioButton1, "guna2RadioButton1");
             this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.Purple;
             this.guna2RadioButton1.CheckedState.BorderThickness = 0;
             this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.Purple;
@@ -147,10 +147,10 @@
             // 
             // guna2RadialGauge1
             // 
-            resources.ApplyResources(this.guna2RadialGauge1, "guna2RadialGauge1");
             this.guna2RadialGauge1.ArrowColor = System.Drawing.Color.Purple;
             this.guna2RadialGauge1.ArrowThickness = 8;
             this.guna2RadialGauge1.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            resources.ApplyResources(this.guna2RadialGauge1, "guna2RadialGauge1");
             this.guna2RadialGauge1.ForeColor = System.Drawing.Color.Purple;
             this.guna2RadialGauge1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2RadialGauge1.Name = "guna2RadialGauge1";
@@ -167,12 +167,12 @@
             // 
             // guna2DateTimePicker1
             // 
-            resources.ApplyResources(this.guna2DateTimePicker1, "guna2DateTimePicker1");
             this.guna2DateTimePicker1.Animated = true;
             this.guna2DateTimePicker1.Checked = true;
             this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
             this.guna2DateTimePicker1.FillColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2DateTimePicker1.FocusedColor = System.Drawing.Color.Teal;
+            resources.ApplyResources(this.guna2DateTimePicker1, "guna2DateTimePicker1");
             this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
@@ -184,7 +184,6 @@
             // 
             // guna2ComboBox1
             // 
-            resources.ApplyResources(this.guna2ComboBox1, "guna2ComboBox1");
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ComboBox1.BorderRadius = 8;
             this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -192,6 +191,7 @@
             this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Purple;
             this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.Purple;
             this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            resources.ApplyResources(this.guna2ComboBox1, "guna2ComboBox1");
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBox1.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
@@ -235,12 +235,12 @@
             // 
             // listView1
             // 
-            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
@@ -264,10 +264,8 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.tbId);
             this.flowLayoutPanel1.Controls.Add(this.lineId);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 108);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(291, 78);
-            this.flowLayoutPanel1.TabIndex = 78;
             // 
             // tbId
             // 
@@ -283,39 +281,31 @@
             this.tbId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbId.FocusedState.Parent = this.tbId;
-            this.tbId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.tbId, "tbId");
             this.tbId.ForeColor = System.Drawing.Color.Black;
             this.tbId.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.tbId.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.tbId.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbId.HoverState.Parent = this.tbId;
-            this.tbId.Location = new System.Drawing.Point(5, 5);
-            this.tbId.Margin = new System.Windows.Forms.Padding(5);
             this.tbId.Name = "tbId";
             this.tbId.PasswordChar = '\0';
             this.tbId.PlaceholderText = "enter texe here";
             this.tbId.SelectedText = "";
             this.tbId.ShadowDecoration.Parent = this.tbId;
-            this.tbId.Size = new System.Drawing.Size(282, 40);
-            this.tbId.TabIndex = 53;
             // 
             // lineId
             // 
             this.lineId.BackColor = System.Drawing.Color.Black;
-            this.lineId.Location = new System.Drawing.Point(3, 53);
+            resources.ApplyResources(this.lineId, "lineId");
             this.lineId.Name = "lineId";
-            this.lineId.Size = new System.Drawing.Size(282, 2);
-            this.lineId.TabIndex = 70;
             this.lineId.TabStop = false;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.guna2TextBox1);
             this.flowLayoutPanel2.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(20, 192);
+            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(291, 78);
-            this.flowLayoutPanel2.TabIndex = 79;
             // 
             // guna2TextBox1
             // 
@@ -331,30 +321,24 @@
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.guna2TextBox1, "guna2TextBox1");
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.Purple;
             this.guna2TextBox1.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.guna2TextBox1.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(5, 5);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Enter password";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(282, 40);
-            this.guna2TextBox1.TabIndex = 53;
             this.guna2TextBox1.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 53);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 2);
-            this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
             // 
             // btnSave
@@ -375,27 +359,21 @@
             this.btnSave.DisabledState.Parent = this.btnSave;
             this.btnSave.FillColor = System.Drawing.Color.Transparent;
             this.btnSave.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnSave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSave.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnSave.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.Parent = this.btnSave;
-            this.btnSave.Location = new System.Drawing.Point(24, 514);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSave.ShadowDecoration.Depth = 5;
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(131, 41);
-            this.btnSave.TabIndex = 71;
-            this.btnSave.Text = "Button";
             // 
             // fmExemple
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1223, 750);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnSave);

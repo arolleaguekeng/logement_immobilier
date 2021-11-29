@@ -9,18 +9,25 @@ namespace LogementImobilier.BO
     public class Client : BaseModel
     {
         public int PhoneNumber { get; set; }
-        public string  Location { get; set; }
+        public Housing Housing { get; set; }
+        public DateTime StarDate { get; set; }
+        public int time { get; set; }
+        public DateTime SndDate { get; set; }
 
-        public Client(string id , string name ,int phoneNumber, string location)
+        public Client(Housing housing,DateTime starDate,string id , string name ,int phoneNumber)
         {
             Id = id;
             Name = name;
             PhoneNumber = phoneNumber;
-            Location = location;
+            StarDate = starDate;
+            housing = Housing;
+
+
+            
         }
         public Client()
         {
-
+            
         }
     }
 }

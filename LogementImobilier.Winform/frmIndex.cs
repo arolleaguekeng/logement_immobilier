@@ -104,10 +104,8 @@ namespace LogementImobilier.Winform
 
         private void btnStartRenting_Click_1(object sender, EventArgs e)
         {
-            lbMessages.Text = "Double Click for show more details of Housing";
             frmRenting renting = new frmRenting();
             OpenChildform(renting, sender);
-            panelMessage.Visible = true;
         }
 
         private void frmIndex_Load(object sender, EventArgs e)
@@ -123,15 +121,12 @@ namespace LogementImobilier.Winform
 
         private void btnAddHouse_Click_1(object sender, EventArgs e)
         {
-            panelMessage.Visible = false;
             frmAddHouse addHouse = new frmAddHouse();
             OpenChildform(addHouse, sender);
-            lbMessages.Text = "Add new house";
         }
 
         private void btnClosePanel_Click(object sender, EventArgs e)
         {
-            panelMessage.Visible = false;
         }
 
         private void frmIndex_FormClosed(object sender, FormClosedEventArgs e)
@@ -158,7 +153,18 @@ namespace LogementImobilier.Winform
         private void btnHistoric_Click(object sender, EventArgs e)
         {
             frmHistory history = new frmHistory();
-            history.Show();
+            OpenChildform(history, sender);
+        }
+
+        private void defineDefaulPriceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnDefPrice_Click(object sender, EventArgs e)
+        {
+            frmdefinitionPrice defauldPrice = new frmdefinitionPrice();
+            OpenChildform(defauldPrice, sender);
         }
     }
 }

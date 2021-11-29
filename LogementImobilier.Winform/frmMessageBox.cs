@@ -15,12 +15,26 @@ namespace LogementImobilier.Winform
         public frmMessageBox()
         {
             InitializeComponent();
-            //lbMessages.Text = Program.messagebox;
         }
 
         private void panelMessage_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void frmMessageBox_Load(object sender, EventArgs e)
+        {
+            lbMessages.Text = Program.messagebox;
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClosePanel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

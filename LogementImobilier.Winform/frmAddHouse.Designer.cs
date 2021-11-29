@@ -57,15 +57,15 @@
             this.lbItems = new System.Windows.Forms.Label();
             this.btnRemovePicture = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAddpicture = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lineName = new System.Windows.Forms.PictureBox();
             this.lineId = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).BeginInit();
@@ -73,10 +73,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2ShadowPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineId)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -325,11 +325,13 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
             // 
             // lbPrice
             // 
             resources.ApplyResources(this.lbPrice, "lbPrice");
+            this.lbPrice.BackColor = System.Drawing.Color.White;
             this.lbPrice.ForeColor = System.Drawing.Color.Purple;
             this.lbPrice.Name = "lbPrice";
             // 
@@ -357,6 +359,7 @@
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2ShadowPanel1.Controls.Add(this.panel1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2ShadowPanel2);
             this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.guna2ShadowPanel1, "guna2ShadowPanel1");
@@ -374,7 +377,6 @@
             this.guna2ShadowPanel2.Controls.Add(this.pictureBox2);
             this.guna2ShadowPanel2.Controls.Add(this.lineName);
             this.guna2ShadowPanel2.Controls.Add(this.lineId);
-            this.guna2ShadowPanel2.Controls.Add(this.panel1);
             this.guna2ShadowPanel2.Controls.Add(this.nudRooms);
             this.guna2ShadowPanel2.Controls.Add(this.tbId);
             this.guna2ShadowPanel2.Controls.Add(this.label3);
@@ -401,9 +403,10 @@
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
             resources.ApplyResources(this.guna2ShadowPanel2, "guna2ShadowPanel2");
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.Radius = 1;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 233;
-            this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel2.ShadowShift = 7;
             // 
             // panelPicture
             // 
@@ -414,6 +417,7 @@
             // lbItems
             // 
             resources.ApplyResources(this.lbItems, "lbItems");
+            this.lbItems.BackColor = System.Drawing.Color.White;
             this.lbItems.Name = "lbItems";
             // 
             // btnRemovePicture
@@ -475,6 +479,36 @@
             this.btnAddpicture.ShadowDecoration.Parent = this.btnAddpicture;
             this.btnAddpicture.Click += new System.EventHandler(this.btnAddpicture_Click);
             // 
+            // linkLabel1
+            // 
+            resources.ApplyResources(this.linkLabel1, "linkLabel1");
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.TabStop = true;
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Name = "label9";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 4000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel1.Controls.Add(this.label6);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Name = "label6";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
@@ -496,43 +530,12 @@
             this.lineId.Name = "lineId";
             this.lineId.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.panel1.Controls.Add(this.label6);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Name = "label6";
-            // 
-            // linkLabel1
-            // 
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Name = "label9";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 4000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // frmAddHouse
             // 
@@ -541,8 +544,6 @@
             this.Controls.Add(this.guna2ShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddHouse";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmAddHouse";
             ((System.ComponentModel.ISupportInitialize)(this.nudShowers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudExibition)).EndInit();
@@ -551,11 +552,11 @@
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineId)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -588,8 +589,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Timer timer1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox lineName;
         private System.Windows.Forms.PictureBox lineId;
@@ -598,5 +597,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnAddpicture;
         private System.Windows.Forms.Label lbItems;
         private System.Windows.Forms.FlowLayoutPanel panelPicture;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
     }
 }

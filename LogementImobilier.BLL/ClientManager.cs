@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LogementImobilier.BO;
+using LogementImobilier.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +8,16 @@ using System.Threading.Tasks;
 
 namespace LogementImobilier.BLL
 {
-    class ClientManager
+    public class ClientManager
     {
-        //ksdfjhsdjkfsdhfkj 
+        ClientRepository repository;
+        public ClientManager()
+        {
+            repository = new ClientRepository();
+        }
+        public void AddClient(Client client)
+        {
+            repository.Add(client);
+        }
     }
 }

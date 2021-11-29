@@ -20,17 +20,25 @@ namespace LogementImobilier.Winform
         bool isLogin = true;
         List<User> users;
         UserManager manager;
+        Language[] languages;
         public frmLogin()
         {
-            Language[] languages = new Language[]
-            {
-                new Language {Code = "en", NameLanguage = "English"},
-                new Language {Code = "fr", NameLanguage = "Français"}
-            };
+
+            manager = new UserManager();
+            InitializeComponent();
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+           languages = new Language[]
+           {
+                new Language {Code = "en", Name = "English"},
+                new Language {Code = "fr", Name = "Français"}
+           };
             combLanguage.DataSource = languages;
-            combLanguage.DisplayMember = "NameLanguage";
+            combLanguage.DisplayMember = "Name";
             combLanguage.ValueMember = "Code";
-            combLanguage.SelectedIndex = -1; 
+            combLanguage.SelectedIndex = -1;
 
             var defaultLanguage = Properties.Settings.Default.langue;
             if (!string.IsNullOrEmpty(defaultLanguage))
@@ -38,12 +46,6 @@ namespace LogementImobilier.Winform
                 combLanguage.SelectedValue = defaultLanguage;
 
             }
-            manager = new UserManager();
-            InitializeComponent();
-        }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
             panelEmail.Visible = true;
         }
 

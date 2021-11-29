@@ -11,9 +11,11 @@ namespace LogementImobilier.BLL
     public class HousingManager
     {
         public HousingRepository housinRepository;
+        public List<int> basePrise;
 
         public HousingManager()
         {
+            basePrise = new List<int>();
             housinRepository = new HousingRepository();
         }
         public void CreateHousing(Housing housing)
@@ -51,12 +53,17 @@ namespace LogementImobilier.BLL
             return housinRepository.FindByName(name);
         }
 
-
+        //File.WriteAllText(path, nudExibition.Value.ToString() + "\n" + nudKitchen.Value.ToString() + "\n" + nudLevel.Value.ToString() + "\n" +
+        //            nudNotation.Value.ToString() + "\n" + nudParking.Value.ToString() + "\n" + nudRooms.Value.ToString() + "\n" + nudShowers.Value.ToString());
+        
         public decimal CalculPrice(int numberRoom, int numberKitchens, int levelOfHousing, int numberExhibition, int numberShower, int duration,int level)
         {
-            return ((numberRoom * 2000) + (numberShower * 3000) + (numberKitchens * 3000) + 
-                    (levelOfHousing * 5000) + ((numberExhibition * 15000)) * duration+(level*1000));
-
+            foreach (var price in housinRepository.GetAllBasicsPrices())
+            {
+                basePrise.Add(int.Parse(price));
+            }
+            return (basePrise[4]+basePrise[7] +(numberRoom * basePrise[5]) + (numberShower * basePrise[6]) + (numberKitchens * basePrise[1]) + 
+                    (levelOfHousing * basePrise[3]) + ((numberExhibition * basePrise[0])) * duration+(level*basePrise[2]));
         }
 
         public void Rending(Housing housing, Housing rentingHousing)
