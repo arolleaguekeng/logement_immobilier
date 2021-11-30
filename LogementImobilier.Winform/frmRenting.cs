@@ -34,14 +34,14 @@ namespace LogementImobilier.Winform
             frmHome frmHome = new frmHome();
             housings = housing.GetAllHousing();
             lbCountHousings.Text = housings.Count().ToString();
-            ShowHousings(housings);
+
             // ShowLvHousing();
         }
 
         private void frmRenting_Load(object sender, EventArgs e)
         {
             //cbbLocation.SelectedIndex = 0;
-           
+            ShowHousings(housings);
 
         }
 

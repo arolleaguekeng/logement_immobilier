@@ -1,6 +1,7 @@
 ﻿using LogementImobilier.BO;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,6 +74,10 @@ namespace LogementImobilier.DAL
                          orderby h.NumberStart descending
                          select h;
             return result.ToList();
+        }
+        public string[] GetAllBasicsPrices()
+        {
+            return File.ReadAllText(@"Data\config\conft_price.bb").Split('\n');
         }
     }
 }

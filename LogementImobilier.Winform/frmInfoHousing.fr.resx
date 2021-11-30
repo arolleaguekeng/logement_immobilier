@@ -117,13 +117,146 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2ShadowForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>-8, 10</value>
-  </metadata>
-  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>185, 10</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>402, 10</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>521, 3</value>
+  </data>
+  <data name="lbHouseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 31</value>
+  </data>
+  <data name="lbHouseName.Text" xml:space="preserve">
+    <value>Nom de la maison</value>
+  </data>
+  <data name="lbShower.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbShower.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbStar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbStar.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbParking.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbParking.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbTerrasse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbTerrasse.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbLocation.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbExibition.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbExibition.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbKitchen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbKitchen.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbLevel.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbUsed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 26</value>
+  </data>
+  <data name="lbUsed.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbRoom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbRoom.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 18</value>
+  </data>
+  <data name="lbPrice.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 18</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Douches</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 18</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Début</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 18</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Localisation</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 18</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Salon</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 18</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Cuisine</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 18</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Niveau</value>
+  </data>
+  <data name="Used.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 18</value>
+  </data>
+  <data name="Used.Text" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 18</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Chambres</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 18</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Prix</value>
+  </data>
+  <data name="guna2GradientButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 0</value>
+  </data>
+  <data name="guna2GradientButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 42</value>
+  </data>
+  <data name="guna2GradientButton1.Text" xml:space="preserve">
+    <value>Libérateur</value>
+  </data>
+  <data name="btnSale.Text" xml:space="preserve">
+    <value>Vente</value>
+  </data>
 </root>

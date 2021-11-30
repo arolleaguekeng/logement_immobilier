@@ -104,10 +104,8 @@ namespace LogementImobilier.Winform
 
         private void btnStartRenting_Click_1(object sender, EventArgs e)
         {
-
             frmRenting renting = new frmRenting();
             OpenChildform(renting, sender);
-
         }
 
         private void frmIndex_Load(object sender, EventArgs e)
@@ -115,12 +113,20 @@ namespace LogementImobilier.Winform
 
         }
 
+        private void btn_Home_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
 
         private void btnAddHouse_Click_1(object sender, EventArgs e)
         {
             frmAddHouse addHouse = new frmAddHouse();
             OpenChildform(addHouse, sender);
+        }
 
+        private void btnClosePanel_Click(object sender, EventArgs e)
+        {
         }
 
         private void frmIndex_FormClosed(object sender, FormClosedEventArgs e)
@@ -149,6 +155,22 @@ namespace LogementImobilier.Winform
             frmHistory history = new frmHistory();
             OpenChildform(history, sender);
         }
+
+        private void defineDefaulPriceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnDefPrice_Click(object sender, EventArgs e)
+        {
+            frmdefinitionPrice defauldPrice = new frmdefinitionPrice();
+            OpenChildform(defauldPrice, sender);
+        }
+
+        private void btnChangeLanguage_Click(object sender, EventArgs e)
+        {
+            frmLanguageChange languageChange = new frmLanguageChange();
+            OpenChildform(languageChange, sender);
+        }
     }
 }
-    

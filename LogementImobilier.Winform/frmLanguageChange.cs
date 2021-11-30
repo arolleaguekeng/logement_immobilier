@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LogementImobilier.Winform
 {
-    public partial class textbox_clientname : Form
+    public partial class frmLanguageChange : Form
     {
-        public textbox_clientname()
+        public frmLanguageChange()
         {
             InitializeComponent();
         }

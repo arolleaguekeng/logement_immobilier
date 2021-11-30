@@ -58,10 +58,11 @@ namespace LogementImobilier.Winform
                                                 false, client, chbTerasse.Checked, chbParking.Checked, (int)nudLevel.Value, LiPicture);
 
 
+
                     housing.CreateHousing(house);
 
                     timer1.Enabled = true;
-                    Program.messagebox = "Edited Succesfully";
+                    Program.messagebox = "Added Succesfully";
                     HistoryManager history = new HistoryManager();
                     history.AddHistory(new Historic(DateTime.Now, "Added", house));
                     message.ShowDialog();
@@ -81,7 +82,8 @@ namespace LogementImobilier.Winform
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            message.Close();
+
         }
 
         //public int IndexOf(List<HousingPicture> pictures , HousingPicture phousing)
@@ -111,10 +113,10 @@ namespace LogementImobilier.Winform
                 lbItems.Text = LiPicture.Count().ToString();
                 box = new PictureBox();
                 picture = new HousingPicture(File.ReadAllBytes(openFile.FileName), openFile.FileName);
-                box.Image = ((Image)(resources.GetObject("box.Image")));
-                box.Name = $"img{n++}";
-                box.Size = new Size(100, 100);
-                box.SizeMode = PictureBoxSizeMode.StretchImage;
+                    box.Image = ((Image)(resources.GetObject("box.Image")));
+                    box.Name = $"img{n++}";
+                    box.Size = new Size(100, 100);
+                    box.SizeMode = PictureBoxSizeMode.StretchImage;
                 box.TabStop = false;
                 box.ImageLocation = Path;
                 box.Cursor = Cursors.Hand;
@@ -122,6 +124,7 @@ namespace LogementImobilier.Winform
                 //box.BackColor = Color.Black;
                 panelPicture.Controls.Add(box);
                 LiPicture.Add(picture);
+
 
             }
         }

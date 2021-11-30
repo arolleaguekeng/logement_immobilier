@@ -36,35 +36,37 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.defineDefaulPriceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnChangeLanguage = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDefPrice = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelmenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel_Childform = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnHistoric = new Guna.UI2.WinForms.Guna2Button();
             this.btnStartRenting = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddHouse = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnPreview = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel_Childform = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.panelmenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_Childform.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowForm1
@@ -128,18 +130,30 @@
             // 
             this.settingsToolStripMenuItem.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addUserToolStripMenuItem});
+            this.defineDefaulPriceToolStripMenuItem});
             this.settingsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(115, 36);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
-            // addUserToolStripMenuItem
+            // defineDefaulPriceToolStripMenuItem
             // 
-            this.addUserToolStripMenuItem.Name = "addUserToolStripMenuItem";
-            this.addUserToolStripMenuItem.Size = new System.Drawing.Size(201, 36);
-            this.addUserToolStripMenuItem.Text = "Add User";
+            this.defineDefaulPriceToolStripMenuItem.Name = "defineDefaulPriceToolStripMenuItem";
+            this.defineDefaulPriceToolStripMenuItem.Size = new System.Drawing.Size(308, 36);
+            this.defineDefaulPriceToolStripMenuItem.Text = "Define defaul price";
+            this.defineDefaulPriceToolStripMenuItem.Click += new System.EventHandler(this.defineDefaulPriceToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // guna2Button3
             // 
@@ -212,6 +226,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel1.Controls.Add(this.btnChangeLanguage);
+            this.panel1.Controls.Add(this.btnDefPrice);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -219,6 +235,58 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1200, 45);
             this.panel1.TabIndex = 3;
+            // 
+            // btnChangeLanguage
+            // 
+            this.btnChangeLanguage.BorderColor = System.Drawing.Color.Transparent;
+            this.btnChangeLanguage.BorderThickness = 1;
+            this.btnChangeLanguage.CheckedState.Parent = this.btnChangeLanguage;
+            this.btnChangeLanguage.CustomImages.Parent = this.btnChangeLanguage;
+            this.btnChangeLanguage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChangeLanguage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChangeLanguage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChangeLanguage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChangeLanguage.DisabledState.Parent = this.btnChangeLanguage;
+            this.btnChangeLanguage.FillColor = System.Drawing.Color.Transparent;
+            this.btnChangeLanguage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnChangeLanguage.ForeColor = System.Drawing.Color.White;
+            this.btnChangeLanguage.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnChangeLanguage.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnChangeLanguage.HoverState.Parent = this.btnChangeLanguage;
+            this.btnChangeLanguage.Image = global::LogementImobilier.Winform.Properties.Resources.translation_26px;
+            this.btnChangeLanguage.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnChangeLanguage.Location = new System.Drawing.Point(339, 0);
+            this.btnChangeLanguage.Name = "btnChangeLanguage";
+            this.btnChangeLanguage.ShadowDecoration.Parent = this.btnChangeLanguage;
+            this.btnChangeLanguage.Size = new System.Drawing.Size(49, 45);
+            this.btnChangeLanguage.TabIndex = 3;
+            this.btnChangeLanguage.Click += new System.EventHandler(this.btnChangeLanguage_Click);
+            // 
+            // btnDefPrice
+            // 
+            this.btnDefPrice.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDefPrice.BorderThickness = 1;
+            this.btnDefPrice.CheckedState.Parent = this.btnDefPrice;
+            this.btnDefPrice.CustomImages.Parent = this.btnDefPrice;
+            this.btnDefPrice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDefPrice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDefPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDefPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDefPrice.DisabledState.Parent = this.btnDefPrice;
+            this.btnDefPrice.FillColor = System.Drawing.Color.Transparent;
+            this.btnDefPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDefPrice.ForeColor = System.Drawing.Color.White;
+            this.btnDefPrice.HoverState.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnDefPrice.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnDefPrice.HoverState.Parent = this.btnDefPrice;
+            this.btnDefPrice.Image = global::LogementImobilier.Winform.Properties.Resources.price1;
+            this.btnDefPrice.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnDefPrice.Location = new System.Drawing.Point(279, 0);
+            this.btnDefPrice.Name = "btnDefPrice";
+            this.btnDefPrice.ShadowDecoration.Parent = this.btnDefPrice;
+            this.btnDefPrice.Size = new System.Drawing.Size(49, 45);
+            this.btnDefPrice.TabIndex = 2;
+            this.btnDefPrice.Click += new System.EventHandler(this.btnDefPrice_Click);
             // 
             // label1
             // 
@@ -230,6 +298,18 @@
             this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1160, 0);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 45);
+            this.guna2CirclePictureBox1.TabIndex = 0;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // panelmenu
             // 
@@ -245,48 +325,6 @@
             this.panelmenu.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.panelmenu.Size = new System.Drawing.Size(212, 618);
             this.panelmenu.TabIndex = 19;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnPreview);
-            this.panel2.Controls.Add(this.btnNext);
-            this.panel2.Location = new System.Drawing.Point(3, 470);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(215, 120);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel_Childform
-            // 
-            this.panel_Childform.BackColor = System.Drawing.Color.White;
-            this.panel_Childform.Controls.Add(this.pictureBox3);
-            this.panel_Childform.Controls.Add(this.pictureBox2);
-            this.panel_Childform.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Childform.Location = new System.Drawing.Point(212, 85);
-            this.panel_Childform.Name = "panel_Childform";
-            this.panel_Childform.Size = new System.Drawing.Size(988, 618);
-            this.panel_Childform.TabIndex = 20;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox3.Image = global::LogementImobilier.Winform.Properties.Resources.bambu2;
-            this.pictureBox3.Location = new System.Drawing.Point(328, 139);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(392, 360);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 72;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(988, 618);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // btnHistoric
             // 
@@ -396,6 +434,15 @@
             this.guna2Button1.Text = "Client";
             this.guna2Button1.TextOffset = new System.Drawing.Point(10, 0);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnPreview);
+            this.panel2.Controls.Add(this.btnNext);
+            this.panel2.Location = new System.Drawing.Point(3, 470);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(215, 120);
+            this.panel2.TabIndex = 3;
+            // 
             // btnPreview
             // 
             this.btnPreview.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -465,28 +512,36 @@
             this.btnNext.Visible = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // guna2CirclePictureBox1
+            // panel_Childform
             // 
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1160, 0);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 45);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.panel_Childform.BackColor = System.Drawing.Color.White;
+            this.panel_Childform.Controls.Add(this.pictureBox3);
+            this.panel_Childform.Controls.Add(this.pictureBox2);
+            this.panel_Childform.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Childform.Location = new System.Drawing.Point(212, 85);
+            this.panel_Childform.Name = "panel_Childform";
+            this.panel_Childform.Size = new System.Drawing.Size(988, 618);
+            this.panel_Childform.TabIndex = 20;
             // 
-            // pictureBox1
+            // pictureBox3
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox3.Image = global::LogementImobilier.Winform.Properties.Resources.bambu2;
+            this.pictureBox3.Location = new System.Drawing.Point(309, 116);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(466, 445);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(988, 618);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // frmIndex
             // 
@@ -511,15 +566,15 @@
             this.guna2Panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.panelmenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel_Childform.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -549,7 +604,9 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnPreview;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnHistoric;
-        private System.Windows.Forms.ToolStripMenuItem addUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem defineDefaulPriceToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2Button btnDefPrice;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private Guna.UI2.WinForms.Guna2Button btnChangeLanguage;
     }
 }

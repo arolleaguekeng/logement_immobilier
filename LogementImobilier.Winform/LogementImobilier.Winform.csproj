@@ -74,12 +74,6 @@
     <Compile Include="fmExemple.Designer.cs">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAddClient.Designer.cs">
-      <DependentUpon>frmAddClient.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAddHouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,17 +86,11 @@
     <Compile Include="frmClientRending.Designer.cs">
       <DependentUpon>frmClientRending.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDeleteClient.cs">
+    <Compile Include="frmdefinitionPrice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDeleteClient.Designer.cs">
-      <DependentUpon>frmDeleteClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditclient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditclient.Designer.cs">
-      <DependentUpon>frmEditclient.cs</DependentUpon>
+    <Compile Include="frmdefinitionPrice.Designer.cs">
+      <DependentUpon>frmdefinitionPrice.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditHousing.cs">
       <SubType>Form</SubType>
@@ -139,6 +127,12 @@
     </Compile>
     <Compile Include="frmInfoHousing.Designer.cs">
       <DependentUpon>frmInfoHousing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLanguageChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLanguageChange.Designer.cs">
+      <DependentUpon>frmLanguageChange.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMessageBox.cs">
       <SubType>Form</SubType>
@@ -184,29 +178,42 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fmExemple.resx">
+    <Compile Include="ResourceTranslate.fr.Designer.cs">
+      <DependentUpon>ResourceTranslate.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ResourceTranslate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceTranslate.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fmExemple.fr.resx">
       <DependentUpon>fmExemple.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddClient.resx">
-      <DependentUpon>frmAddClient.cs</DependentUpon>
+    <EmbeddedResource Include="fmExemple.resx">
+      <DependentUpon>fmExemple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddHouse.resx">
       <DependentUpon>frmAddHouse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClientRending.fr.resx">
+      <DependentUpon>frmClientRending.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmClientRending.resx">
       <DependentUpon>frmClientRending.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDeleteClient.resx">
-      <DependentUpon>frmDeleteClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditclient.resx">
-      <DependentUpon>frmEditclient.cs</DependentUpon>
+    <EmbeddedResource Include="frmdefinitionPrice.resx">
+      <DependentUpon>frmdefinitionPrice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditHousing.resx">
       <DependentUpon>frmEditHousing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFacture.resx">
       <DependentUpon>frmFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.fr.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHistory.resx">
       <DependentUpon>frmHistory.cs</DependentUpon>
@@ -217,8 +224,14 @@
     <EmbeddedResource Include="frmIndex.resx">
       <DependentUpon>frmIndex.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoHousing.fr.resx">
+      <DependentUpon>frmInfoHousing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInfoHousing.resx">
       <DependentUpon>frmInfoHousing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLanguageChange.resx">
+      <DependentUpon>frmLanguageChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
@@ -245,6 +258,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceTranslate.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceTranslate.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceTranslate.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceTranslate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RpFacture.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -351,10 +372,13 @@
     <None Include="Resources\bambu1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bambu2.png" />
+    <None Include="Resources\price.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\filter_32px.png" />
+    <None Include="Resources\translation_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

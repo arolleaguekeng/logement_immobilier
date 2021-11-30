@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="double_clik" xml:space="preserve">
+    <value>Cliquez deux fois pour afficher plus de détails sur le logement.</value>
+  </data>
+  <data name="succes" xml:space="preserve">
+    <value>Ajouté avec succès</value>
+  </data>
 </root>

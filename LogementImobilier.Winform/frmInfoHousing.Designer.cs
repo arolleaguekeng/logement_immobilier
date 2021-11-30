@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInfoHousing));
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnEdit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnCose = new Guna.UI2.WinForms.Guna2Button();
@@ -89,18 +90,16 @@
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.btnCose);
             this.panel2.Controls.Add(this.lbHouseName);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(929, 39);
-            this.panel2.TabIndex = 16;
             // 
             // btnEdit
             // 
+            resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEdit.BorderThickness = 1;
             this.btnEdit.CheckedState.Parent = this.btnEdit;
@@ -111,7 +110,6 @@
             this.btnEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnEdit.DisabledState.Parent = this.btnEdit;
             this.btnEdit.FillColor = System.Drawing.Color.Transparent;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.BorderColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.FillColor = System.Drawing.Color.Transparent;
@@ -119,16 +117,14 @@
             this.btnEdit.HoverState.Parent = this.btnEdit;
             this.btnEdit.Image = global::LogementImobilier.Winform.Properties.Resources.edit_32px;
             this.btnEdit.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnEdit.Location = new System.Drawing.Point(605, 3);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
-            this.btnEdit.Size = new System.Drawing.Size(44, 36);
-            this.btnEdit.TabIndex = 58;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnCose
             // 
+            resources.ApplyResources(this.btnCose, "btnCose");
             this.btnCose.Animated = true;
             this.btnCose.CheckedState.Parent = this.btnCose;
             this.btnCose.CustomImages.Parent = this.btnCose;
@@ -137,33 +133,23 @@
             this.btnCose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCose.DisabledState.Parent = this.btnCose;
-            this.btnCose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnCose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btnCose.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCose.ForeColor = System.Drawing.Color.White;
             this.btnCose.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnCose.HoverState.Parent = this.btnCose;
-            this.btnCose.Location = new System.Drawing.Point(879, 0);
             this.btnCose.Name = "btnCose";
             this.btnCose.ShadowDecoration.Parent = this.btnCose;
-            this.btnCose.Size = new System.Drawing.Size(50, 39);
-            this.btnCose.TabIndex = 64;
-            this.btnCose.Text = "X";
             this.btnCose.Click += new System.EventHandler(this.btnCose_Click);
             // 
             // lbHouseName
             // 
-            this.lbHouseName.AutoSize = true;
-            this.lbHouseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbHouseName, "lbHouseName");
             this.lbHouseName.ForeColor = System.Drawing.Color.White;
-            this.lbHouseName.Location = new System.Drawing.Point(371, 0);
             this.lbHouseName.Name = "lbHouseName";
-            this.lbHouseName.Size = new System.Drawing.Size(202, 38);
-            this.lbHouseName.TabIndex = 0;
-            this.lbHouseName.Text = "House name";
             // 
             // panelLeft
             // 
+            resources.ApplyResources(this.panelLeft, "panelLeft");
             this.panelLeft.Controls.Add(this.label1);
             this.panelLeft.Controls.Add(this.pictureBox10);
             this.panelLeft.Controls.Add(this.pictureBox9);
@@ -197,333 +183,194 @@
             this.panelLeft.Controls.Add(this.Used);
             this.panelLeft.Controls.Add(this.label4);
             this.panelLeft.Controls.Add(this.label3);
-            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 39);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(292, 492);
-            this.panelLeft.TabIndex = 18;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(231, 440);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 24);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "FCFA";
             // 
             // pictureBox10
             // 
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox10.Location = new System.Drawing.Point(7, 380);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox10.TabIndex = 0;
             this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox9.Location = new System.Drawing.Point(7, 342);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox8
             // 
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox8.Location = new System.Drawing.Point(7, 306);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox8.TabIndex = 0;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox7
             // 
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox7.Location = new System.Drawing.Point(7, 273);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox6.Location = new System.Drawing.Point(7, 235);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox5.Location = new System.Drawing.Point(7, 198);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox4.Location = new System.Drawing.Point(7, 160);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox3.Location = new System.Drawing.Point(7, 124);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox2.Location = new System.Drawing.Point(7, 90);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(279, 2);
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // lbShower
             // 
-            this.lbShower.AutoSize = true;
-            this.lbShower.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbShower.Location = new System.Drawing.Point(145, 246);
+            resources.ApplyResources(this.lbShower, "lbShower");
             this.lbShower.Name = "lbShower";
-            this.lbShower.Size = new System.Drawing.Size(61, 24);
-            this.lbShower.TabIndex = 23;
-            this.lbShower.Text = "Name";
             // 
             // lbStar
             // 
-            this.lbStar.AutoSize = true;
-            this.lbStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStar.Location = new System.Drawing.Point(145, 279);
+            resources.ApplyResources(this.lbStar, "lbStar");
             this.lbStar.Name = "lbStar";
-            this.lbStar.Size = new System.Drawing.Size(61, 24);
-            this.lbStar.TabIndex = 22;
-            this.lbStar.Text = "Name";
             // 
             // lbParking
             // 
-            this.lbParking.AutoSize = true;
-            this.lbParking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbParking.Location = new System.Drawing.Point(145, 315);
+            resources.ApplyResources(this.lbParking, "lbParking");
             this.lbParking.Name = "lbParking";
-            this.lbParking.Size = new System.Drawing.Size(61, 24);
-            this.lbParking.TabIndex = 21;
-            this.lbParking.Text = "Name";
             // 
             // lbTerrasse
             // 
-            this.lbTerrasse.AutoSize = true;
-            this.lbTerrasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTerrasse.Location = new System.Drawing.Point(145, 358);
+            resources.ApplyResources(this.lbTerrasse, "lbTerrasse");
             this.lbTerrasse.Name = "lbTerrasse";
-            this.lbTerrasse.Size = new System.Drawing.Size(61, 24);
-            this.lbTerrasse.TabIndex = 20;
-            this.lbTerrasse.Text = "Name";
             // 
             // lbLocation
             // 
-            this.lbLocation.AutoSize = true;
-            this.lbLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLocation.Location = new System.Drawing.Point(145, 68);
+            resources.ApplyResources(this.lbLocation, "lbLocation");
             this.lbLocation.Name = "lbLocation";
-            this.lbLocation.Size = new System.Drawing.Size(61, 24);
-            this.lbLocation.TabIndex = 19;
-            this.lbLocation.Text = "Name";
             // 
             // lbExibition
             // 
-            this.lbExibition.AutoSize = true;
-            this.lbExibition.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbExibition.Location = new System.Drawing.Point(145, 102);
+            resources.ApplyResources(this.lbExibition, "lbExibition");
             this.lbExibition.Name = "lbExibition";
-            this.lbExibition.Size = new System.Drawing.Size(61, 24);
-            this.lbExibition.TabIndex = 18;
-            this.lbExibition.Text = "Name";
             // 
             // lbKitchen
             // 
-            this.lbKitchen.AutoSize = true;
-            this.lbKitchen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbKitchen.Location = new System.Drawing.Point(145, 138);
+            resources.ApplyResources(this.lbKitchen, "lbKitchen");
             this.lbKitchen.Name = "lbKitchen";
-            this.lbKitchen.Size = new System.Drawing.Size(61, 24);
-            this.lbKitchen.TabIndex = 17;
-            this.lbKitchen.Text = "Name";
             // 
             // lbLevel
             // 
-            this.lbLevel.AutoSize = true;
-            this.lbLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLevel.Location = new System.Drawing.Point(145, 176);
+            resources.ApplyResources(this.lbLevel, "lbLevel");
             this.lbLevel.Name = "lbLevel";
-            this.lbLevel.Size = new System.Drawing.Size(61, 24);
-            this.lbLevel.TabIndex = 16;
-            this.lbLevel.Text = "Name";
             // 
             // lbUsed
             // 
-            this.lbUsed.AutoSize = true;
-            this.lbUsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbUsed, "lbUsed");
             this.lbUsed.ForeColor = System.Drawing.Color.Red;
-            this.lbUsed.Location = new System.Drawing.Point(143, 13);
             this.lbUsed.Name = "lbUsed";
-            this.lbUsed.Size = new System.Drawing.Size(94, 32);
-            this.lbUsed.TabIndex = 15;
-            this.lbUsed.Text = "Name";
             // 
             // lbRoom
             // 
-            this.lbRoom.AutoSize = true;
-            this.lbRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRoom.Location = new System.Drawing.Point(145, 208);
+            resources.ApplyResources(this.lbRoom, "lbRoom");
             this.lbRoom.Name = "lbRoom";
-            this.lbRoom.Size = new System.Drawing.Size(61, 24);
-            this.lbRoom.TabIndex = 14;
-            this.lbRoom.Text = "Name";
             // 
             // lbPrice
             // 
-            this.lbPrice.AutoSize = true;
-            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbPrice, "lbPrice");
             this.lbPrice.ForeColor = System.Drawing.Color.Red;
-            this.lbPrice.Location = new System.Drawing.Point(145, 440);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(61, 24);
-            this.lbPrice.TabIndex = 13;
-            this.lbPrice.Text = "Name";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 246);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 24);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Showers";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 279);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(46, 24);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Start";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 315);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 24);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "Parking";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 358);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 24);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Terrasse";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 68);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 24);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Location";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 102);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 24);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Exibitions";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 138);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 24);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Kitchens";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 176);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 24);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Level";
             // 
             // Used
             // 
-            this.Used.AutoSize = true;
-            this.Used.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Used.Location = new System.Drawing.Point(3, 16);
+            resources.ApplyResources(this.Used, "Used");
             this.Used.Name = "Used";
-            this.Used.Size = new System.Drawing.Size(54, 24);
-            this.Used.TabIndex = 3;
-            this.Used.Text = "Used";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 208);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 24);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Rooms";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 440);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Price";
             // 
             // guna2ShadowForm1
             // 
@@ -531,16 +378,13 @@
             // 
             // panelRight
             // 
-            this.panelRight.AutoScroll = true;
+            resources.ApplyResources(this.panelRight, "panelRight");
             this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(292, 39);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(637, 492);
-            this.panelRight.TabIndex = 19;
             // 
             // guna2GradientButton1
             // 
+            resources.ApplyResources(this.guna2GradientButton1, "guna2GradientButton1");
             this.guna2GradientButton1.Animated = true;
             this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -554,27 +398,21 @@
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.guna2GradientButton1.HoverState.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(375, 0);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2GradientButton1.ShadowDecoration.Depth = 5;
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(131, 52);
-            this.guna2GradientButton1.TabIndex = 59;
-            this.guna2GradientButton1.Text = "Liberer";
             // 
             // btnSale
             // 
+            resources.ApplyResources(this.btnSale, "btnSale");
             this.btnSale.Animated = true;
             this.btnSale.BackColor = System.Drawing.Color.Transparent;
             this.btnSale.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -588,50 +426,37 @@
             this.btnSale.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSale.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSale.DisabledState.Parent = this.btnSale;
-            this.btnSale.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSale.FillColor = System.Drawing.Color.Transparent;
             this.btnSale.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnSale.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSale.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnSale.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSale.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnSale.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnSale.HoverState.Parent = this.btnSale;
-            this.btnSale.Location = new System.Drawing.Point(506, 0);
-            this.btnSale.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSale.Name = "btnSale";
             this.btnSale.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSale.ShadowDecoration.Depth = 5;
             this.btnSale.ShadowDecoration.Parent = this.btnSale;
-            this.btnSale.Size = new System.Drawing.Size(131, 52);
-            this.btnSale.TabIndex = 58;
-            this.btnSale.Text = "Sale";
             this.btnSale.Click += new System.EventHandler(this.btnSale_Click_1);
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.guna2GradientButton1);
             this.panel1.Controls.Add(this.btnSale);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(292, 479);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(637, 52);
-            this.panel1.TabIndex = 60;
             // 
             // frmInfoHousing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(929, 531);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInfoHousing";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmInfoHousing";
             this.Load += new System.EventHandler(this.frmInfoHousing_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
