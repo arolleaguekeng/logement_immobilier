@@ -146,6 +146,12 @@
     <Compile Include="frmMessageBox.Designer.cs">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModify.Designer.cs">
+      <DependentUpon>FrmModify.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRenting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,12 @@
     </Compile>
     <Compile Include="FrmSplash.Designer.cs">
       <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,6 +223,9 @@
     <EmbeddedResource Include="frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmModify.resx">
+      <DependentUpon>FrmModify.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRenting.resx">
       <DependentUpon>frmRenting.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSplash.resx">
       <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

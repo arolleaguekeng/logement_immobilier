@@ -23,12 +23,17 @@ namespace LogementImobilier.BLL
             repository.Add(user);
             repository.Save();
         }
+        public void AddUser(User user)
+        {
+           repository.Add(user);
+            repository.Save();
 
+        }
         public void EditUser(User user , User newUser)
         {
             repository.Set(user, newUser);
         }
-
+        
         public User LoginUser(string email , string password)
         {
             return repository.Login(email,password);

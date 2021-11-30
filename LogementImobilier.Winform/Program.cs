@@ -12,7 +12,8 @@ namespace LogementImobilier.Winform
         public static List<HousingPicture> picture;
         public static Housing InfoHouse;
         public static string messagebox;
-        
+        internal static object user;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

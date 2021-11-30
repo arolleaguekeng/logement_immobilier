@@ -20,6 +20,10 @@ namespace LogementImobilier.BO
             Password = password;
         }
 
+        public User()
+        {
+        }
+
         public override bool Equals(object obj)
         {
             return obj is User user &&
