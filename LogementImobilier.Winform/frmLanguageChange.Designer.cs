@@ -35,6 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.combLanguage = new System.Windows.Forms.ComboBox();
             this.btnOk = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelLangguage.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -142,6 +143,17 @@
             this.btnOk.Size = new System.Drawing.Size(179, 49);
             this.btnOk.TabIndex = 12;
             this.btnOk.Text = "OK";
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1325, 11);
+            this.panel1.TabIndex = 71;
             // 
             // frmLanguageChange
             // 
@@ -149,6 +161,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1325, 630);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelLangguage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLanguageChange";
@@ -171,5 +184,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox combLanguage;
         private Guna.UI2.WinForms.Guna2GradientButton btnOk;
+        private System.Windows.Forms.Panel panel1;
     }
 }

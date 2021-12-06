@@ -62,6 +62,7 @@ namespace LogementImobilier.Winform
             if (user != null)
             {
                 MessageBox.Show($"Welcome {user.Name}", "Welcome message", MessageBoxButtons.OK);
+                Program.curentUser = user;
                 var mainfrm = new frmIndex();
                 mainfrm.Show();
                 if (!isLogin)

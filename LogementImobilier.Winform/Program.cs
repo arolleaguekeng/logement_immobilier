@@ -15,6 +15,7 @@ namespace LogementImobilier.Winform
         public static Housing InfoHouse;
         public static string messagebox;
         internal static object user;
+        public static User curentUser;
 
         /// <summary>
         /// The main entry point for the application.
@@ -23,12 +24,13 @@ namespace LogementImobilier.Winform
         static void Main()
         {
             InfoHouse = new Housing();
+            curentUser = new User();
             InfoHouse.Name = "fdfdfdf";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr");
             //Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr");
-            frmIndex index = new frmIndex();
+            frmLogin index = new frmLogin();
             index.Show();
             Application.Run();
         }

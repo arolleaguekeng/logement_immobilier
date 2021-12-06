@@ -73,6 +73,16 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_user_male_26px {
+            get {
+                object obj = ResourceManager.GetObject("add_user_male_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap administrator_male_26px {
             get {
                 object obj = ResourceManager.GetObject("administrator_male_26px", resourceCulture);
@@ -143,6 +153,16 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap browse {
+            get {
+                object obj = ResourceManager.GetObject("browse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_32px {
             get {
                 object obj = ResourceManager.GetObject("edit_32px", resourceCulture);
@@ -166,6 +186,16 @@ namespace LogementImobilier.Winform.Properties {
         internal static System.Drawing.Bitmap edit_white_32px {
             get {
                 object obj = ResourceManager.GetObject("edit_white_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editUser {
+            get {
+                object obj = ResourceManager.GetObject("editUser", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

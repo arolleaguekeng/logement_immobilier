@@ -323,7 +323,7 @@
             // btnStars
             // 
             this.btnStars.BorderColor = System.Drawing.Color.White;
-            this.btnStars.Location = new System.Drawing.Point(35, 538);
+            this.btnStars.Location = new System.Drawing.Point(12, 546);
             this.btnStars.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnStars.Name = "btnStars";
             this.btnStars.RatingColor = System.Drawing.Color.Gold;
@@ -401,7 +401,7 @@
             this.panel1.Controls.Add(this.cbbFilter);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1116, 73);
             this.panel1.TabIndex = 66;
@@ -411,7 +411,7 @@
             this.flowLayoutPanel1.Controls.Add(this.label5);
             this.flowLayoutPanel1.Controls.Add(this.lbCountHousings);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 23);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(267, 39);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -444,7 +444,7 @@
             // 
             this.lineName.BackColor = System.Drawing.Color.Black;
             this.lineName.Location = new System.Drawing.Point(477, 53);
-            this.lineName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lineName.Margin = new System.Windows.Forms.Padding(4);
             this.lineName.Name = "lineName";
             this.lineName.Size = new System.Drawing.Size(184, 2);
             this.lineName.TabIndex = 72;
@@ -454,7 +454,7 @@
             // 
             this.pictureBox1.Image = global::LogementImobilier.Winform.Properties.Resources.filter_32px;
             this.pictureBox1.Location = new System.Drawing.Point(423, 18);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -498,7 +498,7 @@
             this.panelcontein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelcontein.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelcontein.Location = new System.Drawing.Point(0, 73);
-            this.panelcontein.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelcontein.Margin = new System.Windows.Forms.Padding(4);
             this.panelcontein.Name = "panelcontein";
             this.panelcontein.Size = new System.Drawing.Size(1116, 617);
             this.panelcontein.TabIndex = 67;
@@ -539,7 +539,7 @@
             this.Controls.Add(this.btnSee);
             this.Controls.Add(this.panelRight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRenting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRenting";

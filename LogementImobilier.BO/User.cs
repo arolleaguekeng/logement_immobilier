@@ -12,12 +12,14 @@ namespace LogementImobilier.BO
 
 
         public string Password { get; set; }
+        public byte[] profile;
 
-        public User(string email,string fullname,string password)
+        public User(string email,string fullname,string password, byte[] profile)
         {
             Id = email;
             Name = fullname;
             Password = password;
+            this.profile = profile;
         }
 
         public User()

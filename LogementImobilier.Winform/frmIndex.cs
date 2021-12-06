@@ -110,7 +110,7 @@ namespace LogementImobilier.Winform
 
         private void frmIndex_Load(object sender, EventArgs e)
         {
-
+            lbCurentUser.Text = Program.curentUser.Id;
         }
 
         private void btn_Home_Click(object sender, EventArgs e)
@@ -171,6 +171,18 @@ namespace LogementImobilier.Winform
         {
             frmLanguageChange languageChange = new frmLanguageChange();
             OpenChildform(languageChange, sender);
+        }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            FrmUser user = new FrmUser();
+            OpenChildform(user, sender);
+        }
+
+        private void btnShowEditUser_Click(object sender, EventArgs e)
+        {
+            FrmModify user = new FrmModify();
+            OpenChildform(user, sender);
         }
     }
 }
