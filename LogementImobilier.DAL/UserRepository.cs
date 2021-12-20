@@ -1,5 +1,6 @@
 ﻿using LogementImobilier.BO;
 using LogementImobilier.DAL;
+using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,6 +20,14 @@ namespace LogementImobilier.DAL
                     return data;
                     
             return null;
+        }
+
+        public  void CopyPicture(string sourcePath, string destinationPath)
+        {
+            FileInfo fileInfo = new FileInfo(destinationPath);
+            if (!fileInfo.Directory.Exists)
+                fileInfo.Directory.Create();
+            File.Copy(sourcePath, destinationPath);
         }
 
     }

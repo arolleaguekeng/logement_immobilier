@@ -17,7 +17,8 @@ namespace LogementImobilier.Winform
     {
         UserManager manager;
         List<User> users = new List<User>();
-        public byte[] picture;
+        string destinationPath;
+
 
 
         public FrmUser()
@@ -29,7 +30,7 @@ namespace LogementImobilier.Winform
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var users = new User(tbId.Text, tbfullname.Text,tbpassword.Text,picture);
+            var users = new User(tbId.Text, tbfullname.Text,tbpassword.Text,destinationPath);
             manager.AddUser(users);
             MessageBox.Show("saved sucessfully", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -41,18 +42,28 @@ namespace LogementImobilier.Winform
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
-            if (openFile.ShowDialog() == DialogResult.OK)
+            try
             {
-                PictureManager pictureManager = new PictureManager();
-                int n = 0;
-                var Path = openFile.FileName;
-                pbUser.ImageLocation = Path;
-                pbUser.Cursor = Cursors.Hand;
-                picture = File.ReadAllBytes(openFile.FileName);
-
-
+                OpenFileDialog openFile = new OpenFileDialog();
+                if (openFile.ShowDialog() == DialogResult.OK)
+                {
+                    PictureManager pictureManager = new PictureManager();
+                    int n = 0;
+                    var path = openFile.FileName;
+                    string ext = Path.GetExtension(openFile.FileName);
+                    destinationPath = "../../Resources/users/" + tbId.Text+".png";
+                    pbUser.ImageLocation = path;
+                    pbUser.Cursor = Cursors.Hand;
+                    manager.CopyPicture(path, destinationPath);
+                }
             }
+            catch(Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("veuillez remplire dabor les champs !");
+            }
+
         }
     }
 }

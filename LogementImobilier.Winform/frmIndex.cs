@@ -15,6 +15,7 @@ namespace LogementImobilier.Winform
     {
         private Guna2Button currentbutton;
         private Form activeform;
+        public System.Drawing.Image Image { get; set; }
         public frmIndex()
         {
             InitializeComponent();
@@ -108,15 +109,30 @@ namespace LogementImobilier.Winform
             OpenChildform(renting, sender);
         }
 
-        private void frmIndex_Load(object sender, EventArgs e)
+
+        private void SetMyButtonProperties()
         {
-            lbCurentUser.Text = Program.curentUser.Id;
+
         }
 
+        private void frmIndex_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                // Assign an image to the button.
+                userPicture.Image = Image.FromFile($@"{Program.curentUser.Profile}");
+                userPicture.ImageSize = new Size(new Point(49, 45));
+                lbCurentUser.Text = Program.curentUser.Id;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message,ex.Source);
+            }
+        }
+        
         private void btn_Home_Click(object sender, EventArgs e)
         {
            
-            
         }
 
         private void btnAddHouse_Click_1(object sender, EventArgs e)
@@ -138,9 +154,7 @@ namespace LogementImobilier.Winform
         {
             btnNext.Visible = false;
             btnPreview.Visible = true;
-            panelmenu.Size = new Size(212,618);
-
-               
+            panelmenu.Size = new Size(212,618);     
         }
 
         private void btnPreview_Click(object sender, EventArgs e)
@@ -183,6 +197,20 @@ namespace LogementImobilier.Winform
         {
             FrmModify user = new FrmModify();
             OpenChildform(user, sender);
+        }
+
+
+
+        private void userPicture_Click_1(object sender, EventArgs e)
+        {
+            frmInfoUser infoUser = new frmInfoUser();
+            OpenChildform(infoUser, sender);
+        }
+
+        private void userPicture_Click(object sender, EventArgs e)
+        {
+            frmInfoUser infoUser = new frmInfoUser();
+            OpenChildform(infoUser, sender);
         }
     }
 }

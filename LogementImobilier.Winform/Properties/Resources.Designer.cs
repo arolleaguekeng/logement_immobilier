@@ -263,6 +263,16 @@ namespace LogementImobilier.Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap menu_50px {
+            get {
+                object obj = ResourceManager.GetObject("menu_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap notification_26px {
             get {
                 object obj = ResourceManager.GetObject("notification_26px", resourceCulture);

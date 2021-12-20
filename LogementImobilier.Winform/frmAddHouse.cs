@@ -113,10 +113,10 @@ namespace LogementImobilier.Winform
                 lbItems.Text = LiPicture.Count().ToString();
                 box = new PictureBox();
                 picture = new HousingPicture(File.ReadAllBytes(openFile.FileName), openFile.FileName);
-                    box.Image = ((Image)(resources.GetObject("box.Image")));
-                    box.Name = $"img{n++}";
-                    box.Size = new Size(100, 100);
-                    box.SizeMode = PictureBoxSizeMode.StretchImage;
+                box.Image = ((Image)(resources.GetObject("box.Image")));
+                box.Name = $"img{n++}";
+                box.Size = new Size(100, 100);
+                box.SizeMode = PictureBoxSizeMode.StretchImage;
                 box.TabStop = false;
                 box.ImageLocation = Path;
                 box.Cursor = Cursors.Hand;
@@ -163,15 +163,15 @@ namespace LogementImobilier.Winform
 
 
 
-        //    static void CopyPicture(string sourcePath, string destinationPath)
-        //{
-        //        sourcePath = @"C:\Users\PHARAON\Pictures\Capture.png";
-        //    FileInfo fileInfo = new FileInfo(destinationPath);
-        //    if (!fileInfo.Directory.Exists)
-        //        fileInfo.Directory.Create();
-        //    FileSystem.CopyDirectory(sourcePath, destinationPath,
-        //        UIOption.AllDialogs);
-        //}
+        public static void CopyPicture(string sourcePath, string destinationPath)
+        {
+            sourcePath = @"C:\Users\PHARAON\Pictures\Capture.png";
+            FileInfo fileInfo = new FileInfo(destinationPath);
+            if (!fileInfo.Directory.Exists)
+                fileInfo.Directory.Create();
+            FileSystem.CopyDirectory(sourcePath, destinationPath,
+                UIOption.AllDialogs);
+        }
 
 
 

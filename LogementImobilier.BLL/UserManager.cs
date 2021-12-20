@@ -63,5 +63,9 @@ namespace LogementImobilier.BLL
         {
             repository.Save();
         }
+        public void CopyPicture(string sourcePath, string destinationPath)
+        {
+            repository.CopyPicture(sourcePath, destinationPath);
+        }
     }
 }
