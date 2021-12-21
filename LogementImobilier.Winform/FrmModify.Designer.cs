@@ -76,15 +76,15 @@ namespace LogementImobilier.Winform
             this.btnmodify.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btnmodify.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnmodify.HoverState.Parent = this.btnmodify;
-            this.btnmodify.Location = new System.Drawing.Point(55, 321);
-            this.btnmodify.Margin = new System.Windows.Forms.Padding(2);
+            this.btnmodify.Location = new System.Drawing.Point(73, 395);
+            this.btnmodify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnmodify.Name = "btnmodify";
             this.btnmodify.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnmodify.ShadowDecoration.Depth = 5;
             this.btnmodify.ShadowDecoration.Parent = this.btnmodify;
-            this.btnmodify.Size = new System.Drawing.Size(98, 33);
+            this.btnmodify.Size = new System.Drawing.Size(131, 41);
             this.btnmodify.TabIndex = 76;
-            this.btnmodify.Text = "Modify";
+            this.btnmodify.Text = "Edit";
             this.btnmodify.Click += new System.EventHandler(this.btnmodify_Click);
             // 
             // btndelete
@@ -111,13 +111,13 @@ namespace LogementImobilier.Winform
             this.btndelete.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.btndelete.HoverState.ForeColor = System.Drawing.Color.White;
             this.btndelete.HoverState.Parent = this.btndelete;
-            this.btndelete.Location = new System.Drawing.Point(167, 321);
-            this.btndelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btndelete.Location = new System.Drawing.Point(223, 395);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndelete.Name = "btndelete";
             this.btndelete.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btndelete.ShadowDecoration.Depth = 5;
             this.btndelete.ShadowDecoration.Parent = this.btndelete;
-            this.btndelete.Size = new System.Drawing.Size(98, 33);
+            this.btndelete.Size = new System.Drawing.Size(131, 41);
             this.btndelete.TabIndex = 77;
             this.btndelete.Text = "Delete";
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
@@ -130,9 +130,10 @@ namespace LogementImobilier.Winform
             this.Password});
             this.listUser.FullRowSelect = true;
             this.listUser.HideSelection = false;
-            this.listUser.Location = new System.Drawing.Point(299, 77);
+            this.listUser.Location = new System.Drawing.Point(399, 95);
+            this.listUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listUser.Name = "listUser";
-            this.listUser.Size = new System.Drawing.Size(292, 277);
+            this.listUser.Size = new System.Drawing.Size(388, 340);
             this.listUser.TabIndex = 78;
             this.listUser.UseCompatibleStateImageBehavior = false;
             this.listUser.View = System.Windows.Forms.View.Details;
@@ -159,10 +160,10 @@ namespace LogementImobilier.Winform
             // 
             this.flowLayoutPanel3.Controls.Add(this.tbfullname);
             this.flowLayoutPanel3.Controls.Add(this.pictureBox2);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(47, 152);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(63, 187);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(218, 63);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(291, 78);
             this.flowLayoutPanel3.TabIndex = 85;
             // 
             // tbfullname
@@ -185,23 +186,23 @@ namespace LogementImobilier.Winform
             this.tbfullname.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.tbfullname.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbfullname.HoverState.Parent = this.tbfullname;
-            this.tbfullname.Location = new System.Drawing.Point(4, 4);
-            this.tbfullname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbfullname.Location = new System.Drawing.Point(5, 5);
+            this.tbfullname.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbfullname.Name = "tbfullname";
             this.tbfullname.PasswordChar = '\0';
             this.tbfullname.PlaceholderText = "enter the Fullname";
             this.tbfullname.SelectedText = "";
             this.tbfullname.ShadowDecoration.Parent = this.tbfullname;
-            this.tbfullname.Size = new System.Drawing.Size(212, 32);
+            this.tbfullname.Size = new System.Drawing.Size(283, 39);
             this.tbfullname.TabIndex = 53;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(2, 42);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 51);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(212, 2);
+            this.pictureBox2.Size = new System.Drawing.Size(283, 2);
             this.pictureBox2.TabIndex = 70;
             this.pictureBox2.TabStop = false;
             // 
@@ -209,10 +210,10 @@ namespace LogementImobilier.Winform
             // 
             this.flowLayoutPanel2.Controls.Add(this.tbpassword);
             this.flowLayoutPanel2.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(47, 231);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(63, 284);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(218, 63);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(291, 78);
             this.flowLayoutPanel2.TabIndex = 84;
             // 
             // tbpassword
@@ -235,24 +236,24 @@ namespace LogementImobilier.Winform
             this.tbpassword.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.tbpassword.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbpassword.HoverState.Parent = this.tbpassword;
-            this.tbpassword.Location = new System.Drawing.Point(4, 4);
-            this.tbpassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpassword.Location = new System.Drawing.Point(5, 5);
+            this.tbpassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbpassword.Name = "tbpassword";
             this.tbpassword.PasswordChar = '\0';
             this.tbpassword.PlaceholderText = "Enter password";
             this.tbpassword.SelectedText = "";
             this.tbpassword.ShadowDecoration.Parent = this.tbpassword;
-            this.tbpassword.Size = new System.Drawing.Size(212, 32);
+            this.tbpassword.Size = new System.Drawing.Size(283, 39);
             this.tbpassword.TabIndex = 53;
             this.tbpassword.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 51);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 2);
+            this.pictureBox1.Size = new System.Drawing.Size(283, 2);
             this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
             // 
@@ -260,10 +261,10 @@ namespace LogementImobilier.Winform
             // 
             this.flowLayoutPanel1.Controls.Add(this.tbId);
             this.flowLayoutPanel1.Controls.Add(this.lineId);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(47, 77);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(63, 95);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(218, 63);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(291, 78);
             this.flowLayoutPanel1.TabIndex = 83;
             // 
             // tbId
@@ -286,38 +287,38 @@ namespace LogementImobilier.Winform
             this.tbId.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.tbId.HoverState.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.tbId.HoverState.Parent = this.tbId;
-            this.tbId.Location = new System.Drawing.Point(4, 4);
-            this.tbId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbId.Location = new System.Drawing.Point(5, 5);
+            this.tbId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tbId.Name = "tbId";
             this.tbId.PasswordChar = '\0';
             this.tbId.PlaceholderText = "enter the Email";
             this.tbId.SelectedText = "";
             this.tbId.ShadowDecoration.Parent = this.tbId;
-            this.tbId.Size = new System.Drawing.Size(212, 32);
+            this.tbId.Size = new System.Drawing.Size(283, 39);
             this.tbId.TabIndex = 53;
             // 
             // lineId
             // 
             this.lineId.BackColor = System.Drawing.Color.Black;
-            this.lineId.Location = new System.Drawing.Point(2, 42);
-            this.lineId.Margin = new System.Windows.Forms.Padding(2);
+            this.lineId.Location = new System.Drawing.Point(3, 51);
+            this.lineId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lineId.Name = "lineId";
-            this.lineId.Size = new System.Drawing.Size(212, 2);
+            this.lineId.Size = new System.Drawing.Size(283, 2);
             this.lineId.TabIndex = 70;
             this.lineId.TabStop = false;
             // 
             // FrmModify
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 420);
+            this.ClientSize = new System.Drawing.Size(819, 517);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.listUser);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnmodify);
-            //this.Name = "FrmModify";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Text = "FrmModify";
             this.Load += new System.EventHandler(this.FrmModify_Load);
             this.flowLayoutPanel3.ResumeLayout(false);

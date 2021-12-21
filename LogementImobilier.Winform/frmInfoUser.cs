@@ -31,5 +31,11 @@ namespace LogementImobilier.Winform
                 MessageBox.Show(ex.Message, ex.Source);
             }
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            frmEditSingleUser singleUser = new frmEditSingleUser();
+            singleUser.ShowDialog();
+        }
     }
 }

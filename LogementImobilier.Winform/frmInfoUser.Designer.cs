@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnOk = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -72,9 +72,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(273, 398);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 29);
+            this.label2.Size = new System.Drawing.Size(146, 29);
             this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Text = "Description";
             // 
             // lbUserName
             // 
@@ -104,9 +104,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(106, 398);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 29);
+            this.label3.Size = new System.Drawing.Size(135, 29);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label2";
+            this.label3.Text = "Description";
             // 
             // label4
             // 
@@ -119,38 +119,39 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "UserName";
             // 
-            // btnOk
+            // btnEdit
             // 
-            this.btnOk.Animated = true;
-            this.btnOk.BackColor = System.Drawing.Color.Transparent;
-            this.btnOk.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnOk.BorderRadius = 15;
-            this.btnOk.BorderThickness = 2;
-            this.btnOk.CheckedState.Parent = this.btnOk;
-            this.btnOk.CustomImages.Parent = this.btnOk;
-            this.btnOk.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnOk.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnOk.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnOk.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnOk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnOk.DisabledState.Parent = this.btnOk;
-            this.btnOk.FillColor = System.Drawing.Color.Transparent;
-            this.btnOk.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnOk.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnOk.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnOk.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnOk.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
-            this.btnOk.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btnOk.HoverState.Parent = this.btnOk;
-            this.btnOk.Location = new System.Drawing.Point(746, 429);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnOk.ShadowDecoration.Depth = 5;
-            this.btnOk.ShadowDecoration.Parent = this.btnOk;
-            this.btnOk.Size = new System.Drawing.Size(179, 49);
-            this.btnOk.TabIndex = 13;
-            this.btnOk.Text = "Edit";
+            this.btnEdit.Animated = true;
+            this.btnEdit.BackColor = System.Drawing.Color.Transparent;
+            this.btnEdit.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEdit.BorderRadius = 15;
+            this.btnEdit.BorderThickness = 2;
+            this.btnEdit.CheckedState.Parent = this.btnEdit;
+            this.btnEdit.CustomImages.Parent = this.btnEdit;
+            this.btnEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEdit.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEdit.DisabledState.Parent = this.btnEdit;
+            this.btnEdit.FillColor = System.Drawing.Color.Transparent;
+            this.btnEdit.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnEdit.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEdit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnEdit.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEdit.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.HoverState.Parent = this.btnEdit;
+            this.btnEdit.Location = new System.Drawing.Point(746, 429);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnEdit.ShadowDecoration.Depth = 5;
+            this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
+            this.btnEdit.Size = new System.Drawing.Size(179, 49);
+            this.btnEdit.TabIndex = 13;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // guna2ShadowPanel1
             // 
@@ -169,7 +170,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnOk);
+            this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.userPicture);
@@ -189,7 +190,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(354, 14);
+            this.label6.Location = new System.Drawing.Point(368, 14);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(266, 36);
             this.label6.TabIndex = 68;
@@ -222,7 +223,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2GradientButton btnOk;
+        private Guna.UI2.WinForms.Guna2GradientButton btnEdit;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;

@@ -215,10 +215,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.panel1.Controls.Add(this.userPicture);
             this.panel1.Controls.Add(this.btnShowEditUser);
+            this.panel1.Controls.Add(this.lbCurentUser);
             this.panel1.Controls.Add(this.btnAddUser);
             this.panel1.Controls.Add(this.btnChangeLanguage);
             this.panel1.Controls.Add(this.btnDefPrice);
-            this.panel1.Controls.Add(this.lbCurentUser);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Name = "panel1";
@@ -357,14 +357,15 @@
             // 
             // lbCurentUser
             // 
-            this.lbCurentUser.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbCurentUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbCurentUser.AutoSize = true;
             this.lbCurentUser.ForeColor = System.Drawing.Color.White;
-            this.lbCurentUser.Location = new System.Drawing.Point(1063, 12);
+            this.lbCurentUser.Location = new System.Drawing.Point(1040, 11);
             this.lbCurentUser.Name = "lbCurentUser";
-            this.lbCurentUser.Size = new System.Drawing.Size(64, 25);
+            this.lbCurentUser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbCurentUser.Size = new System.Drawing.Size(105, 25);
             this.lbCurentUser.TabIndex = 1;
-            this.lbCurentUser.Text = "label1";
+            this.lbCurentUser.Text = "UserName";
             // 
             // panelmenu
             // 

@@ -49,13 +49,21 @@ namespace LogementImobilier.Winform
 
         private void btnmodify_Click(object sender, EventArgs e)
         {
-            if (listUser.SelectedItems.Count == 0)
-                return;
-            User user = new User();
-            user = listUser.SelectedItems[0].Tag as User;
-            tbId.Text = user.Id;
-            tbfullname.Text = user.Name;
-            tbpassword.Text = user.Password;
+            try
+            {
+                if (listUser.SelectedItems.Count == 0)
+                    return;
+                User user = new User();
+                user = listUser.SelectedItems[0].Tag as User;
+                tbId.Text = user.Id;
+                tbfullname.Text = user.Name;
+                tbpassword.Text = user.Password;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void btndelete_Click(object sender, EventArgs e)

@@ -98,6 +98,12 @@
     <Compile Include="frmEditHousing.Designer.cs">
       <DependentUpon>frmEditHousing.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEditSingleUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSingleUser.Designer.cs">
+      <DependentUpon>frmEditSingleUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFacture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditHousing.resx">
       <DependentUpon>frmEditHousing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditSingleUser.resx">
+      <DependentUpon>frmEditSingleUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFacture.resx">
       <DependentUpon>frmFacture.cs</DependentUpon>

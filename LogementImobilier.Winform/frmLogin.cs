@@ -30,6 +30,8 @@ namespace LogementImobilier.Winform
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            tbEmail.Text = "admin@admin.email";
+            tbPassword.Text = "admin";
            languages = new Language[]
            {
                 new Language {Code = "en", Name = "English"},
