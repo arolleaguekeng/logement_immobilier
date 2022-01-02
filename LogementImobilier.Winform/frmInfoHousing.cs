@@ -15,13 +15,11 @@ namespace LogementImobilier.Winform
     public partial class frmInfoHousing : Form
     {
         PictureBox boxSingle;
-        DateTime endDate;
         HousingManager manager;
         List<HousingPicture> images;
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
         public frmInfoHousing()
         {
-            endDate = new DateTime();
             manager = new HousingManager();
             images = new List<HousingPicture>();
             InitializeComponent();
@@ -29,6 +27,21 @@ namespace LogementImobilier.Winform
 
         private void frmInfoHousing_Load(object sender, EventArgs e)
         {
+            
+            if(Program.InfoHouse.Used == true)
+            {
+                lbClientName1.Text = Program.InfoHouse.HousingClient.Name;
+                lbClientEmail.Text = Program.InfoHouse.HousingClient.Id;
+                lbClientPhone.Text = Program.InfoHouse.HousingClient.PhoneNumber.ToString();
+                panelSalingClient.Visible = true;
+                panelSalingClient.Enabled = true;
+
+            }
+            else
+            {
+                panelSalingClient.Visible = false;
+                panelSalingClient.Enabled = false;
+            }
             //afficher la date actuelle
             dtStartDate.Value = DateTime.Now;
             //remplissage des informations sur la maison
@@ -42,7 +55,7 @@ namespace LogementImobilier.Winform
             lbShower.Text = Program.InfoHouse.NumberShower.ToString();
             lbStar.Text = Program.InfoHouse.NumberStart.ToString();
             lbParking.Text = Program.InfoHouse.Parking.ToString();
-            lbTerrasse.Text = Program.InfoHouse.Terrasse.ToString();
+            //label15.Text = Program.InfoHouse.Terrasse.ToString();
             lbUsed.Text = Program.InfoHouse.Used.ToString();
 
             // recuperation et affichage des images dans le panel

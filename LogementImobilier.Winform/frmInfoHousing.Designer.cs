@@ -35,8 +35,18 @@
             this.btnCose = new Guna.UI2.WinForms.Guna2Button();
             this.lbHouseName = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panelSalingClient = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lbClientPhone = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.lbClientEmail = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -49,7 +59,6 @@
             this.lbShower = new System.Windows.Forms.Label();
             this.lbStar = new System.Windows.Forms.Label();
             this.lbParking = new System.Windows.Forms.Label();
-            this.lbTerrasse = new System.Windows.Forms.Label();
             this.lbLocation = new System.Windows.Forms.Label();
             this.lbExibition = new System.Windows.Forms.Label();
             this.lbKitchen = new System.Windows.Forms.Label();
@@ -60,7 +69,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -72,21 +80,26 @@
             this.btnLeave = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSale = new Guna.UI2.WinForms.Guna2GradientButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelRight = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbClientPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbClientName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbClientPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbClientEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tbClientEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dtStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.dtStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelRight = new System.Windows.Forms.FlowLayoutPanel();
+            this.lbClientName1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panelLeft.SuspendLayout();
+            this.panelSalingClient.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -98,8 +111,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -163,8 +176,8 @@
             // 
             // panelLeft
             // 
+            this.panelLeft.Controls.Add(this.panelSalingClient);
             this.panelLeft.Controls.Add(this.label1);
-            this.panelLeft.Controls.Add(this.pictureBox10);
             this.panelLeft.Controls.Add(this.pictureBox9);
             this.panelLeft.Controls.Add(this.pictureBox8);
             this.panelLeft.Controls.Add(this.pictureBox7);
@@ -177,7 +190,6 @@
             this.panelLeft.Controls.Add(this.lbShower);
             this.panelLeft.Controls.Add(this.lbStar);
             this.panelLeft.Controls.Add(this.lbParking);
-            this.panelLeft.Controls.Add(this.lbTerrasse);
             this.panelLeft.Controls.Add(this.lbLocation);
             this.panelLeft.Controls.Add(this.lbExibition);
             this.panelLeft.Controls.Add(this.lbKitchen);
@@ -188,7 +200,6 @@
             this.panelLeft.Controls.Add(this.label13);
             this.panelLeft.Controls.Add(this.label12);
             this.panelLeft.Controls.Add(this.label11);
-            this.panelLeft.Controls.Add(this.label10);
             this.panelLeft.Controls.Add(this.label9);
             this.panelLeft.Controls.Add(this.label8);
             this.panelLeft.Controls.Add(this.label7);
@@ -199,10 +210,38 @@
             resources.ApplyResources(this.panelLeft, "panelLeft");
             this.panelLeft.Name = "panelLeft";
             // 
-            // label1
+            // panelSalingClient
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            this.panelSalingClient.Controls.Add(this.flowLayoutPanel6);
+            this.panelSalingClient.Controls.Add(this.label10);
+            this.panelSalingClient.Controls.Add(this.lbClientName1);
+            this.panelSalingClient.Controls.Add(this.pictureBox10);
+            this.panelSalingClient.Controls.Add(this.label17);
+            this.panelSalingClient.Controls.Add(this.lbClientPhone);
+            this.panelSalingClient.Controls.Add(this.pictureBox11);
+            this.panelSalingClient.Controls.Add(this.label19);
+            this.panelSalingClient.Controls.Add(this.lbClientEmail);
+            this.panelSalingClient.Controls.Add(this.pictureBox12);
+            resources.ApplyResources(this.panelSalingClient, "panelSalingClient");
+            this.panelSalingClient.Name = "panelSalingClient";
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Controls.Add(this.label16);
+            resources.ApplyResources(this.flowLayoutPanel6, "flowLayoutPanel6");
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.Color.Purple;
+            this.label16.Name = "label16";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Name = "label10";
             // 
             // pictureBox10
             // 
@@ -210,6 +249,47 @@
             resources.ApplyResources(this.pictureBox10, "pictureBox10");
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.TabStop = false;
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.Color.Gray;
+            this.label17.Name = "label17";
+            // 
+            // lbClientPhone
+            // 
+            resources.ApplyResources(this.lbClientPhone, "lbClientPhone");
+            this.lbClientPhone.Name = "lbClientPhone";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox11, "pictureBox11");
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.TabStop = false;
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.ForeColor = System.Drawing.Color.Gray;
+            this.label19.Name = "label19";
+            // 
+            // lbClientEmail
+            // 
+            resources.ApplyResources(this.lbClientEmail, "lbClientEmail");
+            this.lbClientEmail.Name = "lbClientEmail";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox12, "pictureBox12");
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // pictureBox9
             // 
@@ -289,11 +369,6 @@
             resources.ApplyResources(this.lbParking, "lbParking");
             this.lbParking.Name = "lbParking";
             // 
-            // lbTerrasse
-            // 
-            resources.ApplyResources(this.lbTerrasse, "lbTerrasse");
-            this.lbTerrasse.Name = "lbTerrasse";
-            // 
             // lbLocation
             // 
             resources.ApplyResources(this.lbLocation, "lbLocation");
@@ -334,51 +409,55 @@
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
+            this.label13.ForeColor = System.Drawing.Color.Gray;
             this.label13.Name = "label13";
             // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.Color.Gray;
             this.label12.Name = "label12";
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
+            this.label11.ForeColor = System.Drawing.Color.Gray;
             this.label11.Name = "label11";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.Color.Gray;
             this.label9.Name = "label9";
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.Color.Gray;
             this.label8.Name = "label8";
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.Color.Gray;
             this.label7.Name = "label7";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.Gray;
             this.label6.Name = "label6";
             // 
             // Used
             // 
             resources.ApplyResources(this.Used, "Used");
+            this.Used.ForeColor = System.Drawing.Color.Gray;
             this.Used.Name = "Used";
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Gray;
             this.label4.Name = "label4";
             // 
             // label3
@@ -460,39 +539,11 @@
             resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
-            // panelRight
-            // 
-            resources.ApplyResources(this.panelRight, "panelRight");
-            this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelRight.Name = "panelRight";
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.Purple;
             this.label2.Name = "label2";
-            // 
-            // tbClientPhoneNumber
-            // 
-            this.tbClientPhoneNumber.Animated = true;
-            this.tbClientPhoneNumber.BorderRadius = 8;
-            this.tbClientPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbClientPhoneNumber.DefaultText = "";
-            this.tbClientPhoneNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbClientPhoneNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbClientPhoneNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbClientPhoneNumber.DisabledState.Parent = this.tbClientPhoneNumber;
-            this.tbClientPhoneNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbClientPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbClientPhoneNumber.FocusedState.Parent = this.tbClientPhoneNumber;
-            resources.ApplyResources(this.tbClientPhoneNumber, "tbClientPhoneNumber");
-            this.tbClientPhoneNumber.HoverState.BorderColor = System.Drawing.Color.Purple;
-            this.tbClientPhoneNumber.HoverState.Parent = this.tbClientPhoneNumber;
-            this.tbClientPhoneNumber.Name = "tbClientPhoneNumber";
-            this.tbClientPhoneNumber.PasswordChar = '\0';
-            this.tbClientPhoneNumber.PlaceholderText = "Entrez le numéro de teléphone";
-            this.tbClientPhoneNumber.SelectedText = "";
-            this.tbClientPhoneNumber.ShadowDecoration.Parent = this.tbClientPhoneNumber;
             // 
             // tbClientName
             // 
@@ -516,25 +567,27 @@
             this.tbClientName.SelectedText = "";
             this.tbClientName.ShadowDecoration.Parent = this.tbClientName;
             // 
-            // flowLayoutPanel3
+            // tbClientPhoneNumber
             // 
-            this.flowLayoutPanel3.Controls.Add(this.label14);
-            this.flowLayoutPanel3.Controls.Add(this.dtStartDate);
-            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Name = "label14";
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.Controls.Add(this.btnLeave);
-            this.flowLayoutPanel4.Controls.Add(this.btnSale);
-            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.tbClientPhoneNumber.Animated = true;
+            this.tbClientPhoneNumber.BorderRadius = 8;
+            this.tbClientPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbClientPhoneNumber.DefaultText = "";
+            this.tbClientPhoneNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbClientPhoneNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbClientPhoneNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientPhoneNumber.DisabledState.Parent = this.tbClientPhoneNumber;
+            this.tbClientPhoneNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbClientPhoneNumber.FocusedState.Parent = this.tbClientPhoneNumber;
+            resources.ApplyResources(this.tbClientPhoneNumber, "tbClientPhoneNumber");
+            this.tbClientPhoneNumber.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.tbClientPhoneNumber.HoverState.Parent = this.tbClientPhoneNumber;
+            this.tbClientPhoneNumber.Name = "tbClientPhoneNumber";
+            this.tbClientPhoneNumber.PasswordChar = '\0';
+            this.tbClientPhoneNumber.PlaceholderText = "Entrez le numéro de teléphone";
+            this.tbClientPhoneNumber.SelectedText = "";
+            this.tbClientPhoneNumber.ShadowDecoration.Parent = this.tbClientPhoneNumber;
             // 
             // tbClientEmail
             // 
@@ -558,18 +611,18 @@
             this.tbClientEmail.SelectedText = "";
             this.tbClientEmail.ShadowDecoration.Parent = this.tbClientEmail;
             // 
-            // flowLayoutPanel5
+            // flowLayoutPanel3
             // 
-            this.flowLayoutPanel5.Controls.Add(this.label5);
-            this.flowLayoutPanel5.Controls.Add(this.dtEndDate);
-            resources.ApplyResources(this.flowLayoutPanel5, "flowLayoutPanel5");
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel3.Controls.Add(this.label14);
+            this.flowLayoutPanel3.Controls.Add(this.dtStartDate);
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             // 
-            // label5
+            // label14
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.ForeColor = System.Drawing.Color.Gray;
+            this.label14.Name = "label14";
             // 
             // dtStartDate
             // 
@@ -588,6 +641,19 @@
             this.dtStartDate.ShadowDecoration.Parent = this.dtStartDate;
             this.dtStartDate.Value = new System.DateTime(2021, 11, 5, 1, 44, 46, 173);
             // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.label5);
+            this.flowLayoutPanel5.Controls.Add(this.dtEndDate);
+            resources.ApplyResources(this.flowLayoutPanel5, "flowLayoutPanel5");
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.Name = "label5";
+            // 
             // dtEndDate
             // 
             this.dtEndDate.Animated = true;
@@ -605,6 +671,24 @@
             this.dtEndDate.ShadowDecoration.Parent = this.dtEndDate;
             this.dtEndDate.Value = new System.DateTime(2021, 11, 5, 1, 44, 46, 173);
             // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.btnLeave);
+            this.flowLayoutPanel4.Controls.Add(this.btnSale);
+            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            // 
+            // panelRight
+            // 
+            resources.ApplyResources(this.panelRight, "panelRight");
+            this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRight.Name = "panelRight";
+            // 
+            // lbClientName1
+            // 
+            resources.ApplyResources(this.lbClientName1, "lbClientName1");
+            this.lbClientName1.Name = "lbClientName1";
+            // 
             // frmInfoHousing
             // 
             resources.ApplyResources(this, "$this");
@@ -621,7 +705,13 @@
             this.panel2.PerformLayout();
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
+            this.panelSalingClient.ResumeLayout(false);
+            this.panelSalingClient.PerformLayout();
+            this.flowLayoutPanel6.ResumeLayout(false);
+            this.flowLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -635,9 +725,9 @@
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
-            this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -658,7 +748,6 @@
         private System.Windows.Forms.Label lbShower;
         private System.Windows.Forms.Label lbStar;
         private System.Windows.Forms.Label lbParking;
-        private System.Windows.Forms.Label lbTerrasse;
         private System.Windows.Forms.Label lbLocation;
         private System.Windows.Forms.Label lbExibition;
         private System.Windows.Forms.Label lbKitchen;
@@ -669,11 +758,9 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -698,5 +785,17 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtStartDate;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtEndDate;
+        private System.Windows.Forms.FlowLayoutPanel panelSalingClient;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbClientPhone;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lbClientEmail;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label lbClientName1;
     }
 }
