@@ -55,7 +55,7 @@ namespace LogementImobilier.Winform
 
                     var house = new Housing(tbId.Text, tbName.Text, decimal.Parse(lbPrice.Text), cbbLocation.Text, (int)nudRooms.Value,
                                             (int)nudKitchen.Value, (int)nudShowers.Value, (int)nudExibition.Value, starNotation.Value,
-                                                false, client, chbTerasse.Checked, chbParking.Checked, (int)nudLevel.Value, LiPicture);
+                                                false, client, chbTerasse.Checked, chbParking.Checked, (int)nudLevel.Value, LiPicture,new Saling());
 
 
 

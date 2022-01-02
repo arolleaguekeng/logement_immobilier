@@ -1,4 +1,5 @@
-﻿using LogementImobilier.BO;
+﻿using LogementImobilier.BLL;
+using LogementImobilier.BO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,16 +15,22 @@ namespace LogementImobilier.Winform
     public partial class frmInfoHousing : Form
     {
         PictureBox boxSingle;
+        DateTime endDate;
+        HousingManager manager;
         List<HousingPicture> images;
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddHouse));
         public frmInfoHousing()
         {
+            endDate = new DateTime();
+            manager = new HousingManager();
             images = new List<HousingPicture>();
             InitializeComponent();
         }
 
         private void frmInfoHousing_Load(object sender, EventArgs e)
         {
+            //afficher la date actuelle
+            dtStartDate.Value = DateTime.Now;
             //remplissage des informations sur la maison
             lbHouseName.Text = Program.InfoHouse.Name;
             lbPrice.Text = Program.InfoHouse.Price.ToString() ;
@@ -47,7 +54,7 @@ namespace LogementImobilier.Winform
                 boxSingle = new PictureBox();
                 boxSingle.Image = ((Image)(resources.GetObject("boxSingle.Image")));
                 boxSingle.Name = $"img{n++}";
-                boxSingle.Size = new Size(100, 100);
+                boxSingle.Size = new Size(400, 250);
                 boxSingle.SizeMode = PictureBoxSizeMode.StretchImage;
                 boxSingle.TabStop = false;
                 boxSingle.ImageLocation = pic.Title;
@@ -73,16 +80,33 @@ namespace LogementImobilier.Winform
 
         private void btnSale_Click_1(object sender, EventArgs e)
         {
-            
-            //frmFacture facture = new frmFacture();
-            //facture.Show();
+            try
+            {
+                Client client = new Client(tbClientEmail.Text, tbClientName.Text,int.Parse(tbClientPhoneNumber.Text));
+                var houseSale =Program.InfoHouse;
+                Saling saling = new Saling(dtStartDate.Value, dtEndDate.Value);
+                manager.SaleHousing(Program.InfoHouse, houseSale, client, saling);
+                frmFacture facture = new frmFacture();
+                facture.Show();
+                MessageBox.Show("Sale succes !");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, ex.Source);
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-
             frmEditHousing editHousing = new frmEditHousing();
             editHousing.Show();
+        }
+
+        private void btnLeave_Click(object sender, EventArgs e)
+        {
+            Client client = new Client();
+            var houseSale = Program.InfoHouse;
+            manager.LeaveHousing(Program.InfoHouse, houseSale, client);
         }
     }
 }

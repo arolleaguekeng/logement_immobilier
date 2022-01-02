@@ -48,9 +48,9 @@
     <Compile Include="Client.cs" />
     <Compile Include="Historic.cs" />
     <Compile Include="Housing.cs" />
+    <Compile Include="HousingFree.cs" />
     <Compile Include="HousingPicture.cs" />
-    <Compile Include="HousingRenting.cs" />
-    <Compile Include="HousingSale.cs" />
+    <Compile Include="Saling.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />

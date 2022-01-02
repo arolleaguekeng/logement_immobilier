@@ -69,10 +69,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
-            this.panelRight = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnLeave = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSale = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelRight = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbClientPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbClientName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tbClientEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel2.SuspendLayout();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -85,21 +96,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.btnCose);
             this.panel2.Controls.Add(this.lbHouseName);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
             // btnEdit
             // 
-            resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEdit.BorderThickness = 1;
             this.btnEdit.CheckedState.Parent = this.btnEdit;
@@ -110,6 +123,7 @@
             this.btnEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnEdit.DisabledState.Parent = this.btnEdit;
             this.btnEdit.FillColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.BorderColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.FillColor = System.Drawing.Color.Transparent;
@@ -124,7 +138,6 @@
             // 
             // btnCose
             // 
-            resources.ApplyResources(this.btnCose, "btnCose");
             this.btnCose.Animated = true;
             this.btnCose.CheckedState.Parent = this.btnCose;
             this.btnCose.CustomImages.Parent = this.btnCose;
@@ -133,6 +146,7 @@
             this.btnCose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCose.DisabledState.Parent = this.btnCose;
+            resources.ApplyResources(this.btnCose, "btnCose");
             this.btnCose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnCose.ForeColor = System.Drawing.Color.White;
             this.btnCose.HoverState.FillColor = System.Drawing.Color.Red;
@@ -149,7 +163,6 @@
             // 
             // panelLeft
             // 
-            resources.ApplyResources(this.panelLeft, "panelLeft");
             this.panelLeft.Controls.Add(this.label1);
             this.panelLeft.Controls.Add(this.pictureBox10);
             this.panelLeft.Controls.Add(this.pictureBox9);
@@ -183,6 +196,7 @@
             this.panelLeft.Controls.Add(this.Used);
             this.panelLeft.Controls.Add(this.label4);
             this.panelLeft.Controls.Add(this.label3);
+            resources.ApplyResources(this.panelLeft, "panelLeft");
             this.panelLeft.Name = "panelLeft";
             // 
             // label1
@@ -192,71 +206,71 @@
             // 
             // pictureBox10
             // 
-            resources.ApplyResources(this.pictureBox10, "pictureBox10");
             this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
-            resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox8
             // 
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox7
             // 
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
@@ -376,43 +390,37 @@
             // 
             this.guna2ShadowForm1.TargetForm = this;
             // 
-            // panelRight
+            // btnLeave
             // 
-            resources.ApplyResources(this.panelRight, "panelRight");
-            this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelRight.Name = "panelRight";
-            // 
-            // guna2GradientButton1
-            // 
-            resources.ApplyResources(this.guna2GradientButton1, "guna2GradientButton1");
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2GradientButton1.BorderRadius = 15;
-            this.guna2GradientButton1.BorderThickness = 2;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton1.ShadowDecoration.Depth = 5;
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
+            this.btnLeave.Animated = true;
+            this.btnLeave.BackColor = System.Drawing.Color.Transparent;
+            this.btnLeave.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLeave.BorderRadius = 15;
+            this.btnLeave.BorderThickness = 2;
+            this.btnLeave.CheckedState.Parent = this.btnLeave;
+            this.btnLeave.CustomImages.Parent = this.btnLeave;
+            this.btnLeave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLeave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLeave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLeave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLeave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLeave.DisabledState.Parent = this.btnLeave;
+            this.btnLeave.FillColor = System.Drawing.Color.Transparent;
+            this.btnLeave.FillColor2 = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnLeave, "btnLeave");
+            this.btnLeave.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLeave.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnLeave.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnLeave.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnLeave.HoverState.Parent = this.btnLeave;
+            this.btnLeave.Name = "btnLeave";
+            this.btnLeave.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnLeave.ShadowDecoration.Depth = 5;
+            this.btnLeave.ShadowDecoration.Parent = this.btnLeave;
+            this.btnLeave.Click += new System.EventHandler(this.btnLeave_Click);
             // 
             // btnSale
             // 
-            resources.ApplyResources(this.btnSale, "btnSale");
             this.btnSale.Animated = true;
             this.btnSale.BackColor = System.Drawing.Color.Transparent;
             this.btnSale.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -428,6 +436,7 @@
             this.btnSale.DisabledState.Parent = this.btnSale;
             this.btnSale.FillColor = System.Drawing.Color.Transparent;
             this.btnSale.FillColor2 = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnSale, "btnSale");
             this.btnSale.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnSale.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSale.HoverState.FillColor2 = System.Drawing.SystemColors.MenuHighlight;
@@ -439,20 +448,170 @@
             this.btnSale.ShadowDecoration.Parent = this.btnSale;
             this.btnSale.Click += new System.EventHandler(this.btnSale_Click_1);
             // 
-            // panel1
+            // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.guna2GradientButton1);
-            this.panel1.Controls.Add(this.btnSale);
-            this.panel1.Name = "panel1";
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.tbClientName);
+            this.flowLayoutPanel1.Controls.Add(this.tbClientPhoneNumber);
+            this.flowLayoutPanel1.Controls.Add(this.tbClientEmail);
+            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
+            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel5);
+            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel4);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // panelRight
+            // 
+            resources.ApplyResources(this.panelRight, "panelRight");
+            this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRight.Name = "panelRight";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Purple;
+            this.label2.Name = "label2";
+            // 
+            // tbClientPhoneNumber
+            // 
+            this.tbClientPhoneNumber.Animated = true;
+            this.tbClientPhoneNumber.BorderRadius = 8;
+            this.tbClientPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbClientPhoneNumber.DefaultText = "";
+            this.tbClientPhoneNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbClientPhoneNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbClientPhoneNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientPhoneNumber.DisabledState.Parent = this.tbClientPhoneNumber;
+            this.tbClientPhoneNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbClientPhoneNumber.FocusedState.Parent = this.tbClientPhoneNumber;
+            resources.ApplyResources(this.tbClientPhoneNumber, "tbClientPhoneNumber");
+            this.tbClientPhoneNumber.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.tbClientPhoneNumber.HoverState.Parent = this.tbClientPhoneNumber;
+            this.tbClientPhoneNumber.Name = "tbClientPhoneNumber";
+            this.tbClientPhoneNumber.PasswordChar = '\0';
+            this.tbClientPhoneNumber.PlaceholderText = "Entrez le numéro de teléphone";
+            this.tbClientPhoneNumber.SelectedText = "";
+            this.tbClientPhoneNumber.ShadowDecoration.Parent = this.tbClientPhoneNumber;
+            // 
+            // tbClientName
+            // 
+            this.tbClientName.Animated = true;
+            this.tbClientName.BorderRadius = 8;
+            this.tbClientName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbClientName.DefaultText = "";
+            this.tbClientName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbClientName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbClientName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientName.DisabledState.Parent = this.tbClientName;
+            this.tbClientName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbClientName.FocusedState.Parent = this.tbClientName;
+            resources.ApplyResources(this.tbClientName, "tbClientName");
+            this.tbClientName.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.tbClientName.HoverState.Parent = this.tbClientName;
+            this.tbClientName.Name = "tbClientName";
+            this.tbClientName.PasswordChar = '\0';
+            this.tbClientName.PlaceholderText = "Entrez le nom";
+            this.tbClientName.SelectedText = "";
+            this.tbClientName.ShadowDecoration.Parent = this.tbClientName;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.label14);
+            this.flowLayoutPanel3.Controls.Add(this.dtStartDate);
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.ForeColor = System.Drawing.Color.Gray;
+            this.label14.Name = "label14";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.btnLeave);
+            this.flowLayoutPanel4.Controls.Add(this.btnSale);
+            resources.ApplyResources(this.flowLayoutPanel4, "flowLayoutPanel4");
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            // 
+            // tbClientEmail
+            // 
+            this.tbClientEmail.Animated = true;
+            this.tbClientEmail.BorderRadius = 8;
+            this.tbClientEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbClientEmail.DefaultText = "";
+            this.tbClientEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbClientEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbClientEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientEmail.DisabledState.Parent = this.tbClientEmail;
+            this.tbClientEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbClientEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbClientEmail.FocusedState.Parent = this.tbClientEmail;
+            resources.ApplyResources(this.tbClientEmail, "tbClientEmail");
+            this.tbClientEmail.HoverState.BorderColor = System.Drawing.Color.Purple;
+            this.tbClientEmail.HoverState.Parent = this.tbClientEmail;
+            this.tbClientEmail.Name = "tbClientEmail";
+            this.tbClientEmail.PasswordChar = '\0';
+            this.tbClientEmail.PlaceholderText = "Entrez l\'adresse mail";
+            this.tbClientEmail.SelectedText = "";
+            this.tbClientEmail.ShadowDecoration.Parent = this.tbClientEmail;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.label5);
+            this.flowLayoutPanel5.Controls.Add(this.dtEndDate);
+            resources.ApplyResources(this.flowLayoutPanel5, "flowLayoutPanel5");
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.Name = "label5";
+            // 
+            // dtStartDate
+            // 
+            this.dtStartDate.Animated = true;
+            this.dtStartDate.Checked = true;
+            this.dtStartDate.CheckedState.Parent = this.dtStartDate;
+            this.dtStartDate.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dtStartDate.FocusedColor = System.Drawing.Color.Teal;
+            resources.ApplyResources(this.dtStartDate, "dtStartDate");
+            this.dtStartDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dtStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtStartDate.HoverState.Parent = this.dtStartDate;
+            this.dtStartDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtStartDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtStartDate.Name = "dtStartDate";
+            this.dtStartDate.ShadowDecoration.Parent = this.dtStartDate;
+            this.dtStartDate.Value = new System.DateTime(2021, 11, 5, 1, 44, 46, 173);
+            // 
+            // dtEndDate
+            // 
+            this.dtEndDate.Animated = true;
+            this.dtEndDate.Checked = true;
+            this.dtEndDate.CheckedState.Parent = this.dtEndDate;
+            this.dtEndDate.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dtEndDate.FocusedColor = System.Drawing.Color.Teal;
+            resources.ApplyResources(this.dtEndDate, "dtEndDate");
+            this.dtEndDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dtEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtEndDate.HoverState.Parent = this.dtEndDate;
+            this.dtEndDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtEndDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtEndDate.Name = "dtEndDate";
+            this.dtEndDate.ShadowDecoration.Parent = this.dtEndDate;
+            this.dtEndDate.Value = new System.DateTime(2021, 11, 5, 1, 44, 46, 173);
             // 
             // frmInfoHousing
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelRight);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -472,7 +631,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -518,9 +683,20 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2CircleButton btnEdit;
-        private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnLeave;
         private Guna.UI2.WinForms.Guna2GradientButton btnSale;
         private System.Windows.Forms.FlowLayoutPanel panelRight;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2TextBox tbClientPhoneNumber;
+        private Guna.UI2.WinForms.Guna2TextBox tbClientName;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private Guna.UI2.WinForms.Guna2TextBox tbClientEmail;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtStartDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtEndDate;
     }
 }

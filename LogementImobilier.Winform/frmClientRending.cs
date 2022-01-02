@@ -21,5 +21,10 @@ namespace LogementImobilier.Winform
         {
 
         }
+
+        private void frmClientRending_Load(object sender, EventArgs e)
+        {
+            lbNowDate.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }

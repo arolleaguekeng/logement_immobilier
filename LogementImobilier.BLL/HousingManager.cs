@@ -99,5 +99,20 @@ namespace LogementImobilier.BLL
         {
             return housinRepository.FindBystartdesc();
         }
+        public void SaleHousing(Housing oldHousing, Housing newHousing,Client client,Saling saling)
+        {
+            newHousing.Used = true;
+            newHousing.HousingClient = client;
+            newHousing.HousingSaling = saling;
+            housinRepository.Set(oldHousing, newHousing);
+        }
+
+        public void LeaveHousing(Housing saleHousing, Housing newHousing, Client client)
+        {
+            newHousing.Used = true;
+            newHousing.HousingClient = client;
+            housinRepository.Set(saleHousing, newHousing);
+
+        }
     }
 }
