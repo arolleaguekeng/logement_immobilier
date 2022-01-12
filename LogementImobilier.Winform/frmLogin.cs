@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -21,10 +22,25 @@ namespace LogementImobilier.Winform
         List<User> users;
         UserManager manager;
         Language[] languages;
+        public string path = @"Data\User.json";
         public frmLogin()
         {
-
+            FileInfo fi = new FileInfo(path);
+            if (!fi.Directory.Exists)
+            {
+                fi.Directory.Create();
+                File.WriteAllText(path, "");
+            }
             manager = new UserManager();
+            manager.GetAllUsers();
+            if (File.ReadAllText(path).ToString() == "")
+            {
+                UserManager user = new UserManager();
+                user.AddUser(new User("admin@admin.email", "admin", "admin", "../../Resources/users/admin.png"));
+                MessageBox.Show("une erreure c'est produite veuillez redemarer l'application");
+                this.Close();
+            }
+
             InitializeComponent();
         }
 
@@ -59,7 +75,7 @@ namespace LogementImobilier.Winform
 
         private void btnValidate_Click(object sender, EventArgs e)
         {
-
+            manager.GetAllUsers();
             user = manager.LoginUser(tbEmail.Text, tbPassword.Text);
             if (user != null)
             {

@@ -41,6 +41,13 @@ namespace LogementImobilier.Winform
 
         private void frmdefinitionPrice_Load(object sender, EventArgs e)
         {
+            FileInfo fi = new FileInfo(path);
+            if (!fi.Directory.Exists)
+            {
+                fi.Directory.Create();
+                File.WriteAllText(path, "5000\n5000\n5000\n5000\n5000\n5000\n5000\n5000\n");
+            }
+                
             var val = File.ReadAllLines(path);
             nudExibition.Value = decimal.Parse(val[0]);
             nudKitchen.Value = decimal.Parse(val[1]);

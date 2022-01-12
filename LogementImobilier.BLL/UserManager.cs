@@ -27,7 +27,6 @@ namespace LogementImobilier.BLL
         {
            repository.Add(user);
             repository.Save();
-
         }
         public void EditUser(User user , User newUser)
         {
